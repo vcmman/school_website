@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SG Primary Schools Explorer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="badge">SGSchooling Primary Dataset</div>
+        <h1>Singapore Primary Schools Explorer</h1>
+        <p>
+          Complete primary-school pages mirrored from SGSchooling, including profile data, mother-tongue offerings, and
+          ballot history.
+        </p>
+        <div class="meta-row">
+          <div id="generatedAt" class="meta-pill">Loading data...</div>
+          <div id="schoolCount" class="meta-pill">Schools: -</div>
+          <div id="rankCount" class="meta-pill">Ranked: -</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="controls">
+      <input id="searchInput" type="text" placeholder="Search school, town, or address" />
+      <select id="rankFilter">
+        <option value="all">All schools</option>
+        <option value="ranked">Ranked in PSLE 2025 table</option>
+        <option value="unranked">Not in ranking table</option>
+      </select>
+      <select id="sortFilter">
+        <option value="name">Sort by name</option>
+        <option value="town">Sort by town</option>
+        <option value="rank">Sort by ranking</option>
+      </select>
+    </section>
+
+    <main class="layout">
+      <aside class="school-list-panel">
+        <h2>Primary Schools</h2>
+        <div id="resultCount" class="subtle">0 results</div>
+        <div id="schoolList" class="school-list"></div>
+      </aside>
+
+      <section class="details-panel">
+        <article id="schoolDetails" class="details-card">
+          <p class="empty">Select a school to view details.</p>
+        </article>
+      </section>
+    </main>
+
+    <section class="ranking-wrap">
+      <h2>PSLE 2025 Community Ranking</h2>
+      <table class="ranking-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>School</th>
+            <th>Score Range</th>
+            <th>Students</th>
+            <th>Total in Cohort</th>
+            <th>%</th>
+            <th>Top 10% Avg AL</th>
+          </tr>
+        </thead>
+        <tbody id="rankingBody"></tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Source: <a href="https://sgschooling.com/" target="_blank" rel="noopener noreferrer">sgschooling.com</a>. Data is
+        community-contributed and may be incomplete.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
