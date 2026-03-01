@@ -20,6 +20,11 @@
           <div id="schoolCount" class="meta-pill">Schools: -</div>
           <div id="rankCount" class="meta-pill">Ranked: -</div>
         </div>
+        <nav class="tabs">
+          <a class="tab active" href="/index.html">School Explorer</a>
+          <a class="tab" href="/house.html">1km Home Suggestions</a>
+          <a class="tab" href="/condo.html">1km Condo Names</a>
+        </nav>
       </div>
     </header>
 
@@ -31,9 +36,10 @@
         <option value="unranked">Not in ranking table</option>
       </select>
       <select id="sortFilter">
+        <option value="rank">Sort by community rank</option>
+        <option value="phaseProbability">Sort by 2C(S) then 2C probability (hard to easy)</option>
         <option value="name">Sort by name</option>
         <option value="town">Sort by town</option>
-        <option value="rank">Sort by ranking</option>
       </select>
     </section>
 

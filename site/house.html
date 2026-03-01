@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homes Within 1km of Primary Schools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="badge">Housing Suggestions</div>
+        <h1>Homes Within 1km of Primary Schools</h1>
+        <p>Recent HDB resale transactions near each school, filtered to SGD 500k–2M.</p>
+        <div class="meta-row">
+          <div id="houseGeneratedAt" class="meta-pill">Loading data...</div>
+          <div id="houseSchoolCount" class="meta-pill">Schools: -</div>
+        </div>
+        <nav class="tabs">
+          <a class="tab" href="/index.html">School Explorer</a>
+          <a class="tab active" href="/house.html">1km Home Suggestions</a>
+          <a class="tab" href="/condo.html">1km Condo Names</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="controls">
+      <input id="houseSearchInput" type="text" placeholder="Search school name or town" />
+      <select id="houseSortFilter">
+        <option value="rank">Sort by community rank</option>
+        <option value="phaseProbability">Sort by 2C(S) then 2C probability (hard to easy)</option>
+        <option value="name">Sort by school name</option>
+        <option value="count">Sort by homes count</option>
+      </select>
+    </section>
+
+    <main class="layout">
+      <aside class="school-list-panel">
+        <h2>Schools</h2>
+        <div id="houseResultCount" class="subtle">0 results</div>
+        <div id="houseSchoolList" class="school-list"></div>
+      </aside>
+
+      <section class="details-panel">
+        <article id="houseDetails" class="details-card">
+          <p class="empty">Select a school to view nearby home suggestions.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="house.js"></script>
+  </body>
+</html>

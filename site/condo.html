@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condo Names Within 1km of Primary Schools</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="badge">Condo Names</div>
+        <h1>Condo Names Within 1km of Primary Schools</h1>
+        <p>Nearby condo/apartment place names from OneMap, without sales listing data.</p>
+        <div class="meta-row">
+          <div id="condoGeneratedAt" class="meta-pill">Loading data...</div>
+          <div id="condoSchoolCount" class="meta-pill">Schools: -</div>
+        </div>
+        <nav class="tabs">
+          <a class="tab" href="/index.html">School Explorer</a>
+          <a class="tab" href="/house.html">1km Home Suggestions</a>
+          <a class="tab active" href="/condo.html">1km Condo Names</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="controls">
+      <input id="condoSearchInput" type="text" placeholder="Search school name or town" />
+      <select id="condoSortFilter">
+        <option value="rank">Sort by community rank</option>
+        <option value="phaseProbability">Sort by 2C(S) then 2C probability (hard to easy)</option>
+        <option value="name">Sort by school name</option>
+        <option value="count">Sort by condo count</option>
+      </select>
+    </section>
+
+    <main class="layout">
+      <aside class="school-list-panel">
+        <h2>Schools</h2>
+        <div id="condoResultCount" class="subtle">0 results</div>
+        <div id="condoSchoolList" class="school-list"></div>
+      </aside>
+
+      <section class="details-panel">
+        <article id="condoDetails" class="details-card">
+          <p class="empty">Select a school to view nearby condo names.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="condo.js"></script>
+  </body>
+</html>

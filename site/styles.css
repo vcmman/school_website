@@ -79,6 +79,39 @@ h1 {
   color: #39514d;
 }
 
+.nav-pill {
+  text-decoration: none;
+  font-weight: 700;
+  color: #0f6d5a;
+}
+
+.tabs {
+  margin-top: 14px;
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.tab {
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3d5a54;
+  border-right: 1px solid var(--line);
+}
+
+.tab:last-child {
+  border-right: 0;
+}
+
+.tab.active {
+  background: var(--accent-soft);
+  color: #0f6d5a;
+}
+
 .controls {
   max-width: 1260px;
   margin: 0 auto;

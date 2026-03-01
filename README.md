@@ -7,6 +7,8 @@ It collects:
 - Mother-tongue offerings
 - Ballot history table
 - PSLE 2025 community ranking table
+- Nearby home suggestions within 1km (HDB by default, optional PropertyGuru condos via CSV input)
+- Nearby condo names within 1km from OneMap place search (no sales data required)
 
 ## Data source
 
@@ -35,6 +37,22 @@ Run the data build:
 python3 /Users/byc/src/test/scripts/build_data.py
 ```
 
+Optional: export PropertyGuru condo rows (manual browser-assisted), then rebuild:
+
+```bash
+python3 -m pip install playwright
+python3 -m playwright install chromium
+python3 /Users/byc/src/test/scripts/fetch_propertyguru_condos.py
+python3 /Users/byc/src/test/scripts/build_data.py
+```
+
+Preferred automated condo source (URA API):
+
+```bash
+export URA_ACCESS_KEY="YOUR_URA_KEY"
+python3 /Users/byc/src/test/scripts/build_data.py
+```
+
 This generates:
 
 - `/Users/byc/src/test/site/data/site.json`
@@ -53,3 +71,6 @@ Open http://localhost:8000
 
 - Data is community-contributed and may be incomplete/inaccurate.
 - If SGSchooling changes HTML structures, update `/Users/byc/src/test/scripts/build_data.py` selectors/parsers.
+- PropertyGuru may block bot requests. If direct fetch is blocked, place condo listings in
+  `/Users/byc/src/test/data/propertyguru_condos.csv` (see `/Users/byc/src/test/data/README.md`).
+- URA condo pull requires `URA_ACCESS_KEY`. Without it, URA condo count remains 0 and the build continues.

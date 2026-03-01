@@ -2,7 +2,7 @@ const state = {
   data: null,
   search: "",
   rankFilter: "all",
-  sort: "name",
+  sort: "rank",
   selectedSlug: null
 };
 
@@ -56,7 +56,57 @@ function sortableRank(school) {
   return school.community_ranking ? school.community_ranking.rank : Number.MAX_SAFE_INTEGER;
 }
 
+function phaseProbabilityFromRecord(record, phase) {
+  const applied = record?.applied?.[phase];
+  if (typeof applied !== "number" || applied <= 0) return null;
+
+  const taken = record?.taken?.[phase];
+  if (typeof taken === "number" && taken >= 0) {
+    return Math.min(1, Math.max(0, taken / applied));
+  }
+
+  const vacancy = record?.vacancy?.[phase];
+  if (typeof vacancy === "number" && vacancy >= 0) {
+    return Math.min(1, Math.max(0, vacancy / applied));
+  }
+
+  return null;
+}
+
+function averagePhaseProbability(school, phase) {
+  const history = school.ballot_history || [];
+  let total = 0;
+  let count = 0;
+
+  history.forEach((record) => {
+    const value = phaseProbabilityFromRecord(record, phase);
+    if (typeof value === "number") {
+      total += value;
+      count += 1;
+    }
+  });
+
+  return count ? total / count : -1;
+}
+
 function sortSchools(schools) {
+  if (state.sort === "phaseProbability") {
+    return [...schools].sort((a, b) => {
+      const a2C = averagePhaseProbability(a, "2C");
+      const b2C = averagePhaseProbability(b, "2C");
+      const a2Cs = averagePhaseProbability(a, "2C(S)");
+      const b2Cs = averagePhaseProbability(b, "2C(S)");
+
+      const aHasAny = a2C >= 0 || a2Cs >= 0;
+      const bHasAny = b2C >= 0 || b2Cs >= 0;
+      if (aHasAny !== bHasAny) return aHasAny ? -1 : 1;
+
+      if (a2Cs >= 0 && b2Cs >= 0 && Math.abs(a2Cs - b2Cs) > 1e-6) return a2Cs - b2Cs;
+      if (a2C >= 0 && b2C >= 0 && Math.abs(a2C - b2C) > 1e-6) return a2C - b2C;
+
+      return a.name.localeCompare(b.name);
+    });
+  }
   if (state.sort === "town") {
     return [...schools].sort((a, b) => {
       const aTown = a.school_info.Town || "";
@@ -90,14 +140,15 @@ function renderSchoolList() {
   }
 
   schoolList.innerHTML = schools
-    .map((school) => {
+    .map((school, index) => {
       const town = school.school_info.Town || "Unknown town";
       const rank = school.community_ranking ? `#${school.community_ranking.rank}` : "Unranked";
+      const sortRank = state.sort === "phaseProbability" ? ` · Sort #${index + 1}` : "";
       const active = school.slug === state.selectedSlug ? "active" : "";
       return `
         <button class="school-item ${active}" data-slug="${school.slug}">
           <div class="name">${school.name}</div>
-          <div class="meta">${town} · ${rank}</div>
+          <div class="meta">${town} · ${rank}${sortRank}</div>
         </button>
       `;
     })
