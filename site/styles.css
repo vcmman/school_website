@@ -447,51 +447,6 @@ h1 {
   margin-top: 8px;
 }
 
-.result-list {
-  display: grid;
-  gap: 10px;
-}
-
-.result-list.compact {
-  margin-top: 10px;
-  gap: 8px;
-}
-
-.result-row {
-  border: 1px solid #e4efeb;
-  border-radius: 12px;
-  padding: 10px 12px;
-  background: #fbfdfc;
-}
-
-.result-row.compact {
-  padding: 9px 10px;
-}
-
-.result-main {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.result-main strong {
-  font-size: 13px;
-}
-
-.result-main span {
-  color: #4d6661;
-  font-size: 12px;
-}
-
-.result-meta {
-  margin-top: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 12px;
-  color: #27423d;
-  font-size: 12px;
-}
-
 .compact-note {
   margin-top: 10px;
 }

@@ -246,31 +246,6 @@ function renderPressureCard(label, phase) {
   const status = !phase?.has_data ? "No 2025 data" : phase.oversubscribed ? "Oversubscribed" : "Within vacancy";
   const statusClass = !phase?.has_data ? "muted" : phase.oversubscribed ? "hot" : "calm";
   const officialCutoff = renderOfficialCutoff(phase?.official);
-  const breakdown = Array.isArray(phase?.breakdown) && phase.breakdown.length
-    ? `
-        <div class="result-list compact">
-          ${phase.breakdown
-            .map(
-              (entry) => `
-                <div class="result-row compact">
-                  <div class="result-main">
-                    <strong>${entry.label}</strong>
-                    <span>${formatValue(entry.description, "")}</span>
-                  </div>
-                  <div class="result-meta">
-                    <span>Applicants ${formatCount(entry.applicants)}</span>
-                    <span>Vacancies ${formatCount(entry.vacancies)}</span>
-                    <span>Chance ${
-                      typeof entry.ballot_chance_pct === "number" ? `${entry.ballot_chance_pct.toFixed(0)}%` : "—"
-                    }</span>
-                  </div>
-                </div>
-              `
-            )
-            .join("")}
-        </div>
-      `
-    : `<p class="subtle compact-note">No SGSchooling SC / PR bucket breakdown found for this phase.</p>`;
 
   return `
     <article class="pressure-card">
@@ -285,7 +260,6 @@ function renderPressureCard(label, phase) {
         <span>Taken ${formatCount(phase?.taken)}</span>
       </div>
       ${officialCutoff}
-      ${breakdown}
     </article>
   `;
 }
@@ -428,7 +402,7 @@ function renderSchoolDetails() {
 
     <section class="section">
       <h4>2025 Ballot Pressure</h4>
-      <p class="subtle">Pressure is shown as applied/vacancy. Values above 1.00x mean the phase was oversubscribed. Each phase card shows the official MOE 2025 cutoff first, then the finer SGSchooling SC / PR distance buckets when they are available.</p>
+      <p class="subtle">Pressure is shown as applied/vacancy. Values above 1.00x mean the phase was oversubscribed. Each phase card shows the official MOE 2025 citizen and distance cutoff for that phase.</p>
       <div class="pressure-grid">
         ${renderPressureCard("2C(S)", phases["2C(S)"])}
         ${renderPressureCard("2C", phases["2C"])}
