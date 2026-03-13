@@ -2,7 +2,7 @@
 
 - `top20_schools.csv` is refreshed from SGSchooling PSLE 2025 community data:
   - https://sgschooling.com/blog/psle-2025-score-ranges-community-data
-- `/Users/byc/src/test/site/data/site.json` includes:
+- `/Users/byc/src/webschool/site/data/site.json` includes:
   - all SGSchooling primary-school pages (from sitemap)
   - school profile + mother tongue + ballot history
   - PSLE 2025 community ranking table
@@ -13,7 +13,7 @@
 Direct automated crawling of PropertyGuru may be blocked by anti-bot protection.
 To include PropertyGuru condos in the house page, provide:
 
-- `/Users/byc/src/test/data/propertyguru_condos.csv`
+- `/Users/byc/src/webschool/data/propertyguru_condos.csv`
 
 Expected CSV columns:
 - `address` (required)
@@ -24,7 +24,7 @@ Expected CSV columns:
 - `project` (optional)
 
 You can generate this CSV with:
-- `/Users/byc/src/test/scripts/fetch_propertyguru_condos.py`
+- `/Users/byc/src/webschool/scripts/fetch_propertyguru_condos.py`
 
 ## URA condo source (automated)
 
@@ -32,7 +32,7 @@ You can pull condo transactions automatically from URA:
 
 ```bash
 export URA_ACCESS_KEY="YOUR_URA_KEY"
-python3 /Users/byc/src/test/scripts/build_data.py
+python3 /Users/byc/src/webschool/scripts/build_data.py
 ```
 
 The build output stats will include:
@@ -41,10 +41,10 @@ The build output stats will include:
 ## Condo enrichment overrides
 
 You can improve condo-name recall for specific schools by adding OneMap query terms in:
-- `/Users/byc/src/test/data/condo_query_overrides.json`
+- `/Users/byc/src/webschool/data/condo_query_overrides.json`
 
 Format:
 - key: school slug (same slug used in `site.json`, e.g. `nan-hua`)
 - value: list of search queries
 
-See `/Users/byc/src/test/README.md` for full pipeline instructions.
+See `/Users/byc/src/webschool/README.md` for full pipeline instructions.

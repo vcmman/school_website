@@ -210,6 +210,13 @@ h1 {
   color: var(--muted);
 }
 
+.detail-intro {
+  margin-top: 10px;
+  max-width: 70ch;
+  color: #38504b;
+  line-height: 1.5;
+}
+
 .title-row {
   display: flex;
   justify-content: space-between;
@@ -250,6 +257,34 @@ h1 {
   flex-wrap: wrap;
 }
 
+.metric-strip {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.metric-pill {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: #f7fbfa;
+}
+
+.metric-pill strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.metric-label {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .section {
   margin-top: 16px;
   border: 1px solid var(--line);
@@ -262,6 +297,203 @@ h1 {
   margin: 0 0 10px;
   font-size: 14px;
   font-family: "Space Grotesk", sans-serif;
+}
+
+.info-card-grid,
+.language-grid,
+.pressure-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.info-card-grid,
+.language-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pressure-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.info-card,
+.language-block,
+.pressure-card {
+  border: 1px solid rgba(10, 143, 116, 0.12);
+  border-radius: 14px;
+  background: #fff;
+  padding: 14px;
+}
+
+.info-card h5,
+.language-block h5,
+.pressure-card h5 {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 8px 12px;
+  font-size: 13px;
+}
+
+.info-label {
+  color: #4b635f;
+  font-weight: 700;
+}
+
+.info-value {
+  color: #213430;
+  min-width: 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 7px 11px;
+  background: #edf7f4;
+  border: 1px solid #d0e7e1;
+  color: #24564d;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.pressure-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.pressure-value {
+  margin-top: 8px;
+  font-size: 28px;
+  line-height: 1;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.pressure-meta {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  color: #4a615d;
+  font-size: 12px;
+}
+
+.status-dot {
+  border-radius: 999px;
+  padding: 5px 9px;
+  font-size: 11px;
+  border: 1px solid var(--line);
+  white-space: nowrap;
+}
+
+.status-dot.hot {
+  background: #fff1ed;
+  border-color: #f2b2a4;
+  color: #a1432f;
+}
+
+.status-dot.calm {
+  background: #eef8f3;
+  border-color: #b7e0d0;
+  color: #177053;
+}
+
+.status-dot.muted {
+  background: #f4f7f6;
+  color: #6a7f7b;
+}
+
+.source-panel .subtle {
+  margin-top: 10px;
+}
+
+.official-cutoff {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f2faf7;
+  border: 1px solid #d7ebe3;
+}
+
+.official-kicker {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3f6a60;
+  font-weight: 700;
+}
+
+.official-label {
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 1.1;
+  font-family: "Space Grotesk", sans-serif;
+  color: #173b33;
+}
+
+.official-meta {
+  margin-top: 8px;
+}
+
+.result-list {
+  display: grid;
+  gap: 10px;
+}
+
+.result-list.compact {
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.result-row {
+  border: 1px solid #e4efeb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fbfdfc;
+}
+
+.result-row.compact {
+  padding: 9px 10px;
+}
+
+.result-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.result-main strong {
+  font-size: 13px;
+}
+
+.result-main span {
+  color: #4d6661;
+  font-size: 12px;
+}
+
+.result-meta {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  color: #27423d;
+  font-size: 12px;
+}
+
+.compact-note {
+  margin-top: 10px;
 }
 
 .kv-grid {
@@ -336,6 +568,11 @@ h1 {
   .school-list {
     max-height: 320px;
   }
+
+  .metric-strip,
+  .pressure-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 740px) {
@@ -352,7 +589,15 @@ h1 {
     flex-direction: column;
   }
 
+  .metric-strip,
+  .info-card-grid,
+  .language-grid,
+  .pressure-grid,
   .kv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-list {
     grid-template-columns: 1fr;
   }
 

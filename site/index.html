@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SG Primary Schools Explorer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20260313e" />
   </head>
   <body>
     <header class="hero">
@@ -12,13 +12,15 @@
         <div class="badge">SGSchooling Primary Dataset</div>
         <h1>Singapore Primary Schools Explorer</h1>
         <p>
-          Complete primary-school pages mirrored from SGSchooling, including profile data, mother-tongue offerings, and
-          ballot history.
+          Verified school overview built from SGSchooling pages plus official directory and MOE ballot data, with 2025
+          ballot pressure, cutoff status, languages, contact details, and nearby context in one place.
         </p>
         <div class="meta-row">
           <div id="generatedAt" class="meta-pill">Loading data...</div>
           <div id="schoolCount" class="meta-pill">Schools: -</div>
           <div id="rankCount" class="meta-pill">Ranked: -</div>
+          <div id="verifiedCount" class="meta-pill">Directory verified: -</div>
+          <div id="ballotCount" class="meta-pill">2025 ballot: -</div>
         </div>
         <nav class="tabs">
           <a class="tab active" href="/index.html">School Explorer</a>
@@ -37,7 +39,7 @@
       </select>
       <select id="sortFilter">
         <option value="rank">Sort by community rank</option>
-        <option value="phaseProbability">Sort by 2C(S) then 2C probability (hard to easy)</option>
+        <option value="phaseProbability">Sort by 2025 2C(S)->2C applied/vacancy (hard to easy)</option>
         <option value="name">Sort by name</option>
         <option value="town">Sort by town</option>
       </select>
@@ -77,11 +79,12 @@
 
     <footer class="footer">
       <p>
-        Source: <a href="https://sgschooling.com/" target="_blank" rel="noopener noreferrer">sgschooling.com</a>. Data is
-        community-contributed and may be incomplete.
+        Sources: <a href="https://sgschooling.com/" target="_blank" rel="noopener noreferrer">SGSchooling</a>,
+        <a href="https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data" target="_blank" rel="noopener noreferrer">MOE 2025 vacancies and balloting data</a>,
+        cached MOE school directory data, and OneMap/data.gov.sg enrichment where shown.
       </p>
     </footer>
 
-    <script src="app.js"></script>
+    <script src="app.js?v=20260313f"></script>
   </body>
 </html>

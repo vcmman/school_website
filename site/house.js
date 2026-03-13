@@ -1,7 +1,7 @@
 const state = {
   data: null,
   search: "",
-  sort: "rank",
+  sort: "phaseProbability",
   selectedSlug: null
 };
 
@@ -38,53 +38,34 @@ function rankValue(school) {
   return school.community_ranking?.rank ?? Number.MAX_SAFE_INTEGER;
 }
 
-function phaseProbabilityFromRecord(record, phase) {
-  const applied = record?.applied?.[phase];
-  if (typeof applied !== "number" || applied <= 0) return null;
-
-  const taken = record?.taken?.[phase];
-  if (typeof taken === "number" && taken >= 0) {
-    return Math.min(1, Math.max(0, taken / applied));
-  }
-
-  const vacancy = record?.vacancy?.[phase];
-  if (typeof vacancy === "number" && vacancy >= 0) {
-    return Math.min(1, Math.max(0, vacancy / applied));
-  }
-
-  return null;
-}
-
-function averagePhaseProbability(school, phase) {
+function phaseProbability2025(school, phase) {
   const history = school.ballot_history || [];
-  let total = 0;
-  let count = 0;
+  const record2025 = history.find((item) => item?.year === 2025);
+  if (!record2025) return -1;
 
-  history.forEach((record) => {
-    const value = phaseProbabilityFromRecord(record, phase);
-    if (typeof value === "number") {
-      total += value;
-      count += 1;
-    }
-  });
-
-  return count ? total / count : -1;
+  const applied = record2025?.applied?.[phase];
+  const vacancy = record2025?.vacancy?.[phase];
+  if (typeof applied !== "number" || applied < 0) return -1;
+  if (typeof vacancy !== "number" || vacancy <= 0) return -1;
+  return applied / vacancy;
 }
 
 function sortSchools(schools) {
   if (state.sort === "phaseProbability") {
     return [...schools].sort((a, b) => {
-      const a2C = averagePhaseProbability(a, "2C");
-      const b2C = averagePhaseProbability(b, "2C");
-      const a2Cs = averagePhaseProbability(a, "2C(S)");
-      const b2Cs = averagePhaseProbability(b, "2C(S)");
+      const a2C = phaseProbability2025(a, "2C");
+      const b2C = phaseProbability2025(b, "2C");
+      const a2Cs = phaseProbability2025(a, "2C(S)");
+      const b2Cs = phaseProbability2025(b, "2C(S)");
+      const a2CsValid = a2Cs >= 0;
+      const b2CsValid = b2Cs >= 0;
+      if (a2CsValid !== b2CsValid) return a2CsValid ? -1 : 1;
+      if (a2CsValid && Math.abs(a2Cs - b2Cs) > 1e-6) return b2Cs - a2Cs;
 
-      const aHasAny = a2C >= 0 || a2Cs >= 0;
-      const bHasAny = b2C >= 0 || b2Cs >= 0;
-      if (aHasAny !== bHasAny) return aHasAny ? -1 : 1;
-
-      if (a2Cs >= 0 && b2Cs >= 0 && Math.abs(a2Cs - b2Cs) > 1e-6) return a2Cs - b2Cs;
-      if (a2C >= 0 && b2C >= 0 && Math.abs(a2C - b2C) > 1e-6) return a2C - b2C;
+      const a2CValid = a2C >= 0;
+      const b2CValid = b2C >= 0;
+      if (a2CValid !== b2CValid) return a2CValid ? -1 : 1;
+      if (a2CValid && Math.abs(a2C - b2C) > 1e-6) return b2C - a2C;
 
       return a.name.localeCompare(b.name);
     });
@@ -129,7 +110,7 @@ function renderSchoolList() {
     .map((school, index) => {
       const active = school.slug === state.selectedSlug ? "active" : "";
       const town = school.school_info?.Town || "Unknown town";
-      const sortRank = state.sort === "phaseProbability" ? ` · Sort #${index + 1}` : "";
+      const sortRank = ` · Sort #${index + 1}`;
       return `
         <button class="school-item ${active}" data-slug="${school.slug}">
           <div class="name">${school.name}</div>
@@ -209,7 +190,7 @@ function renderDetails() {
 }
 
 async function init() {
-  const response = await fetch("data/site.json");
+  const response = await fetch("data/site.json", { cache: "no-store" });
   state.data = await response.json();
   const generated = new Date(state.data.generated_at).toLocaleString("en-SG", { hour12: false });
   generatedAt.textContent = `Data generated: ${generated}`;
