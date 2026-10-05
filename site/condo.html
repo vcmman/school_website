@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Condo Names Within 1km of Primary Schools</title>
-    <link rel="stylesheet" href="styles.css?v=20260313c" />
+    <link rel="stylesheet" href="styles.css?v=20261005a" />
   </head>
   <body>
     <header class="hero">
@@ -15,11 +15,17 @@
         <div class="meta-row">
           <div id="condoGeneratedAt" class="meta-pill">Loading data...</div>
           <div id="condoSchoolCount" class="meta-pill">Schools: -</div>
+          <div id="condoNameCount" class="meta-pill">Condo names: -</div>
+          <div id="condoPrivateCount" class="meta-pill">Likely private: -</div>
         </div>
         <nav class="tabs">
-          <a class="tab" href="/index.html">School Explorer</a>
-          <a class="tab" href="/house.html">1km Home Suggestions</a>
-          <a class="tab active" href="/condo.html">1km Condo Names</a>
+          <a class="tab" href="index.html">School Explorer</a>
+          <a class="tab" href="house.html">1km Home Suggestions</a>
+          <a class="tab active" href="condo.html">1km Condo Names</a>
+          <a class="tab" href="school-condos.html">School Condo Picks</a>
+          <a class="tab" href="invest.html">Investment Scout</a>
+          <a class="tab" href="research.html">Market Research</a>
+          <a class="tab" href="ai-stocks.html">AI Stocks</a>
         </nav>
       </div>
     </header>
@@ -28,9 +34,13 @@
       <input id="condoSearchInput" type="text" placeholder="Search school name or town" />
       <select id="condoSortFilter">
         <option value="rank">Sort by community rank</option>
-        <option value="phaseProbability">Sort by 2025 2C(S)->2C applied/vacancy (hard to easy)</option>
+        <option value="phaseProbability">Sort by latest 2C(S)->2C applied/vacancy (hard to easy)</option>
         <option value="name">Sort by school name</option>
         <option value="count">Sort by condo count</option>
+      </select>
+      <select id="condoRecordFilter">
+        <option value="private">Likely private condos only</option>
+        <option value="all">All OneMap place records</option>
       </select>
     </section>
 
@@ -48,6 +58,7 @@
       </section>
     </main>
 
-    <script src="condo.js?v=20260313b"></script>
+    <script src="i18n.js?v=20261005a"></script>
+    <script src="condo.js?v=20261005a"></script>
   </body>
 </html>

@@ -1,0 +1,4275 @@
+{
+  "generated_at": "2026-10-05T14:47:01.930471Z",
+  "as_of_date": "2026-10-05",
+  "sources": [
+    "Current PropertyGuru listing and search-result snippets gathered online on 2026-05-13",
+    "Local school dataset from site/data/site.json"
+  ],
+  "coverage_note": "Live-verified listings stay separate from the expanded candidate pool. Candidate projects are useful for discovery and school/MRT screening, but their current price, size, and age still need live checks.",
+  "stats": {
+    "listing_count": 64,
+    "verified_listing_count": 8,
+    "candidate_project_count": 56,
+    "ccr_count": 11,
+    "rcr_count": 29,
+    "ocr_count": 24,
+    "with_school_signal_count": 62,
+    "max_age_years": 9.6
+  },
+  "listings": [
+    {
+      "id": "the-gatz-1054",
+      "name": "The GATZ",
+      "address": "26 Lorong 32 Geylang",
+      "region": "RCR",
+      "corridor": "Dakota / Geylang",
+      "price_sgd": 1988000,
+      "psf_sgd": 1886,
+      "size_sqft": 1054,
+      "beds": 3,
+      "baths": 3,
+      "property_type": "Condominium",
+      "tenure": "Freehold",
+      "top_month": 1,
+      "top_year": 2024,
+      "mrt_station": "Dakota",
+      "mrt_distance_m": 800,
+      "listed_on": "2026-01-05",
+      "school_names": [
+        [
+          "Kong Hwa School",
+          "nearest school from listing"
+        ],
+        [
+          "Haig Girls' School",
+          "mrt corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/25473772/for-sale-the-gatz",
+      "source_note": "Listing snippet names Kong Hwa School as a nearby school and notes TOP in 2024.",
+      "size_sqm": 97.9,
+      "age_years": 2.8,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "Haig Girls' School",
+          "basis": "mrt corridor",
+          "town": "Geylang",
+          "mrt": "Eunos, Dakota",
+          "rank": null,
+          "pressure_2cs": 2.111,
+          "pressure_2c": 0.855,
+          "demand_score": 0.844
+        },
+        {
+          "name": "Kong Hwa School",
+          "basis": "nearest school from listing",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.985,
+        "size_fit": 0.635,
+        "mrt_fit": 0.385,
+        "age_fit": 0.72,
+        "psf_fit": 0.966,
+        "school_fit": 0.844
+      },
+      "investment_score": 73.2,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "park-place-residences-1076",
+      "name": "Park Place Residences",
+      "address": "6 Paya Lebar Road",
+      "region": "RCR",
+      "corridor": "Paya Lebar",
+      "price_sgd": 2450000,
+      "psf_sgd": 2277,
+      "size_sqft": 1076,
+      "beds": 3,
+      "baths": 2,
+      "property_type": "Condominium",
+      "tenure": "99-year leasehold",
+      "top_month": 12,
+      "top_year": 2019,
+      "mrt_station": "Paya Lebar",
+      "mrt_distance_m": 240,
+      "listed_on": "2026-03-12",
+      "school_names": [
+        [
+          "Kong Hwa School",
+          "explicit 1km mention"
+        ],
+        [
+          "CHIJ (Katong) Primary",
+          "mrt corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/for-sale-park-place-residences-25237064",
+      "source_note": "Snippet explicitly mentions 1km Kong Hwa School.",
+      "size_sqm": 100.0,
+      "age_years": 6.8,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "explicit 1km mention",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "CHIJ (Katong) Primary",
+          "basis": "mrt corridor",
+          "town": "Bedok",
+          "mrt": "MARINE PARADE; EUNOS; PAYA LEBAR",
+          "rank": null,
+          "pressure_2cs": 1.364,
+          "pressure_2c": 0.891,
+          "demand_score": 0.546
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.438,
+        "size_fit": 0.69,
+        "mrt_fit": 0.815,
+        "age_fit": 0.32,
+        "psf_fit": 0.64,
+        "school_fit": 0.836
+      },
+      "investment_score": 63.2,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "sanctuary-newton-807",
+      "name": "Sanctuary @ Newton",
+      "address": "2 Surrey Road",
+      "region": "CCR",
+      "corridor": "Newton / Novena",
+      "price_sgd": 2118000,
+      "psf_sgd": 2625,
+      "size_sqft": 807,
+      "beds": 2,
+      "baths": 2,
+      "property_type": "Condominium",
+      "tenure": "Freehold",
+      "top_month": 6,
+      "top_year": 2025,
+      "mrt_station": "Novena / Newton",
+      "mrt_distance_m": 600,
+      "listed_on": "2026-01-25",
+      "school_names": [
+        [
+          "Anglo-Chinese School (Primary)",
+          "mrt corridor"
+        ],
+        [
+          "Anglo-Chinese School (Junior)",
+          "mrt corridor"
+        ],
+        [
+          "St. Joseph's Institution Junior",
+          "mrt corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/for-sale-sanctuary-newton-60200182",
+      "source_note": "Live listing snippet captured from current PropertyGuru search results.",
+      "size_sqm": 75.0,
+      "age_years": 1.3,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "St. Joseph's Institution Junior",
+          "basis": "mrt corridor",
+          "town": "Novena",
+          "mrt": "Novena",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.333,
+          "demand_score": 0.533
+        },
+        {
+          "name": "Anglo-Chinese School (Junior)",
+          "basis": "mrt corridor",
+          "town": "Central",
+          "mrt": "Newton MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.259,
+          "demand_score": 0.504
+        },
+        {
+          "name": "Anglo-Chinese School (Primary)",
+          "basis": "mrt corridor",
+          "town": "Novena",
+          "mrt": "Newton MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.167,
+          "demand_score": 0.467
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.853,
+        "size_fit": 0.018,
+        "mrt_fit": 0.538,
+        "age_fit": 0.87,
+        "psf_fit": 0.349,
+        "school_fit": 0.533
+      },
+      "investment_score": 53.4,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "parc-clematis-893",
+      "name": "Parc Clematis",
+      "address": "8E Jalan Lempeng",
+      "region": "OCR",
+      "corridor": "Clementi",
+      "price_sgd": 1648000,
+      "psf_sgd": 1845,
+      "size_sqft": 893,
+      "beds": 2,
+      "baths": 1,
+      "property_type": "Condominium",
+      "tenure": "99-year leasehold",
+      "top_month": 1,
+      "top_year": 2023,
+      "mrt_station": "Clementi",
+      "mrt_distance_m": 1250,
+      "listed_on": "2026-04-08",
+      "school_names": [
+        [
+          "Nan Hua Primary School",
+          "explicit 1km mention"
+        ],
+        [
+          "Clementi Primary School",
+          "mrt corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/24296520/for-sale-parc-clematis",
+      "source_note": "Recent sale snippet explicitly says 1km to Nan Hua Primary and shows Built: 2023.",
+      "size_sqm": 83.0,
+      "age_years": 3.8,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "Nan Hua Primary School",
+          "basis": "explicit 1km mention",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 4,
+          "pressure_2cs": null,
+          "pressure_2c": 3,
+          "demand_score": 0.97
+        },
+        {
+          "name": "Clementi Primary School",
+          "basis": "mrt corridor",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 30,
+          "pressure_2cs": 1.119,
+          "pressure_2c": 0.606,
+          "demand_score": 0.707
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.56,
+        "size_fit": 0.233,
+        "mrt_fit": 0.038,
+        "age_fit": 0.62,
+        "psf_fit": 1.0,
+        "school_fit": 0.97
+      },
+      "investment_score": 52.4,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "city-gate-904",
+      "name": "City Gate",
+      "address": "371 Beach Road",
+      "region": "RCR",
+      "corridor": "Nicoll Highway / Beach Road",
+      "price_sgd": 1899999,
+      "psf_sgd": 2102,
+      "size_sqft": 904,
+      "beds": 3,
+      "baths": 2,
+      "property_type": "Apartment",
+      "tenure": "99-year leasehold",
+      "top_month": 1,
+      "top_year": 2019,
+      "mrt_station": "Nicoll Highway",
+      "mrt_distance_m": 350,
+      "listed_on": "2026-03-13",
+      "school_names": [],
+      "source_url": "https://www.propertyguru.com.sg/listing/for-sale-city-gate-60203901",
+      "source_note": "Live listing snippet captured from current PropertyGuru search results.",
+      "size_sqm": 84.0,
+      "age_years": 7.8,
+      "age_under_10": true,
+      "school_signals": [],
+      "score_breakdown": {
+        "price_fit": 0.875,
+        "size_fit": 0.26,
+        "mrt_fit": 0.731,
+        "age_fit": 0.22,
+        "psf_fit": 0.786,
+        "school_fit": 0.0
+      },
+      "investment_score": 46.4,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "6-derbyshire-829",
+      "name": "6 Derbyshire",
+      "address": "6 Derbyshire Road",
+      "region": "CCR",
+      "corridor": "Newton / Novena",
+      "price_sgd": 1678888,
+      "psf_sgd": 2025,
+      "size_sqft": 829,
+      "beds": 2,
+      "baths": 2,
+      "property_type": "Condominium",
+      "tenure": "Freehold",
+      "top_month": 3,
+      "top_year": 2017,
+      "mrt_station": "Novena",
+      "mrt_distance_m": 630,
+      "listed_on": "2026-04-26",
+      "school_names": [
+        [
+          "Anglo-Chinese School (Primary)",
+          "mrt corridor"
+        ],
+        [
+          "Anglo-Chinese School (Junior)",
+          "mrt corridor"
+        ],
+        [
+          "St. Joseph's Institution Junior",
+          "mrt corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/25485051/for-sale-6-derbyshire",
+      "source_note": "Live listing snippet captured from current PropertyGuru search results.",
+      "size_sqm": 77.0,
+      "age_years": 9.6,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "St. Joseph's Institution Junior",
+          "basis": "mrt corridor",
+          "town": "Novena",
+          "mrt": "Novena",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.333,
+          "demand_score": 0.533
+        },
+        {
+          "name": "Anglo-Chinese School (Junior)",
+          "basis": "mrt corridor",
+          "town": "Central",
+          "mrt": "Newton MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.259,
+          "demand_score": 0.504
+        },
+        {
+          "name": "Anglo-Chinese School (Primary)",
+          "basis": "mrt corridor",
+          "town": "Novena",
+          "mrt": "Newton MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.167,
+          "demand_score": 0.467
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.599,
+        "size_fit": 0.072,
+        "mrt_fit": 0.515,
+        "age_fit": 0.04,
+        "psf_fit": 0.85,
+        "school_fit": 0.533
+      },
+      "investment_score": 41.1,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "kallang-riverside-1033",
+      "name": "Kallang Riverside",
+      "address": "51 Kampong Bugis",
+      "region": "RCR",
+      "corridor": "Kallang / Lavender",
+      "price_sgd": 2388000,
+      "psf_sgd": 2312,
+      "size_sqft": 1033,
+      "beds": 2,
+      "baths": 2,
+      "property_type": "Condominium",
+      "tenure": "Freehold",
+      "top_month": 12,
+      "top_year": 2019,
+      "mrt_station": "Lavender",
+      "mrt_distance_m": 770,
+      "listed_on": "2026-04-25",
+      "school_names": [],
+      "source_url": "https://www.propertyguru.com.sg/listing/60096303/for-sale-kallang-riverside",
+      "source_note": "Live listing snippet captured from current PropertyGuru search results.",
+      "size_sqm": 96.0,
+      "age_years": 6.8,
+      "age_under_10": true,
+      "school_signals": [],
+      "score_breakdown": {
+        "price_fit": 0.515,
+        "size_fit": 0.583,
+        "mrt_fit": 0.408,
+        "age_fit": 0.32,
+        "psf_fit": 0.611,
+        "school_fit": 0.0
+      },
+      "investment_score": 39.1,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "riviere-818",
+      "name": "Riviere",
+      "address": "1 Jiak Kim Street",
+      "region": "CCR",
+      "corridor": "Havelock / River Valley",
+      "price_sgd": 2490000,
+      "psf_sgd": 3044,
+      "size_sqft": 818,
+      "beds": 2,
+      "baths": 2,
+      "property_type": "Condominium",
+      "tenure": "99-year leasehold",
+      "top_month": 1,
+      "top_year": 2023,
+      "mrt_station": "Havelock",
+      "mrt_distance_m": 580,
+      "listed_on": "2026-05-07",
+      "school_names": [
+        [
+          "River Valley Primary School",
+          "district corridor"
+        ]
+      ],
+      "source_url": "https://www.propertyguru.com.sg/listing/for-sale-riviere-500111718",
+      "source_note": "Live listing snippet captured from current PropertyGuru search results.",
+      "size_sqm": 76.0,
+      "age_years": 3.8,
+      "age_under_10": true,
+      "school_signals": [
+        {
+          "name": "River Valley Primary School",
+          "basis": "district corridor",
+          "town": "Central",
+          "mrt": "Somerset MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.338,
+          "demand_score": 0.535
+        }
+      ],
+      "score_breakdown": {
+        "price_fit": 0.387,
+        "size_fit": 0.045,
+        "mrt_fit": 0.554,
+        "age_fit": 0.62,
+        "psf_fit": 0.0,
+        "school_fit": 0.535
+      },
+      "investment_score": 38.4,
+      "verification_status": "live",
+      "school_distance_m": null
+    },
+    {
+      "id": "candidate-10",
+      "name": "SENGKANG GRAND RESIDENCES",
+      "address": "80 COMPASSVALE BOW SENGKANG GRAND RESIDENCES SINGAPORE 544570",
+      "region": "OCR",
+      "corridor": "Sengkang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "MRT : NE16-Sengkang; LRT : SW7-TongKang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Anchor Green Primary School",
+          "901m from school"
+        ],
+        [
+          "Nan Chiau Primary School",
+          "913m from school"
+        ],
+        [
+          "North Vista Primary School",
+          "415m from school"
+        ],
+        [
+          "Palm View Primary School",
+          "78m from school"
+        ],
+        [
+          "Seng Kang Primary School",
+          "949m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Palm View Primary School",
+          "basis": "78m from school",
+          "town": "Sengkang",
+          "mrt": "Buangkok",
+          "rank": null,
+          "pressure_2cs": 3.833,
+          "pressure_2c": 0.939,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Nan Chiau Primary School",
+          "basis": "913m from school",
+          "town": "Sengkang",
+          "mrt": "Sengkang Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.42,
+          "demand_score": 0.968
+        },
+        {
+          "name": "Anchor Green Primary School",
+          "basis": "901m from school",
+          "town": "Sengkang",
+          "mrt": "MRT : NE16-Sengkang; LRT : SW7-TongKang",
+          "rank": null,
+          "pressure_2cs": 0.47,
+          "pressure_2c": 0.164,
+          "demand_score": 0.188
+        }
+      ],
+      "school_distance_m": 78,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 92.8
+    },
+    {
+      "id": "candidate-35",
+      "name": "VILLA MARTIA",
+      "address": "11 MARTIA ROAD VILLA MARTIA SINGAPORE 424808",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "MARINE PARADE; EUNOS; PAYA LEBAR",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ (Katong) Primary",
+          "38m from school"
+        ],
+        [
+          "Ngee Ann Primary School",
+          "698m from school"
+        ],
+        [
+          "Tao Nan School",
+          "154m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Tao Nan School",
+          "basis": "154m from school",
+          "town": "Marine Parade",
+          "mrt": "Marine Parade, Marine Terrace",
+          "rank": 3,
+          "pressure_2cs": null,
+          "pressure_2c": 1.357,
+          "demand_score": 0.98
+        },
+        {
+          "name": "CHIJ (Katong) Primary",
+          "basis": "38m from school",
+          "town": "Bedok",
+          "mrt": "MARINE PARADE; EUNOS; PAYA LEBAR",
+          "rank": null,
+          "pressure_2cs": 1.364,
+          "pressure_2c": 0.891,
+          "demand_score": 0.546
+        },
+        {
+          "name": "Ngee Ann Primary School",
+          "basis": "698m from school",
+          "town": "Marine Parade",
+          "mrt": "Nil",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.107,
+          "demand_score": 0.443
+        }
+      ],
+      "school_distance_m": 38,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.98
+      },
+      "investment_score": 92.6
+    },
+    {
+      "id": "candidate-78",
+      "name": "VILLAGE RESIDENCE HOUGANG",
+      "address": "1 HOUGANG STREET 91 VILLAGE RESIDENCE HOUGANG SINGAPORE 538692",
+      "region": "OCR",
+      "corridor": "Hougang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Ang Mo Kio, Buangkok, Hougang, Sengkang, Yio Chu Kang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Hougang Primary School",
+          "238m from school"
+        ],
+        [
+          "Rosyth School",
+          "603m from school"
+        ],
+        [
+          "Xinmin Primary School",
+          "597m from school"
+        ],
+        [
+          "Yio Chu Kang Primary School",
+          "743m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Rosyth School",
+          "basis": "603m from school",
+          "town": "Serangoon",
+          "mrt": "Ang Mo Kio, Serangoon",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.609,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Hougang Primary School",
+          "basis": "238m from school",
+          "town": "Hougang",
+          "mrt": "Ang Mo Kio, Buangkok, Hougang, Sengkang, Yio Chu Kang",
+          "rank": null,
+          "pressure_2cs": 2.444,
+          "pressure_2c": 0.877,
+          "demand_score": 0.978
+        },
+        {
+          "name": "Xinmin Primary School",
+          "basis": "597m from school",
+          "town": "Hougang",
+          "mrt": "Nil",
+          "rank": 26,
+          "pressure_2cs": null,
+          "pressure_2c": 1.519,
+          "demand_score": 0.747
+        }
+      ],
+      "school_distance_m": 238,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 88.8
+    },
+    {
+      "id": "candidate-40",
+      "name": "OLEANDER TOWERS",
+      "address": "911 LORONG 1 TOA PAYOH OLEANDER TOWERS SINGAPORE 319771",
+      "region": "RCR",
+      "corridor": "Toa Payoh",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Toa Payoh",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ Primary (Toa Payoh)",
+          "260m from school"
+        ],
+        [
+          "Kheng Cheng School",
+          "556m from school"
+        ],
+        [
+          "Marymount Convent School",
+          "918m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kheng Cheng School",
+          "basis": "556m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell",
+          "rank": null,
+          "pressure_2cs": 3.1,
+          "pressure_2c": 0.92,
+          "demand_score": 1.0
+        },
+        {
+          "name": "CHIJ Primary (Toa Payoh)",
+          "basis": "260m from school",
+          "town": "Toa Payoh",
+          "mrt": "Toa Payoh",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.172,
+          "demand_score": 0.469
+        },
+        {
+          "name": "Marymount Convent School",
+          "basis": "918m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell MRT Station or Caldecott MRT Station",
+          "rank": null,
+          "pressure_2cs": 0.505,
+          "pressure_2c": 0.129,
+          "demand_score": 0.202
+        }
+      ],
+      "school_distance_m": 260,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 88.2
+    },
+    {
+      "id": "candidate-41",
+      "name": "TRELLIS TOWERS",
+      "address": "700 LORONG 1 TOA PAYOH TRELLIS TOWERS SINGAPORE 319773",
+      "region": "RCR",
+      "corridor": "Toa Payoh",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Toa Payoh",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ Primary (Toa Payoh)",
+          "321m from school"
+        ],
+        [
+          "Kheng Cheng School",
+          "848m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kheng Cheng School",
+          "basis": "848m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell",
+          "rank": null,
+          "pressure_2cs": 3.1,
+          "pressure_2c": 0.92,
+          "demand_score": 1.0
+        },
+        {
+          "name": "CHIJ Primary (Toa Payoh)",
+          "basis": "321m from school",
+          "town": "Toa Payoh",
+          "mrt": "Toa Payoh",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.172,
+          "demand_score": 0.469
+        }
+      ],
+      "school_distance_m": 321,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 86.7
+    },
+    {
+      "id": "candidate-72",
+      "name": "VILLAS HOLLAND",
+      "address": "2A BUKIT SEDAP ROAD VILLAS HOLLAND SINGAPORE 279930",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Buona Vista MRT, Clementi MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Henry Park Primary School",
+          "247m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Henry Park Primary School",
+          "basis": "247m from school",
+          "town": "Bukit Timah",
+          "mrt": "Buona Vista MRT, Clementi MRT",
+          "rank": 5,
+          "pressure_2cs": null,
+          "pressure_2c": 1.49,
+          "demand_score": 0.96
+        }
+      ],
+      "school_distance_m": 247,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.96
+      },
+      "investment_score": 86.2
+    },
+    {
+      "id": "candidate-7",
+      "name": "CENTRAL GREEN CONDOMINIUM",
+      "address": "1 JALAN MEMBINA CENTRAL GREEN CONDOMINIUM SINGAPORE 169479",
+      "region": "RCR",
+      "corridor": "Bukit Merah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Redhill Station; Tiong Bahru Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Alexandra Primary School",
+          "769m from school"
+        ],
+        [
+          "Zhangde Primary School",
+          "199m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Alexandra Primary School",
+          "basis": "769m from school",
+          "town": "Bukit Merah",
+          "mrt": "Redhill Station; Tiong Bahru Station",
+          "rank": 9,
+          "pressure_2cs": null,
+          "pressure_2c": 1.564,
+          "demand_score": 0.919
+        },
+        {
+          "name": "Zhangde Primary School",
+          "basis": "199m from school",
+          "town": "Bukit Merah",
+          "mrt": "Tiong Bahru MRT Station",
+          "rank": null,
+          "pressure_2cs": 0.51,
+          "pressure_2c": 0.495,
+          "demand_score": 0.204
+        }
+      ],
+      "school_distance_m": 199,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.919
+      },
+      "investment_score": 84.9
+    },
+    {
+      "id": "candidate-2",
+      "name": "NINE RESIDENCES",
+      "address": "16 YISHUN AVENUE 9 NINE RESIDENCES SINGAPORE 768896",
+      "region": "OCR",
+      "corridor": "Yishun",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Yishun",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Ahmad Ibrahim Primary School",
+          "941m from school"
+        ],
+        [
+          "Chongfu School",
+          "617m from school"
+        ],
+        [
+          "Huamin Primary School",
+          "716m from school"
+        ],
+        [
+          "North View Primary School",
+          "971m from school"
+        ],
+        [
+          "Xishan Primary School",
+          "407m from school"
+        ],
+        [
+          "Yishun Primary School",
+          "822m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Chongfu School",
+          "basis": "617m from school",
+          "town": "Yishun",
+          "mrt": "Yishun MRT station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.854,
+          "demand_score": 1.0
+        },
+        {
+          "name": "North View Primary School",
+          "basis": "971m from school",
+          "town": "Yishun",
+          "mrt": "Yishun; Khatib",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.068,
+          "demand_score": 0.827
+        },
+        {
+          "name": "Huamin Primary School",
+          "basis": "716m from school",
+          "town": "Yishun",
+          "mrt": "Yishun MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.828,
+          "demand_score": 0.731
+        }
+      ],
+      "school_distance_m": 407,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 84.6
+    },
+    {
+      "id": "candidate-87",
+      "name": "ORCHID PARK CONDOMINIUM",
+      "address": "87 YISHUN STREET 81 ORCHID PARK CONDOMINIUM SINGAPORE 768448",
+      "region": "OCR",
+      "corridor": "Yishun",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Yishun MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Naval Base Primary School",
+          "407m from school"
+        ],
+        [
+          "Peiying Primary School",
+          "699m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Naval Base Primary School",
+          "basis": "407m from school",
+          "town": "Yishun",
+          "mrt": "Yishun MRT Station",
+          "rank": null,
+          "pressure_2cs": 2.643,
+          "pressure_2c": 0.823,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Peiying Primary School",
+          "basis": "699m from school",
+          "town": "Yishun",
+          "mrt": "Khatib",
+          "rank": null,
+          "pressure_2cs": 1.288,
+          "pressure_2c": 0.508,
+          "demand_score": 0.515
+        }
+      ],
+      "school_distance_m": 407,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 84.6
+    },
+    {
+      "id": "candidate-62",
+      "name": "GEM RESIDENCES",
+      "address": "3 LORONG 5 TOA PAYOH GEM RESIDENCES SINGAPORE 319459",
+      "region": "RCR",
+      "corridor": "Toa Payoh",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Braddell & Toa Payoh Stations",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "First Toa Payoh Primary School",
+          "491m from school"
+        ],
+        [
+          "Kheng Cheng School",
+          "444m from school"
+        ],
+        [
+          "Pei Chun Public School",
+          "538m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kheng Cheng School",
+          "basis": "444m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell",
+          "rank": null,
+          "pressure_2cs": 3.1,
+          "pressure_2c": 0.92,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Pei Chun Public School",
+          "basis": "538m from school",
+          "town": "Toa Payoh",
+          "mrt": "Toa Payoh MRT Station and Braddell MRT Station",
+          "rank": 12,
+          "pressure_2cs": null,
+          "pressure_2c": 1.727,
+          "demand_score": 0.889
+        },
+        {
+          "name": "First Toa Payoh Primary School",
+          "basis": "491m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell & Toa Payoh Stations",
+          "rank": null,
+          "pressure_2cs": 0.07,
+          "pressure_2c": 0.088,
+          "demand_score": 0.028
+        }
+      ],
+      "school_distance_m": 444,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 83.7
+    },
+    {
+      "id": "candidate-29",
+      "name": "LAKEPOINT CONDOMINIUM",
+      "address": "2 LAKEPOINT DRIVE LAKEPOINT CONDOMINIUM SINGAPORE 648923",
+      "region": "OCR",
+      "corridor": "Jurong West",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Lakeside & Boon Lay",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Boon Lay Garden Primary School",
+          "506m from school"
+        ],
+        [
+          "Lakeside Primary School",
+          "292m from school"
+        ],
+        [
+          "Rulang Primary School",
+          "542m from school"
+        ],
+        [
+          "Shuqun Primary School",
+          "661m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Rulang Primary School",
+          "basis": "542m from school",
+          "town": "Jurong West",
+          "mrt": "Lakeside",
+          "rank": 10,
+          "pressure_2cs": null,
+          "pressure_2c": 2.195,
+          "demand_score": 0.909
+        },
+        {
+          "name": "Shuqun Primary School",
+          "basis": "661m from school",
+          "town": "Jurong West",
+          "mrt": "W11 Lakeside",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.563,
+          "demand_score": 0.625
+        },
+        {
+          "name": "Lakeside Primary School",
+          "basis": "292m from school",
+          "town": "Jurong West",
+          "mrt": "Lakeside MRT",
+          "rank": null,
+          "pressure_2cs": 0.532,
+          "pressure_2c": 0.612,
+          "demand_score": 0.213
+        }
+      ],
+      "school_distance_m": 292,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.909
+      },
+      "investment_score": 82.0
+    },
+    {
+      "id": "candidate-49",
+      "name": "THE PARC CONDOMINIUM",
+      "address": "11 WEST COAST WALK THE PARC CONDOMINIUM SINGAPORE 127161",
+      "region": "OCR",
+      "corridor": "Clementi",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Clementi MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Clementi Primary School",
+          "455m from school"
+        ],
+        [
+          "Nan Hua Primary School",
+          "915m from school"
+        ],
+        [
+          "Pei Tong Primary School",
+          "826m from school"
+        ],
+        [
+          "Qifa Primary School",
+          "619m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Nan Hua Primary School",
+          "basis": "915m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 4,
+          "pressure_2cs": null,
+          "pressure_2c": 3,
+          "demand_score": 0.97
+        },
+        {
+          "name": "Qifa Primary School",
+          "basis": "619m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 14,
+          "pressure_2cs": 1,
+          "pressure_2c": 0.871,
+          "demand_score": 0.869
+        },
+        {
+          "name": "Clementi Primary School",
+          "basis": "455m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 30,
+          "pressure_2cs": 1.119,
+          "pressure_2c": 0.606,
+          "demand_score": 0.707
+        }
+      ],
+      "school_distance_m": 455,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.97
+      },
+      "investment_score": 81.6
+    },
+    {
+      "id": "candidate-36",
+      "name": "RESIDENCE TWENTY-TWO",
+      "address": "246 TELOK KURAU ROAD RESIDENCE TWENTY-TWO SINGAPORE 423844",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "MARINE PARADE; EUNOS; PAYA LEBAR",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ (Katong) Primary",
+          "501m from school"
+        ],
+        [
+          "Haig Girls' School",
+          "912m from school"
+        ],
+        [
+          "Ngee Ann Primary School",
+          "946m from school"
+        ],
+        [
+          "Tao Nan School",
+          "636m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Tao Nan School",
+          "basis": "636m from school",
+          "town": "Marine Parade",
+          "mrt": "Marine Parade, Marine Terrace",
+          "rank": 3,
+          "pressure_2cs": null,
+          "pressure_2c": 1.357,
+          "demand_score": 0.98
+        },
+        {
+          "name": "Haig Girls' School",
+          "basis": "912m from school",
+          "town": "Geylang",
+          "mrt": "Eunos, Dakota",
+          "rank": null,
+          "pressure_2cs": 2.111,
+          "pressure_2c": 0.855,
+          "demand_score": 0.844
+        },
+        {
+          "name": "CHIJ (Katong) Primary",
+          "basis": "501m from school",
+          "town": "Bedok",
+          "mrt": "MARINE PARADE; EUNOS; PAYA LEBAR",
+          "rank": null,
+          "pressure_2cs": 1.364,
+          "pressure_2c": 0.891,
+          "demand_score": 0.546
+        }
+      ],
+      "school_distance_m": 501,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.98
+      },
+      "investment_score": 81.0
+    },
+    {
+      "id": "candidate-85",
+      "name": "MONTEREY PARK CONDOMINIUM",
+      "address": "33 WEST COAST RISE MONTEREY PARK CONDOMINIUM SINGAPORE 127476",
+      "region": "OCR",
+      "corridor": "Clementi",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Clementi MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Nan Hua Primary School",
+          "868m from school"
+        ],
+        [
+          "Qifa Primary School",
+          "484m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Nan Hua Primary School",
+          "basis": "868m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 4,
+          "pressure_2cs": null,
+          "pressure_2c": 3,
+          "demand_score": 0.97
+        },
+        {
+          "name": "Qifa Primary School",
+          "basis": "484m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 14,
+          "pressure_2cs": 1,
+          "pressure_2c": 0.871,
+          "demand_score": 0.869
+        }
+      ],
+      "school_distance_m": 484,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.97
+      },
+      "investment_score": 80.8
+    },
+    {
+      "id": "candidate-1",
+      "name": "NORTH PARK RESIDENCES",
+      "address": "15 YISHUN CENTRAL 1 NORTH PARK RESIDENCES SINGAPORE 768797",
+      "region": "OCR",
+      "corridor": "Yishun",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Yishun",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Ahmad Ibrahim Primary School",
+          "591m from school"
+        ],
+        [
+          "Huamin Primary School",
+          "838m from school"
+        ],
+        [
+          "Jiemin Primary School",
+          "584m from school"
+        ],
+        [
+          "Northland Primary School",
+          "782m from school"
+        ],
+        [
+          "Xishan Primary School",
+          "573m from school"
+        ],
+        [
+          "Yishun Primary School",
+          "620m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Northland Primary School",
+          "basis": "782m from school",
+          "town": "Yishun",
+          "mrt": "Yishun MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 3.357,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Huamin Primary School",
+          "basis": "838m from school",
+          "town": "Yishun",
+          "mrt": "Yishun MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.828,
+          "demand_score": 0.731
+        },
+        {
+          "name": "Xishan Primary School",
+          "basis": "573m from school",
+          "town": "Yishun",
+          "mrt": "Alight at Yishun MRT Station; Take Exit C; Walk towards Yishun Street 21",
+          "rank": 28,
+          "pressure_2cs": 1.729,
+          "pressure_2c": 0.443,
+          "demand_score": 0.727
+        }
+      ],
+      "school_distance_m": 573,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 80.4
+    },
+    {
+      "id": "candidate-67",
+      "name": "SUNFLOWER RESIDENCE",
+      "address": "45 LORONG 32 GEYLANG SUNFLOWER RESIDENCE SINGAPORE 398305",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Aljunied",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Geylang Methodist School (Primary)",
+          "745m from school"
+        ],
+        [
+          "Kong Hwa School",
+          "195m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "195m from school",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "Geylang Methodist School (Primary)",
+          "basis": "745m from school",
+          "town": "Geylang",
+          "mrt": "Aljunied",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.013,
+          "demand_score": 0.405
+        }
+      ],
+      "school_distance_m": 195,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.836
+      },
+      "investment_score": 80.0
+    },
+    {
+      "id": "candidate-73",
+      "name": "RIDGEWOOD CONDOMINIUM",
+      "address": "51 MOUNT SINAI DRIVE RIDGEWOOD CONDOMINIUM SINGAPORE 277107",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Buona Vista MRT, Clementi MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Henry Park Primary School",
+          "505m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Henry Park Primary School",
+          "basis": "505m from school",
+          "town": "Bukit Timah",
+          "mrt": "Buona Vista MRT, Clementi MRT",
+          "rank": 5,
+          "pressure_2cs": null,
+          "pressure_2c": 1.49,
+          "demand_score": 0.96
+        }
+      ],
+      "school_distance_m": 505,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.96
+      },
+      "investment_score": 79.7
+    },
+    {
+      "id": "candidate-102",
+      "name": "THE GARDEN RESIDENCES",
+      "address": "1 SERANGOON NORTH VIEW THE GARDEN RESIDENCES SINGAPORE 554343",
+      "region": "OCR",
+      "corridor": "Serangoon",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Ang Mo Kio, Serangoon",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Rosyth School",
+          "882m from school"
+        ],
+        [
+          "Zhonghua Primary School",
+          "602m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Rosyth School",
+          "basis": "882m from school",
+          "town": "Serangoon",
+          "mrt": "Ang Mo Kio, Serangoon",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.609,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Zhonghua Primary School",
+          "basis": "602m from school",
+          "town": "Serangoon",
+          "mrt": "Ang Mo Kio MRT, Bishan MRT, Serangoon MRT",
+          "rank": null,
+          "pressure_2cs": 0.222,
+          "pressure_2c": 0.143,
+          "demand_score": 0.089
+        }
+      ],
+      "school_distance_m": 602,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 79.7
+    },
+    {
+      "id": "candidate-50",
+      "name": "VILLA VERDE",
+      "address": "147 VERDE CRESCENT VILLA VERDE SINGAPORE 688473",
+      "region": "OCR",
+      "corridor": "Choa Chu Kang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "YEW TEE MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "De La Salle School",
+          "786m from school"
+        ],
+        [
+          "Kranji Primary School",
+          "313m from school"
+        ],
+        [
+          "Teck Whye Primary School",
+          "639m from school"
+        ],
+        [
+          "Yew Tee Primary School",
+          "390m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Yew Tee Primary School",
+          "basis": "390m from school",
+          "town": "Choa Chu Kang",
+          "mrt": "Yew Tee MRT Station",
+          "rank": 13,
+          "pressure_2cs": 0.419,
+          "pressure_2c": 0.567,
+          "demand_score": 0.879
+        },
+        {
+          "name": "De La Salle School",
+          "basis": "786m from school",
+          "town": "Choa Chu Kang",
+          "mrt": "YEW TEE MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.043,
+          "demand_score": 0.417
+        },
+        {
+          "name": "Kranji Primary School",
+          "basis": "313m from school",
+          "town": "Choa Chu Kang",
+          "mrt": "Yew Tee MRT",
+          "rank": null,
+          "pressure_2cs": 0.41,
+          "pressure_2c": 0.35,
+          "demand_score": 0.164
+        }
+      ],
+      "school_distance_m": 313,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.879
+      },
+      "investment_score": 79.7
+    },
+    {
+      "id": "candidate-42",
+      "name": "SKYPARK RESIDENCES",
+      "address": "1 SEMBAWANG CRESCENT SKYPARK RESIDENCES SINGAPORE 757093",
+      "region": "OCR",
+      "corridor": "Sembawang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Sembawang MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Canberra Primary School",
+          "894m from school"
+        ],
+        [
+          "Sembawang Primary School",
+          "204m from school"
+        ],
+        [
+          "Wellington Primary School",
+          "864m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Canberra Primary School",
+          "basis": "894m from school",
+          "town": "Sembawang",
+          "mrt": "Sembawang MRT Station",
+          "rank": 18,
+          "pressure_2cs": 7,
+          "pressure_2c": 0.989,
+          "demand_score": 0.828
+        },
+        {
+          "name": "Wellington Primary School",
+          "basis": "864m from school",
+          "town": "Sembawang",
+          "mrt": "Sembawang MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.889,
+          "demand_score": 0.756
+        },
+        {
+          "name": "Sembawang Primary School",
+          "basis": "204m from school",
+          "town": "Sembawang",
+          "mrt": "Sembawang MRT (6 to 8-minute walk)",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.362,
+          "demand_score": 0.545
+        }
+      ],
+      "school_distance_m": 204,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.828
+      },
+      "investment_score": 79.3
+    },
+    {
+      "id": "candidate-86",
+      "name": "SUNSET WAY RESIDENCE",
+      "address": "101 CLEMENTI STREET 14 SUNSET WAY RESIDENCE SINGAPORE 120101",
+      "region": "OCR",
+      "corridor": "Clementi",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Clementi MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Nan Hua Primary School",
+          "929m from school"
+        ],
+        [
+          "Pei Tong Primary School",
+          "622m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Nan Hua Primary School",
+          "basis": "929m from school",
+          "town": "Clementi",
+          "mrt": "Clementi MRT Station",
+          "rank": 4,
+          "pressure_2cs": null,
+          "pressure_2c": 3,
+          "demand_score": 0.97
+        },
+        {
+          "name": "Pei Tong Primary School",
+          "basis": "622m from school",
+          "town": "Clementi",
+          "mrt": "Clementi",
+          "rank": null,
+          "pressure_2cs": 0.186,
+          "pressure_2c": 0.161,
+          "demand_score": 0.074
+        }
+      ],
+      "school_distance_m": 622,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.97
+      },
+      "investment_score": 77.4
+    },
+    {
+      "id": "candidate-30",
+      "name": "CASHEW PARK CONDOMINIUM",
+      "address": "66 CASHEW ROAD CASHEW PARK CONDOMINIUM SINGAPORE 679644",
+      "region": "OCR",
+      "corridor": "Bukit Panjang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "From Pending LRT station to Choa Chu Kang MRT station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bukit Panjang Primary School",
+          "265m from school"
+        ],
+        [
+          "CHIJ Our Lady Queen of Peace",
+          "382m from school"
+        ],
+        [
+          "Zhenghua Primary School",
+          "889m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Bukit Panjang Primary School",
+          "basis": "265m from school",
+          "town": "Bukit Panjang",
+          "mrt": "From Pending LRT station to Choa Chu Kang MRT station",
+          "rank": 19,
+          "pressure_2cs": null,
+          "pressure_2c": 1.878,
+          "demand_score": 0.818
+        },
+        {
+          "name": "Zhenghua Primary School",
+          "basis": "889m from school",
+          "town": "Bukit Panjang",
+          "mrt": "LRT: Fajar Station",
+          "rank": null,
+          "pressure_2cs": 2,
+          "pressure_2c": 0.983,
+          "demand_score": 0.8
+        },
+        {
+          "name": "CHIJ Our Lady Queen of Peace",
+          "basis": "382m from school",
+          "town": "Bukit Panjang",
+          "mrt": "Cashew and Hillview",
+          "rank": null,
+          "pressure_2cs": 0.559,
+          "pressure_2c": 0.576,
+          "demand_score": 0.224
+        }
+      ],
+      "school_distance_m": 265,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.818
+      },
+      "investment_score": 77.2
+    },
+    {
+      "id": "candidate-93",
+      "name": "ADAM PARK CONDOMINIUM",
+      "address": "29 ADAM ROAD ADAM PARK CONDOMINIUM SINGAPORE 289901",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "TAN KAH KEE MRT STATION",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Raffles Girls' Primary School",
+          "720m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Raffles Girls' Primary School",
+          "basis": "720m from school",
+          "town": "Bukit Timah",
+          "mrt": "TAN KAH KEE MRT STATION",
+          "rank": 1,
+          "pressure_2cs": 3.1,
+          "pressure_2c": 0.934,
+          "demand_score": 1.0
+        }
+      ],
+      "school_distance_m": 720,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 76.8
+    },
+    {
+      "id": "candidate-27",
+      "name": "MCNAIR TOWERS",
+      "address": "113B MCNAIR ROAD MCNAIR TOWERS SINGAPORE 323113",
+      "region": "RCR",
+      "corridor": "Kallang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Boon Keng, Kallang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bendemeer Primary School",
+          "543m from school"
+        ],
+        [
+          "Hong Wen School",
+          "258m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Hong Wen School",
+          "basis": "258m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.017,
+          "demand_score": 0.807
+        },
+        {
+          "name": "Bendemeer Primary School",
+          "basis": "543m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng, Kallang",
+          "rank": 27,
+          "pressure_2cs": 0.391,
+          "pressure_2c": 0.179,
+          "demand_score": 0.737
+        }
+      ],
+      "school_distance_m": 258,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.807
+      },
+      "investment_score": 76.7
+    },
+    {
+      "id": "candidate-8",
+      "name": "THE METROPOLITAN CONDOMINIUM",
+      "address": "8 ALEXANDRA VIEW THE METROPOLITAN CONDOMINIUM SINGAPORE 158747",
+      "region": "RCR",
+      "corridor": "Bukit Merah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Redhill Station; Tiong Bahru Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Alexandra Primary School",
+          "941m from school"
+        ],
+        [
+          "Gan Eng Seng Primary School",
+          "542m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Alexandra Primary School",
+          "basis": "941m from school",
+          "town": "Bukit Merah",
+          "mrt": "Redhill Station; Tiong Bahru Station",
+          "rank": 9,
+          "pressure_2cs": null,
+          "pressure_2c": 1.564,
+          "demand_score": 0.919
+        },
+        {
+          "name": "Gan Eng Seng Primary School",
+          "basis": "542m from school",
+          "town": "Bukit Merah",
+          "mrt": "Redhill",
+          "rank": null,
+          "pressure_2cs": 0.219,
+          "pressure_2c": 0.256,
+          "demand_score": 0.088
+        }
+      ],
+      "school_distance_m": 542,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.919
+      },
+      "investment_score": 76.3
+    },
+    {
+      "id": "candidate-101",
+      "name": "KENSINGTON PARK CONDOMINIUM",
+      "address": "8 KENSINGTON PARK DRIVE KENSINGTON PARK CONDOMINIUM SINGAPORE 557323",
+      "region": "OCR",
+      "corridor": "Serangoon",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Ang Mo Kio, Serangoon",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Rosyth School",
+          "773m from school"
+        ],
+        [
+          "Zhonghua Primary School",
+          "740m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Rosyth School",
+          "basis": "773m from school",
+          "town": "Serangoon",
+          "mrt": "Ang Mo Kio, Serangoon",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.609,
+          "demand_score": 1.0
+        },
+        {
+          "name": "Zhonghua Primary School",
+          "basis": "740m from school",
+          "town": "Serangoon",
+          "mrt": "Ang Mo Kio MRT, Bishan MRT, Serangoon MRT",
+          "rank": null,
+          "pressure_2cs": 0.222,
+          "pressure_2c": 0.143,
+          "demand_score": 0.089
+        }
+      ],
+      "school_distance_m": 740,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 1.0
+      },
+      "investment_score": 76.2
+    },
+    {
+      "id": "candidate-37",
+      "name": "RESIDENCE 118",
+      "address": "118 LORONG L TELOK KURAU RESIDENCE 118 SINGAPORE 425552",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "MARINE PARADE; EUNOS; PAYA LEBAR",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ (Katong) Primary",
+          "702m from school"
+        ],
+        [
+          "Ngee Ann Primary School",
+          "821m from school"
+        ],
+        [
+          "St. Stephen's School",
+          "822m from school"
+        ],
+        [
+          "Tao Nan School",
+          "802m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Tao Nan School",
+          "basis": "802m from school",
+          "town": "Marine Parade",
+          "mrt": "Marine Parade, Marine Terrace",
+          "rank": 3,
+          "pressure_2cs": null,
+          "pressure_2c": 1.357,
+          "demand_score": 0.98
+        },
+        {
+          "name": "CHIJ (Katong) Primary",
+          "basis": "702m from school",
+          "town": "Bedok",
+          "mrt": "MARINE PARADE; EUNOS; PAYA LEBAR",
+          "rank": null,
+          "pressure_2cs": 1.364,
+          "pressure_2c": 0.891,
+          "demand_score": 0.546
+        },
+        {
+          "name": "St. Stephen's School",
+          "basis": "822m from school",
+          "town": "Bedok",
+          "mrt": "Kembangan MRT Station",
+          "rank": null,
+          "pressure_2cs": 1.341,
+          "pressure_2c": 0.664,
+          "demand_score": 0.536
+        }
+      ],
+      "school_distance_m": 702,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.98
+      },
+      "investment_score": 76.0
+    },
+    {
+      "id": "candidate-25",
+      "name": "SAINT GEORGE'S TOWERS",
+      "address": "26 SAINT GEORGE'S LANE SAINT GEORGE'S TOWERS SINGAPORE 320026",
+      "region": "RCR",
+      "corridor": "Kallang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Boon Keng, Kallang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bendemeer Primary School",
+          "288m from school"
+        ],
+        [
+          "Hong Wen School",
+          "454m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Hong Wen School",
+          "basis": "454m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.017,
+          "demand_score": 0.807
+        },
+        {
+          "name": "Bendemeer Primary School",
+          "basis": "288m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng, Kallang",
+          "rank": 27,
+          "pressure_2cs": 0.391,
+          "pressure_2c": 0.179,
+          "demand_score": 0.737
+        }
+      ],
+      "school_distance_m": 288,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.807
+      },
+      "investment_score": 76.0
+    },
+    {
+      "id": "candidate-44",
+      "name": "RAFFLESIA CONDOMINIUM",
+      "address": "31 BISHAN STREET 21 RAFFLESIA CONDOMINIUM SINGAPORE 579800",
+      "region": "RCR",
+      "corridor": "Bishan",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "BISHAN MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Catholic High School",
+          "744m from school"
+        ],
+        [
+          "Marymount Convent School",
+          "879m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Catholic High School",
+          "basis": "744m from school",
+          "town": "Bishan",
+          "mrt": "BISHAN MRT",
+          "rank": 2,
+          "pressure_2cs": null,
+          "pressure_2c": 1.561,
+          "demand_score": 0.99
+        },
+        {
+          "name": "Marymount Convent School",
+          "basis": "879m from school",
+          "town": "Toa Payoh",
+          "mrt": "Braddell MRT Station or Caldecott MRT Station",
+          "rank": null,
+          "pressure_2cs": 0.505,
+          "pressure_2c": 0.129,
+          "demand_score": 0.202
+        }
+      ],
+      "school_distance_m": 744,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.99
+      },
+      "investment_score": 75.5
+    },
+    {
+      "id": "candidate-6",
+      "name": "ALEX RESIDENCES",
+      "address": "28 ALEXANDRA VIEW ALEX RESIDENCES SINGAPORE 158744",
+      "region": "RCR",
+      "corridor": "Bukit Merah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Redhill Station; Tiong Bahru Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Alexandra Primary School",
+          "610m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Alexandra Primary School",
+          "basis": "610m from school",
+          "town": "Bukit Merah",
+          "mrt": "Redhill Station; Tiong Bahru Station",
+          "rank": 9,
+          "pressure_2cs": null,
+          "pressure_2c": 1.564,
+          "demand_score": 0.919
+        }
+      ],
+      "school_distance_m": 610,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.919
+      },
+      "investment_score": 74.6
+    },
+    {
+      "id": "candidate-38",
+      "name": "PINEHURST CONDOMINIUM",
+      "address": "132 LORONG L TELOK KURAU PINEHURST CONDOMINIUM SINGAPORE 425569",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "MARINE PARADE; EUNOS; PAYA LEBAR",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ (Katong) Primary",
+          "781m from school"
+        ],
+        [
+          "Ngee Ann Primary School",
+          "787m from school"
+        ],
+        [
+          "St. Stephen's School",
+          "761m from school"
+        ],
+        [
+          "Tao Nan School",
+          "868m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Tao Nan School",
+          "basis": "868m from school",
+          "town": "Marine Parade",
+          "mrt": "Marine Parade, Marine Terrace",
+          "rank": 3,
+          "pressure_2cs": null,
+          "pressure_2c": 1.357,
+          "demand_score": 0.98
+        },
+        {
+          "name": "CHIJ (Katong) Primary",
+          "basis": "781m from school",
+          "town": "Bedok",
+          "mrt": "MARINE PARADE; EUNOS; PAYA LEBAR",
+          "rank": null,
+          "pressure_2cs": 1.364,
+          "pressure_2c": 0.891,
+          "demand_score": 0.546
+        },
+        {
+          "name": "St. Stephen's School",
+          "basis": "761m from school",
+          "town": "Bedok",
+          "mrt": "Kembangan MRT Station",
+          "rank": null,
+          "pressure_2cs": 1.341,
+          "pressure_2c": 0.664,
+          "demand_score": 0.536
+        }
+      ],
+      "school_distance_m": 761,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.98
+      },
+      "investment_score": 74.5
+    },
+    {
+      "id": "candidate-65",
+      "name": "PLATINUM RESIDENCE",
+      "address": "10 LORONG 31 GEYLANG PLATINUM RESIDENCE SINGAPORE 388039",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Aljunied",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Geylang Methodist School (Primary)",
+          "560m from school"
+        ],
+        [
+          "Kong Hwa School",
+          "421m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "421m from school",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "Geylang Methodist School (Primary)",
+          "basis": "560m from school",
+          "town": "Geylang",
+          "mrt": "Aljunied",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.013,
+          "demand_score": 0.405
+        }
+      ],
+      "school_distance_m": 421,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.836
+      },
+      "investment_score": 74.4
+    },
+    {
+      "id": "candidate-81",
+      "name": "VILLA PONDER ROSA",
+      "address": "28 LORONG ONG LYE VILLA PONDER ROSA SINGAPORE 536396",
+      "region": "RCR",
+      "corridor": "Toa Payoh",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "BARTLEY MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Maris Stella High School",
+          "783m from school"
+        ],
+        [
+          "Paya Lebar Methodist Girls' School (Primary)",
+          "646m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Maris Stella High School",
+          "basis": "783m from school",
+          "town": "Toa Payoh",
+          "mrt": "BARTLEY MRT",
+          "rank": 8,
+          "pressure_2cs": null,
+          "pressure_2c": 2.187,
+          "demand_score": 0.929
+        },
+        {
+          "name": "Paya Lebar Methodist Girls' School (Primary)",
+          "basis": "646m from school",
+          "town": "Hougang",
+          "mrt": "Kovan (NE13), Serangoon(NE12/CC13)",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.04,
+          "demand_score": 0.416
+        }
+      ],
+      "school_distance_m": 646,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.929
+      },
+      "investment_score": 74.3
+    },
+    {
+      "id": "candidate-3",
+      "name": "FABER GARDEN CONDOMINIUM",
+      "address": "4 ANGKLONG LANE FABER GARDEN CONDOMINIUM SINGAPORE 579979",
+      "region": "OCR",
+      "corridor": "Bishan",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Bishan MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Ai Tong School",
+          "268m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Ai Tong School",
+          "basis": "268m from school",
+          "town": "Bishan",
+          "mrt": "Bishan MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.9,
+          "demand_score": 0.76
+        }
+      ],
+      "school_distance_m": 268,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.76
+      },
+      "investment_score": 73.7
+    },
+    {
+      "id": "candidate-74",
+      "name": "VILLAGE TOWER",
+      "address": "35 MOUNT SINAI RISE VILLAGE TOWER SINGAPORE 276955",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Buona Vista MRT, Clementi MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Henry Park Primary School",
+          "746m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Henry Park Primary School",
+          "basis": "746m from school",
+          "town": "Bukit Timah",
+          "mrt": "Buona Vista MRT, Clementi MRT",
+          "rank": 5,
+          "pressure_2cs": null,
+          "pressure_2c": 1.49,
+          "demand_score": 0.96
+        }
+      ],
+      "school_distance_m": 746,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.96
+      },
+      "investment_score": 73.7
+    },
+    {
+      "id": "candidate-31",
+      "name": "HAZEL PARK CONDOMINIUM",
+      "address": "23 HAZEL PARK TERRACE HAZEL PARK CONDOMINIUM SINGAPORE 678947",
+      "region": "OCR",
+      "corridor": "Bukit Panjang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "From Pending LRT station to Choa Chu Kang MRT station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bukit Panjang Primary School",
+          "414m from school"
+        ],
+        [
+          "CHIJ Our Lady Queen of Peace",
+          "708m from school"
+        ],
+        [
+          "Zhenghua Primary School",
+          "774m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Bukit Panjang Primary School",
+          "basis": "414m from school",
+          "town": "Bukit Panjang",
+          "mrt": "From Pending LRT station to Choa Chu Kang MRT station",
+          "rank": 19,
+          "pressure_2cs": null,
+          "pressure_2c": 1.878,
+          "demand_score": 0.818
+        },
+        {
+          "name": "Zhenghua Primary School",
+          "basis": "774m from school",
+          "town": "Bukit Panjang",
+          "mrt": "LRT: Fajar Station",
+          "rank": null,
+          "pressure_2cs": 2,
+          "pressure_2c": 0.983,
+          "demand_score": 0.8
+        },
+        {
+          "name": "CHIJ Our Lady Queen of Peace",
+          "basis": "708m from school",
+          "town": "Bukit Panjang",
+          "mrt": "Cashew and Hillview",
+          "rank": null,
+          "pressure_2cs": 0.559,
+          "pressure_2c": 0.576,
+          "demand_score": 0.224
+        }
+      ],
+      "school_distance_m": 414,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.818
+      },
+      "investment_score": 73.5
+    },
+    {
+      "id": "candidate-66",
+      "name": "GEYLANG MANSIONS",
+      "address": "2 LORONG 26 GEYLANG GEYLANG MANSIONS SINGAPORE 398478",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Aljunied",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Geylang Methodist School (Primary)",
+          "585m from school"
+        ],
+        [
+          "Kong Hwa School",
+          "477m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "477m from school",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "Geylang Methodist School (Primary)",
+          "basis": "585m from school",
+          "town": "Geylang",
+          "mrt": "Aljunied",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.013,
+          "demand_score": 0.405
+        }
+      ],
+      "school_distance_m": 477,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.836
+      },
+      "investment_score": 73.0
+    },
+    {
+      "id": "candidate-24",
+      "name": "BEDOK RESIDENCES",
+      "address": "24 BEDOK NORTH DRIVE BEDOK RESIDENCES SINGAPORE 465498",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Bedok MRT Station, Tanah Merah MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bedok Green Primary School",
+          "898m from school"
+        ],
+        [
+          "Fengshan Primary School",
+          "540m from school"
+        ],
+        [
+          "Opera Estate Primary School",
+          "736m from school"
+        ],
+        [
+          "Yu Neng Primary School",
+          "988m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Yu Neng Primary School",
+          "basis": "988m from school",
+          "town": "Bedok",
+          "mrt": "Bedok MRT Station (East-West Line), Bedok Reservoir MRT STation (Downtown line)",
+          "rank": 15,
+          "pressure_2cs": null,
+          "pressure_2c": 1.765,
+          "demand_score": 0.859
+        },
+        {
+          "name": "Fengshan Primary School",
+          "basis": "540m from school",
+          "town": "Bedok",
+          "mrt": "Bedok MRT",
+          "rank": null,
+          "pressure_2cs": 1.944,
+          "pressure_2c": 0.798,
+          "demand_score": 0.778
+        },
+        {
+          "name": "Opera Estate Primary School",
+          "basis": "736m from school",
+          "town": "Bedok",
+          "mrt": "Bedok, Kembangan",
+          "rank": null,
+          "pressure_2cs": 0.686,
+          "pressure_2c": 0.588,
+          "demand_score": 0.274
+        }
+      ],
+      "school_distance_m": 540,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.859
+      },
+      "investment_score": 72.8
+    },
+    {
+      "id": "candidate-64",
+      "name": "MANSIONS 28",
+      "address": "28 LORONG 31 GEYLANG MANSIONS 28 SINGAPORE 388038",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Aljunied",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Geylang Methodist School (Primary)",
+          "508m from school"
+        ],
+        [
+          "Kong Hwa School",
+          "489m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "489m from school",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "Geylang Methodist School (Primary)",
+          "basis": "508m from school",
+          "town": "Geylang",
+          "mrt": "Aljunied",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.013,
+          "demand_score": 0.405
+        }
+      ],
+      "school_distance_m": 489,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.836
+      },
+      "investment_score": 72.7
+    },
+    {
+      "id": "candidate-26",
+      "name": "RESIDENCE @ ST GEORGE",
+      "address": "1 SAINT GEORGE'S LANE RESIDENCE @ ST GEORGE SINGAPORE 328047",
+      "region": "RCR",
+      "corridor": "Kallang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Boon Keng, Kallang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bendemeer Primary School",
+          "422m from school"
+        ],
+        [
+          "Hong Wen School",
+          "464m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Hong Wen School",
+          "basis": "464m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.017,
+          "demand_score": 0.807
+        },
+        {
+          "name": "Bendemeer Primary School",
+          "basis": "422m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng, Kallang",
+          "rank": 27,
+          "pressure_2cs": 0.391,
+          "pressure_2c": 0.179,
+          "demand_score": 0.737
+        }
+      ],
+      "school_distance_m": 422,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.807
+      },
+      "investment_score": 72.6
+    },
+    {
+      "id": "candidate-92",
+      "name": "TWIN WATERFALLS",
+      "address": "114 PUNGGOL WALK TWIN WATERFALLS SINGAPORE 828767",
+      "region": "OCR",
+      "corridor": "Punggol",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Punggol MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Punggol Green Primary School",
+          "116m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Punggol Green Primary School",
+          "basis": "116m from school",
+          "town": "Punggol",
+          "mrt": "Punggol MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.684,
+          "demand_score": 0.674
+        }
+      ],
+      "school_distance_m": 116,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.674
+      },
+      "investment_score": 72.3
+    },
+    {
+      "id": "candidate-23",
+      "name": "PARBURY HILL CONDOMINIUM",
+      "address": "36 PARBURY AVENUE PARBURY HILL CONDOMINIUM SINGAPORE 467303",
+      "region": "RCR",
+      "corridor": "Bedok",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Bedok MRT Station, Tanah Merah MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bedok Green Primary School",
+          "822m from school"
+        ],
+        [
+          "Temasek Primary School",
+          "195m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Temasek Primary School",
+          "basis": "195m from school",
+          "town": "Bedok",
+          "mrt": "Tanah Merah MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.72,
+          "demand_score": 0.688
+        },
+        {
+          "name": "Bedok Green Primary School",
+          "basis": "822m from school",
+          "town": "Bedok",
+          "mrt": "Bedok MRT Station, Tanah Merah MRT Station",
+          "rank": null,
+          "pressure_2cs": 0.237,
+          "pressure_2c": 0.191,
+          "demand_score": 0.095
+        }
+      ],
+      "school_distance_m": 195,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.688
+      },
+      "investment_score": 71.2
+    },
+    {
+      "id": "candidate-45",
+      "name": "SIMEI GREEN CONDOMINIUM",
+      "address": "11 SIMEI STREET 4 SIMEI GREEN CONDOMINIUM SINGAPORE 529866",
+      "region": "OCR",
+      "corridor": "Tampines",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Simei MRT Station",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Changkat Primary School",
+          "621m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Changkat Primary School",
+          "basis": "621m from school",
+          "town": "Tampines",
+          "mrt": "Simei MRT Station",
+          "rank": 16,
+          "pressure_2cs": 0.095,
+          "pressure_2c": 0.175,
+          "demand_score": 0.848
+        }
+      ],
+      "school_distance_m": 621,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.848
+      },
+      "investment_score": 70.1
+    },
+    {
+      "id": "candidate-4",
+      "name": "THOMSON VIEW CONDOMINIUM",
+      "address": "1 BRIGHT HILL DRIVE THOMSON VIEW CONDOMINIUM SINGAPORE 579580",
+      "region": "OCR",
+      "corridor": "Bishan",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Bishan MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Ai Tong School",
+          "413m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Ai Tong School",
+          "basis": "413m from school",
+          "town": "Bishan",
+          "mrt": "Bishan MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.9,
+          "demand_score": 0.76
+        }
+      ],
+      "school_distance_m": 413,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.76
+      },
+      "investment_score": 70.0
+    },
+    {
+      "id": "candidate-80",
+      "name": "RESIDENCES 88",
+      "address": "88 LORONG MARICAN RESIDENCES 88 SINGAPORE 417297",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Eunos Station (Transfer Bus No.63, 63M); Ubi Station (Transfer Bus No. 137)",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Maha Bodhi School",
+          "767m from school"
+        ],
+        [
+          "Telok Kurau Primary School",
+          "640m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Maha Bodhi School",
+          "basis": "767m from school",
+          "town": "Geylang",
+          "mrt": "Eunos Station (Transfer Bus No.63, 63M); Ubi Station (Transfer Bus No. 137)",
+          "rank": 17,
+          "pressure_2cs": null,
+          "pressure_2c": 1.791,
+          "demand_score": 0.838
+        },
+        {
+          "name": "Telok Kurau Primary School",
+          "basis": "640m from school",
+          "town": "Bedok",
+          "mrt": "Kaki Bukit MRT (nearest)",
+          "rank": null,
+          "pressure_2cs": 0.6,
+          "pressure_2c": 0.526,
+          "demand_score": 0.24
+        }
+      ],
+      "school_distance_m": 640,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.838
+      },
+      "investment_score": 69.0
+    },
+    {
+      "id": "candidate-75",
+      "name": "VILLAEA VISTA",
+      "address": "31 OEI TIONG HAM PARK VILLAEA VISTA SINGAPORE 267036",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Buona Vista MRT, Clementi MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Henry Park Primary School",
+          "933m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Henry Park Primary School",
+          "basis": "933m from school",
+          "town": "Bukit Timah",
+          "mrt": "Buona Vista MRT, Clementi MRT",
+          "rank": 5,
+          "pressure_2cs": null,
+          "pressure_2c": 1.49,
+          "demand_score": 0.96
+        }
+      ],
+      "school_distance_m": 933,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.96
+      },
+      "investment_score": 69.0
+    },
+    {
+      "id": "candidate-68",
+      "name": "PRIME RESIDENCE",
+      "address": "41 LORONG 22 GEYLANG PRIME RESIDENCE SINGAPORE 398697",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Aljunied",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Geylang Methodist School (Primary)",
+          "780m from school"
+        ],
+        [
+          "Kong Hwa School",
+          "655m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kong Hwa School",
+          "basis": "655m from school",
+          "town": "Geylang",
+          "mrt": "Dakota",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.089,
+          "demand_score": 0.836
+        },
+        {
+          "name": "Geylang Methodist School (Primary)",
+          "basis": "780m from school",
+          "town": "Geylang",
+          "mrt": "Aljunied",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.013,
+          "demand_score": 0.405
+        }
+      ],
+      "school_distance_m": 655,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.836
+      },
+      "investment_score": 68.5
+    },
+    {
+      "id": "candidate-28",
+      "name": "SAINT MICHAEL'S CONDOMINIUM",
+      "address": "19A SAINT MICHAEL'S ROAD SAINT MICHAEL'S CONDOMINIUM SINGAPORE 328003",
+      "region": "RCR",
+      "corridor": "Kallang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Boon Keng, Kallang",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bendemeer Primary School",
+          "588m from school"
+        ],
+        [
+          "Hong Wen School",
+          "714m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Hong Wen School",
+          "basis": "714m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.017,
+          "demand_score": 0.807
+        },
+        {
+          "name": "Bendemeer Primary School",
+          "basis": "588m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng, Kallang",
+          "rank": 27,
+          "pressure_2cs": 0.391,
+          "pressure_2c": 0.179,
+          "demand_score": 0.737
+        }
+      ],
+      "school_distance_m": 588,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.807
+      },
+      "investment_score": 68.5
+    },
+    {
+      "id": "candidate-84",
+      "name": "SHERWOOD TOWERS",
+      "address": "3 JALAN ANAK BUKIT SHERWOOD TOWERS SINGAPORE 588998",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "King Albert Park MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Methodist Girls' School (Primary)",
+          "911m from school"
+        ],
+        [
+          "Pei Hwa Presbyterian Primary School",
+          "326m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Pei Hwa Presbyterian Primary School",
+          "basis": "326m from school",
+          "town": "Bukit Timah",
+          "mrt": "Beauty World",
+          "rank": 31,
+          "pressure_2cs": null,
+          "pressure_2c": 1.233,
+          "demand_score": 0.697
+        },
+        {
+          "name": "Methodist Girls' School (Primary)",
+          "basis": "911m from school",
+          "town": "Bukit Timah",
+          "mrt": "King Albert Park MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.537,
+          "demand_score": 0.615
+        }
+      ],
+      "school_distance_m": 326,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.697
+      },
+      "investment_score": 68.4
+    },
+    {
+      "id": "candidate-39",
+      "name": "GOLDENHILL PARK CONDOMINIUM",
+      "address": "60 MEI HWAN DRIVE GOLDENHILL PARK CONDOMINIUM SINGAPORE 568426",
+      "region": "OCR",
+      "corridor": "Serangoon",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Ang Mo Kio MRT, Bishan MRT, Serangoon MRT station.",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "CHIJ Our Lady of Good Counsel",
+          "500m from school"
+        ],
+        [
+          "Kuo Chuan Presbyterian Primary School",
+          "849m from school"
+        ],
+        [
+          "St. Gabriel's Primary School",
+          "303m from school"
+        ],
+        [
+          "Yangzheng Primary School",
+          "735m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Kuo Chuan Presbyterian Primary School",
+          "basis": "849m from school",
+          "town": "Bishan",
+          "mrt": "Bishan MRT Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.708,
+          "demand_score": 0.683
+        },
+        {
+          "name": "St. Gabriel's Primary School",
+          "basis": "303m from school",
+          "town": "Serangoon",
+          "mrt": "Lor Chuan MRT Station (Circle Line)",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.024,
+          "demand_score": 0.41
+        },
+        {
+          "name": "Yangzheng Primary School",
+          "basis": "735m from school",
+          "town": "Serangoon",
+          "mrt": "Serangoon Station",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.018,
+          "demand_score": 0.407
+        }
+      ],
+      "school_distance_m": 303,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.683
+      },
+      "investment_score": 68.2
+    },
+    {
+      "id": "candidate-69",
+      "name": "GALAXY TOWERS",
+      "address": "30 ONAN ROAD GALAXY TOWERS SINGAPORE 424482",
+      "region": "RCR",
+      "corridor": "Geylang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Eunos, Dakota",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Haig Girls' School",
+          "712m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Haig Girls' School",
+          "basis": "712m from school",
+          "town": "Geylang",
+          "mrt": "Eunos, Dakota",
+          "rank": null,
+          "pressure_2cs": 2.111,
+          "pressure_2c": 0.855,
+          "demand_score": 0.844
+        }
+      ],
+      "school_distance_m": 712,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.844
+      },
+      "investment_score": 67.6
+    },
+    {
+      "id": "candidate-51",
+      "name": "FERRARIA PARK CONDOMINIUM",
+      "address": "16 FLORA DRIVE FERRARIA PARK CONDOMINIUM SINGAPORE 506945",
+      "region": "OCR",
+      "corridor": "Tampines",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Tampines",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "East Spring Primary School",
+          "542m from school"
+        ],
+        [
+          "White Sands Primary School",
+          "898m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "White Sands Primary School",
+          "basis": "898m from school",
+          "town": "Pasir Ris",
+          "mrt": "Pasir Ris MRT Station",
+          "rank": 24,
+          "pressure_2cs": null,
+          "pressure_2c": 1.062,
+          "demand_score": 0.768
+        },
+        {
+          "name": "East Spring Primary School",
+          "basis": "542m from school",
+          "town": "Tampines",
+          "mrt": "Tampines",
+          "rank": null,
+          "pressure_2cs": 0.135,
+          "pressure_2c": 0.297,
+          "demand_score": 0.054
+        }
+      ],
+      "school_distance_m": 542,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.768
+      },
+      "investment_score": 67.3
+    },
+    {
+      "id": "candidate-76",
+      "name": "AVA TOWERS",
+      "address": "10 AVA ROAD AVA TOWERS SINGAPORE 329949",
+      "region": "CCR",
+      "corridor": "Kallang",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Boon Keng MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Hong Wen School",
+          "654m from school"
+        ],
+        [
+          "St. Joseph's Institution Junior",
+          "840m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Hong Wen School",
+          "basis": "654m from school",
+          "town": "Kallang",
+          "mrt": "Boon Keng MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 2.017,
+          "demand_score": 0.807
+        },
+        {
+          "name": "St. Joseph's Institution Junior",
+          "basis": "840m from school",
+          "town": "Novena",
+          "mrt": "Novena",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.333,
+          "demand_score": 0.533
+        }
+      ],
+      "school_distance_m": 654,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.807
+      },
+      "investment_score": 66.8
+    },
+    {
+      "id": "candidate-56",
+      "name": "AZALEA PARK CONDOMINIUM",
+      "address": "10 FLORA ROAD AZALEA PARK CONDOMINIUM SINGAPORE 509729",
+      "region": "OCR",
+      "corridor": "Tampines",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Tampines",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "East Spring Primary School",
+          "818m from school"
+        ],
+        [
+          "White Sands Primary School",
+          "571m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "White Sands Primary School",
+          "basis": "571m from school",
+          "town": "Pasir Ris",
+          "mrt": "Pasir Ris MRT Station",
+          "rank": 24,
+          "pressure_2cs": null,
+          "pressure_2c": 1.062,
+          "demand_score": 0.768
+        },
+        {
+          "name": "East Spring Primary School",
+          "basis": "818m from school",
+          "town": "Tampines",
+          "mrt": "Tampines",
+          "rank": null,
+          "pressure_2cs": 0.135,
+          "pressure_2c": 0.297,
+          "demand_score": 0.054
+        }
+      ],
+      "school_distance_m": 571,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.768
+      },
+      "investment_score": 66.6
+    },
+    {
+      "id": "candidate-34",
+      "name": "SUITES AT BUKIT TIMAH",
+      "address": "68 JALAN JURONG KECHIL SUITES AT BUKIT TIMAH SINGAPORE 596180",
+      "region": "CCR",
+      "corridor": "Bukit Timah",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Beauty World, Bukit Batok and Clementi Stations",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Bukit Timah Primary School",
+          "817m from school"
+        ],
+        [
+          "Pei Hwa Presbyterian Primary School",
+          "398m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Pei Hwa Presbyterian Primary School",
+          "basis": "398m from school",
+          "town": "Bukit Timah",
+          "mrt": "Beauty World",
+          "rank": 31,
+          "pressure_2cs": null,
+          "pressure_2c": 1.233,
+          "demand_score": 0.697
+        },
+        {
+          "name": "Bukit Timah Primary School",
+          "basis": "817m from school",
+          "town": "Bukit Timah",
+          "mrt": "Beauty World, Bukit Batok and Clementi Stations",
+          "rank": null,
+          "pressure_2cs": 1.375,
+          "pressure_2c": 1.009,
+          "demand_score": 0.55
+        }
+      ],
+      "school_distance_m": 398,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.697
+      },
+      "investment_score": 66.6
+    },
+    {
+      "id": "candidate-5",
+      "name": "BISHAN PARK CONDOMINIUM",
+      "address": "18 SIN MING WALK BISHAN PARK CONDOMINIUM SINGAPORE 575569",
+      "region": "OCR",
+      "corridor": "Bishan",
+      "price_sgd": null,
+      "psf_sgd": null,
+      "size_sqft": null,
+      "beds": null,
+      "baths": null,
+      "property_type": "Condo candidate",
+      "tenure": "",
+      "top_month": null,
+      "top_year": null,
+      "mrt_station": "Bishan MRT",
+      "mrt_distance_m": null,
+      "listed_on": "",
+      "school_names": [
+        [
+          "Ai Tong School",
+          "562m from school"
+        ],
+        [
+          "Ang Mo Kio Primary School",
+          "926m from school"
+        ],
+        [
+          "CHIJ St. Nicholas Girls' School",
+          "857m from school"
+        ]
+      ],
+      "source_url": "",
+      "source_note": "Expanded candidate derived from local condo-name and school-proximity data. Current listing price, size, and age still need live verification.",
+      "verification_status": "candidate",
+      "school_signals": [
+        {
+          "name": "Ai Tong School",
+          "basis": "562m from school",
+          "town": "Bishan",
+          "mrt": "Bishan MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.9,
+          "demand_score": 0.76
+        },
+        {
+          "name": "CHIJ St. Nicholas Girls' School",
+          "basis": "857m from school",
+          "town": "Ang Mo Kio",
+          "mrt": "ANG MO KIO MRT, YIO CHU KANG MRT, MAYFLOWER MRT",
+          "rank": null,
+          "pressure_2cs": null,
+          "pressure_2c": 1.625,
+          "demand_score": 0.65
+        },
+        {
+          "name": "Ang Mo Kio Primary School",
+          "basis": "926m from school",
+          "town": "Ang Mo Kio",
+          "mrt": "Ang Mo Kio MRT Station; Mayflower MRT Station",
+          "rank": null,
+          "pressure_2cs": 0.164,
+          "pressure_2c": 0.197,
+          "demand_score": 0.066
+        }
+      ],
+      "school_distance_m": 562,
+      "score_breakdown": {
+        "price_fit": null,
+        "size_fit": null,
+        "mrt_fit": 0.65,
+        "age_fit": null,
+        "psf_fit": null,
+        "school_fit": 0.76
+      },
+      "investment_score": 66.3
+    }
+  ]
+}

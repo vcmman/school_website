@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Singapore Condo Market Research 2026-2031</title>
+    <link rel="stylesheet" href="styles.css?v=20261005a" />
+  </head>
+  <body>
+    <header class="hero research-hero">
+      <div class="hero-inner">
+        <div class="badge">Market Research</div>
+        <h1>Singapore Condo Upside Research 2026-2031</h1>
+        <p>
+          A data-backed investment screen for private condos that have a plausible path to more than 20% capital
+          appreciation over five years. The page combines URA market signals, LTA rail catalysts, local school-demand
+          data, and this site's condo shortlist.
+        </p>
+        <div class="meta-row">
+          <div class="meta-pill">As of 13 May 2026</div>
+          <div class="meta-pill">Target: >20% in 5 years</div>
+          <div class="meta-pill">Required CAGR: about 3.7%</div>
+          <div class="meta-pill">Focus: private condos, not HDBs</div>
+        </div>
+        <nav class="tabs">
+          <a class="tab" href="index.html">School Explorer</a>
+          <a class="tab" href="house.html">1km Home Suggestions</a>
+          <a class="tab" href="condo.html">1km Condo Names</a>
+          <a class="tab" href="school-condos.html">School Condo Picks</a>
+          <a class="tab" href="invest.html">Investment Scout</a>
+          <a class="tab active" href="research.html">Market Research</a>
+          <a class="tab" href="ai-stocks.html">AI Stocks</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="research-main">
+      <section class="research-warning">
+        <strong>Important limit:</strong>
+        This is a research screen, not financial advice or a guarantee. The 20% target excludes buyer stamp duty,
+        ABSD, legal fees, maintenance, mortgage cost, tax, and selling cost. Before buying, verify unit-level caveats,
+        stack/facing, defects, MCST health, rental evidence, and financing.
+      </section>
+
+      <section class="research-section new-launch-section">
+        <div class="research-section-head">
+          <span>Launch / TOP Forms</span>
+          <h2>Incoming launches and near-TOP condos</h2>
+          <p>
+            These forms are now placed at the top because they are action lists. The first ranks projects that are
+            coming to market. The second ranks launched projects already under construction and approaching TOP,
+            including Pinetree Hill and Nava Grove. The third captures older but well-located long-tenure condos. The
+            fourth fixes the missing-data gap for mature 99-year leasehold condos such as Gardenvista.
+          </p>
+        </div>
+        <div class="table-block">
+          <h3>Form 1: Incoming new launches</h3>
+          <div class="table-scroll">
+            <table class="ranking-table new-launch-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Launch / Site</th>
+                  <th>Region</th>
+                  <th>Location</th>
+                  <th>Type</th>
+                  <th>Window</th>
+                  <th>Units</th>
+                  <th>Score</th>
+                  <th>Upside</th>
+                  <th>Why it ranks here</th>
+                  <th>Watch-out</th>
+                </tr>
+              </thead>
+              <tbody id="newLaunchBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-block">
+          <h3>Form 2: TOP / under-construction watchlist</h3>
+          <div class="table-scroll">
+            <table class="ranking-table new-launch-table top-soon-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project</th>
+                  <th>Region</th>
+                  <th>Location</th>
+                  <th>TOP</th>
+                  <th>Units</th>
+                  <th>Score</th>
+                  <th>Upside</th>
+                  <th>Why it ranks here</th>
+                  <th>Watch-out</th>
+                </tr>
+              </thead>
+              <tbody id="topSoonBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-block">
+          <h3>Form 3: Older long-tenure condo watchlist</h3>
+          <p class="table-block-note">
+            Screen rule: freehold, 999-year, or otherwise more-than-100-year land tenure. “Good condition” is not
+            assumed from project age; inspect the actual unit, estate upkeep, MCST funds, facade, lifts, waterproofing,
+            and renovation quality before treating any row as investable.
+          </p>
+          <div class="table-scroll">
+            <table class="ranking-table new-launch-table long-tenure-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project</th>
+                  <th>Region</th>
+                  <th>Location</th>
+                  <th>Tenure</th>
+                  <th>TOP</th>
+                  <th>Units</th>
+                  <th>Score</th>
+                  <th>Upside</th>
+                  <th>Condition angle</th>
+                  <th>Why it ranks here</th>
+                  <th>Watch-out</th>
+                </tr>
+              </thead>
+              <tbody id="longTenureBody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="table-block">
+          <h3>Form 4: Mature 99-year leasehold condo watchlist</h3>
+          <p class="table-block-note">
+            Recheck result: some useful mature projects were absent because Form 3 intentionally filtered for freehold,
+            999-year, or more-than-100-year land tenure. This new form keeps only 99-year leasehold projects, generally
+            TOP 2016 or earlier, where transport, school, employment, waterfront, or transformation catalysts can still
+            create upside. Freehold projects such as The Cascadia stay out of this form even when they are nearby.
+          </p>
+          <div class="table-scroll">
+            <table class="ranking-table new-launch-table leasehold-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Project</th>
+                  <th>Region</th>
+                  <th>Location</th>
+                  <th>Tenure</th>
+                  <th>TOP</th>
+                  <th>Units</th>
+                  <th>Score</th>
+                  <th>Upside</th>
+                  <th>Why previously missing</th>
+                  <th>Why it ranks here</th>
+                  <th>Watch-out</th>
+                </tr>
+              </thead>
+              <tbody id="leaseholdBody"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-section-head">
+          <span>Market Baseline</span>
+          <h2>What the public data says now</h2>
+          <p>
+            A 20% gain in five years needs roughly 3.7% annual growth. That is slightly above Singapore's 2025
+            private-market gain, so the best candidates need project-specific catalysts rather than just market beta.
+          </p>
+        </div>
+        <div id="researchSignalGrid" class="research-signal-grid"></div>
+      </section>
+
+      <section class="research-section research-thesis">
+        <div class="research-section-head">
+          <span>Investment Thesis</span>
+          <h2>Where the upside is most likely to come from</h2>
+        </div>
+        <div class="research-thesis-grid">
+          <article>
+            <h3>1. OCR and selected RCR look stronger than expensive CCR</h3>
+            <p>
+              URA's latest quarter shows OCR non-landed prices rising faster than RCR and CCR. That does not mean every
+              OCR condo is attractive; it means affordability and upgrader depth are still powerful.
+            </p>
+          </article>
+          <article>
+            <h3>2. Rail catalysts matter only when entry price has not fully priced them in</h3>
+            <p>
+              The strongest five-year window is where the market can see a rail opening before or near exit, especially
+              CRL1 around 2030 and selected integrated MRT nodes.
+            </p>
+          </article>
+          <article>
+            <h3>3. Good primary-school demand improves exit liquidity</h3>
+            <p>
+              The site already scores schools using 2025 2C(S) and 2C pressure. Condos near high-demand schools have a
+              deeper family-buyer pool, but only if the unit is actually within the useful distance band.
+            </p>
+          </article>
+          <article>
+            <h3>4. Supply is the main brake on aggressive forecasts</h3>
+            <p>
+              URA's pipeline is large. A project needs scarcity, transport, school demand, or an entry discount to
+              outperform the broad market enough to cross 20%.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-section-head">
+          <span>Ranked Picks</span>
+          <h2>Condos with the clearest five-year >20% path</h2>
+          <p>
+            The base range is my conservative screen. A project is a real 20% candidate only when the upper end of base
+            case reaches or exceeds 20%, and the actual unit is bought below comparable replacement-cost pressure.
+          </p>
+        </div>
+        <div id="researchPickGrid" class="research-pick-grid"></div>
+      </section>
+
+      <section class="research-section requested-case-section">
+        <div class="research-section-head">
+          <span>Requested Case Studies</span>
+          <h2>Eight Riversuites and Twin Waterfalls</h2>
+          <p>
+            These two are not the same kind of bet. Eight Riversuites is a city-fringe RCR transport/liquidity play.
+            Twin Waterfalls is an OCR family-size and fully-privatised EC play. Both can work, but only one has a
+            cleaner path to a 20% five-year outcome.
+          </p>
+        </div>
+        <div id="researchCaseGrid" class="research-pick-grid"></div>
+      </section>
+
+      <section class="research-section">
+        <div class="research-section-head">
+          <span>Quick Compare</span>
+          <h2>Forecast summary table, including requested cases</h2>
+        </div>
+        <div class="table-scroll">
+          <table class="ranking-table research-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Condo</th>
+                <th>Region</th>
+                <th>Area</th>
+                <th>Base 5y</th>
+                <th>Bull 5y</th>
+                <th>Conviction</th>
+                <th>Data status</th>
+              </tr>
+            </thead>
+            <tbody id="researchPickBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="research-section research-framework">
+        <div class="research-section-head">
+          <span>How To Use</span>
+          <h2>The buying checklist before trusting any upside number</h2>
+        </div>
+        <ol>
+          <li>Pull URA caveats for the exact project and compare 2023-2026 psf trend by bedroom type.</li>
+          <li>Reject units that are not meaningfully cheaper than nearby new-launch alternatives after age adjustment.</li>
+          <li>Check walking distance, not marketing distance, to MRT and primary school gates.</li>
+          <li>Prefer efficient layouts above 800 sqft with a broad buyer pool; avoid odd layouts and poor stacks.</li>
+          <li>Stress-test mortgage at a higher rate than today's package; do not rely on rate cuts to save the thesis.</li>
+          <li>Deduct buyer/seller costs. A 20% headline gain may be much lower after friction.</li>
+        </ol>
+      </section>
+
+      <section class="research-section source-panel">
+        <div class="research-section-head">
+          <span>Sources</span>
+          <h2>Public data used</h2>
+        </div>
+        <ul id="researchSourceList" class="research-source-list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        This report is built for screening and discussion. It should be refreshed when URA releases the next quarterly
+        statistics or when a target project has new caveats that materially change its entry price.
+      </p>
+    </footer>
+
+    <script src="i18n.js?v=20261005a"></script>
+    <script src="research.js?v=20260515a"></script>
+  </body>
+</html>

@@ -3,3 +3,6 @@ apps/web/dist
 apps/desktop/dist
 .DS_Store
 .env
+.vercel
+.pycache/
+.server*.log

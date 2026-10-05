@@ -7,6 +7,9 @@ const state = {
 
 const generatedAt = document.getElementById("houseGeneratedAt");
 const schoolCount = document.getElementById("houseSchoolCount");
+const withHomesCount = document.getElementById("houseWithHomesCount");
+const listingCount = document.getElementById("houseListingCount");
+const monthRange = document.getElementById("houseMonthRange");
 const resultCount = document.getElementById("houseResultCount");
 const schoolList = document.getElementById("houseSchoolList");
 const details = document.getElementById("houseDetails");
@@ -31,20 +34,33 @@ function countHomes(school) {
 function matchesSchool(school) {
   if (!state.search) return true;
   const town = (school.school_info?.Town || "").toLowerCase();
-  return school.name.toLowerCase().includes(state.search) || town.includes(state.search);
+  const address = (school.school_info?.Address || school.address?.street || "").toLowerCase();
+  return school.name.toLowerCase().includes(state.search) || town.includes(state.search) || address.includes(state.search);
 }
 
 function rankValue(school) {
   return school.community_ranking?.rank ?? Number.MAX_SAFE_INTEGER;
 }
 
-function phaseProbability2025(school, phase) {
-  const history = school.ballot_history || [];
-  const record2025 = history.find((item) => item?.year === 2025);
-  if (!record2025) return -1;
+function latestBallotYear() {
+  return state.data?.stats?.latest_ballot_year || 2026;
+}
 
-  const applied = record2025?.applied?.[phase];
-  const vacancy = record2025?.vacancy?.[phase];
+function getLatestBallot(school) {
+  return school.ballot_latest || school[`ballot_${latestBallotYear()}`] || school.ballot_2025 || {};
+}
+
+function phaseProbabilityLatest(school, phase) {
+  const phaseSnapshot = getLatestBallot(school).phases?.[phase];
+  if (typeof phaseSnapshot?.pressure === "number") return phaseSnapshot.pressure;
+
+  const latestYear = getLatestBallot(school).year || latestBallotYear();
+  const history = school.ballot_history || [];
+  const record = history.find((item) => item?.year === latestYear);
+  if (!record) return -1;
+
+  const applied = record?.applied?.[phase];
+  const vacancy = record?.vacancy?.[phase];
   if (typeof applied !== "number" || applied < 0) return -1;
   if (typeof vacancy !== "number" || vacancy <= 0) return -1;
   return applied / vacancy;
@@ -53,10 +69,10 @@ function phaseProbability2025(school, phase) {
 function sortSchools(schools) {
   if (state.sort === "phaseProbability") {
     return [...schools].sort((a, b) => {
-      const a2C = phaseProbability2025(a, "2C");
-      const b2C = phaseProbability2025(b, "2C");
-      const a2Cs = phaseProbability2025(a, "2C(S)");
-      const b2Cs = phaseProbability2025(b, "2C(S)");
+      const a2C = phaseProbabilityLatest(a, "2C");
+      const b2C = phaseProbabilityLatest(b, "2C");
+      const a2Cs = phaseProbabilityLatest(a, "2C(S)");
+      const b2Cs = phaseProbabilityLatest(b, "2C(S)");
       const a2CsValid = a2Cs >= 0;
       const b2CsValid = b2Cs >= 0;
       if (a2CsValid !== b2CsValid) return a2CsValid ? -1 : 1;
@@ -92,6 +108,45 @@ function formatPrice(value) {
   }).format(value);
 }
 
+function homeSummary(school) {
+  const homes = school.housing_within_1km || [];
+  if (!homes.length) {
+    return { count: 0, minPrice: null, nearest: null, largest: null, latest: "" };
+  }
+  const prices = homes.map((home) => home.price).filter((value) => typeof value === "number" && Number.isFinite(value));
+  const distances = homes
+    .map((home) => home.distance_m)
+    .filter((value) => typeof value === "number" && Number.isFinite(value));
+  const sizes = homes.map((home) => home.area_sqm).filter((value) => typeof value === "number" && Number.isFinite(value));
+  return {
+    count: homes.length,
+    minPrice: prices.length ? Math.min(...prices) : null,
+    nearest: distances.length ? Math.min(...distances) : null,
+    largest: sizes.length ? Math.max(...sizes) : null,
+    latest: homes.map((home) => home.date).filter(Boolean).sort().at(-1) || ""
+  };
+}
+
+function formatMaybePrice(value) {
+  return typeof value === "number" && Number.isFinite(value) ? formatPrice(value) : "No recent match";
+}
+
+function formatMaybeDistance(value) {
+  return typeof value === "number" && Number.isFinite(value) ? `${Math.round(value)} m` : "—";
+}
+
+function hdbMonthRange() {
+  const months = [];
+  state.data.primary_schools.forEach((school) => {
+    (school.housing_within_1km || []).forEach((home) => {
+      if (home.date) months.push(home.date);
+    });
+  });
+  if (!months.length) return "—";
+  months.sort();
+  return `${months[0]} to ${months[months.length - 1]}`;
+}
+
 function renderSchoolList() {
   const schools = visibleSchools();
   resultCount.textContent = `${schools.length} results`;
@@ -110,11 +165,12 @@ function renderSchoolList() {
     .map((school, index) => {
       const active = school.slug === state.selectedSlug ? "active" : "";
       const town = school.school_info?.Town || "Unknown town";
-      const sortRank = ` · Sort #${index + 1}`;
+      const summary = homeSummary(school);
       return `
         <button class="school-item ${active}" data-slug="${school.slug}">
           <div class="name">${school.name}</div>
-          <div class="meta">${town} · ${countHomes(school)} homes${sortRank}</div>
+          <div class="meta">${town} · ${summary.count} HDB matches · From ${formatMaybePrice(summary.minPrice)}</div>
+          <div class="meta">Nearest ${formatMaybeDistance(summary.nearest)} · Latest ${summary.latest || "—"} · Sort #${index + 1}</div>
         </button>
       `;
     })
@@ -139,6 +195,7 @@ function renderDetails() {
   }
 
   const homes = school.housing_within_1km || [];
+  const summary = homeSummary(school);
   const rows = homes.length
     ? homes
         .map(
@@ -167,24 +224,33 @@ function renderDetails() {
       </div>
     </div>
 
+    <div class="metric-strip">
+      <div class="metric-pill"><span class="metric-label">Matches</span><strong>${summary.count}</strong></div>
+      <div class="metric-pill"><span class="metric-label">Lowest price</span><strong>${formatMaybePrice(summary.minPrice)}</strong></div>
+      <div class="metric-pill"><span class="metric-label">Nearest</span><strong>${formatMaybeDistance(summary.nearest)}</strong></div>
+      <div class="metric-pill"><span class="metric-label">Largest</span><strong>${summary.largest ? `${summary.largest} sqm` : "—"}</strong></div>
+    </div>
+
     <section class="section">
       <h4>Suggested Homes Within 1km</h4>
-      <table class="mini-table">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Address</th>
-            <th>Price</th>
-            <th>Area (sqm)</th>
-            <th>Distance</th>
-            <th>Month</th>
-            <th>Listing</th>
-            <th>Source</th>
-          </tr>
-        </thead>
-        <tbody>${rows}</tbody>
-      </table>
-      <p class="subtle">Source: data.gov.sg HDB resale data. Suggestions are transaction-based, not live listings.</p>
+      <div class="table-scroll">
+        <table class="mini-table">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Address</th>
+              <th>Price</th>
+              <th>Area (sqm)</th>
+              <th>Distance</th>
+              <th>Month</th>
+              <th>Listing</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <p class="subtle">Source: refreshed data.gov.sg HDB resale data. Suggestions are transaction-based, not live listings; private condos are handled on the Investment Scout and Market Research pages.</p>
     </section>
   `;
 }
@@ -195,6 +261,9 @@ async function init() {
   const generated = new Date(state.data.generated_at).toLocaleString("en-SG", { hour12: false });
   generatedAt.textContent = `Data generated: ${generated}`;
   schoolCount.textContent = `Schools: ${state.data.stats.primary_school_count}`;
+  withHomesCount.textContent = `With HDB matches: ${state.data.stats.schools_with_housing_suggestions ?? "-"}`;
+  listingCount.textContent = `Recent HDB rows: ${state.data.stats.hdb_listing_count ?? "-"}`;
+  monthRange.textContent = `HDB months: ${hdbMonthRange()}`;
   renderSchoolList();
 }
 

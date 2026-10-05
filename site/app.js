@@ -11,6 +11,8 @@ const schoolCount = document.getElementById("schoolCount");
 const rankCount = document.getElementById("rankCount");
 const verifiedCount = document.getElementById("verifiedCount");
 const ballotCount = document.getElementById("ballotCount");
+const housingCount = document.getElementById("housingCount");
+const condoNameCount = document.getElementById("condoNameCount");
 const resultCount = document.getElementById("resultCount");
 
 const searchInput = document.getElementById("searchInput");
@@ -58,13 +60,25 @@ function sortableRank(school) {
   return school.community_ranking ? school.community_ranking.rank : Number.MAX_SAFE_INTEGER;
 }
 
-function phaseProbability2025(school, phase) {
-  const history = school.ballot_history || [];
-  const record2025 = history.find((item) => item?.year === 2025);
-  if (!record2025) return -1;
+function latestBallotYear() {
+  return state.data?.stats?.latest_ballot_year || 2026;
+}
 
-  const applied = record2025?.applied?.[phase];
-  const vacancy = record2025?.vacancy?.[phase];
+function getLatestBallot(school) {
+  return school.ballot_latest || school[`ballot_${latestBallotYear()}`] || school.ballot_2025 || {};
+}
+
+function phaseProbabilityLatest(school, phase) {
+  const phaseSnapshot = getLatestBallot(school).phases?.[phase];
+  if (typeof phaseSnapshot?.pressure === "number") return phaseSnapshot.pressure;
+
+  const latestYear = getLatestBallot(school).year || latestBallotYear();
+  const history = school.ballot_history || [];
+  const record = history.find((item) => item?.year === latestYear);
+  if (!record) return -1;
+
+  const applied = record?.applied?.[phase];
+  const vacancy = record?.vacancy?.[phase];
   if (typeof applied !== "number" || applied < 0) return -1;
   if (typeof vacancy !== "number" || vacancy <= 0) return -1;
   return applied / vacancy;
@@ -73,10 +87,10 @@ function phaseProbability2025(school, phase) {
 function sortSchools(schools) {
   if (state.sort === "phaseProbability") {
     return [...schools].sort((a, b) => {
-      const a2C = phaseProbability2025(a, "2C");
-      const b2C = phaseProbability2025(b, "2C");
-      const a2Cs = phaseProbability2025(a, "2C(S)");
-      const b2Cs = phaseProbability2025(b, "2C(S)");
+      const a2C = phaseProbabilityLatest(a, "2C");
+      const b2C = phaseProbabilityLatest(b, "2C");
+      const a2Cs = phaseProbabilityLatest(a, "2C(S)");
+      const b2Cs = phaseProbabilityLatest(b, "2C(S)");
       const a2CsValid = a2Cs >= 0;
       const b2CsValid = b2Cs >= 0;
       if (a2CsValid !== b2CsValid) return a2CsValid ? -1 : 1;
@@ -119,13 +133,24 @@ function formatPressureShort(phase) {
   return `${phase.pressure.toFixed(2)}x`;
 }
 
+function formatSchoolPressureLine(school) {
+  const ballot = getLatestBallot(school);
+  const phases = ballot?.phases || {};
+  const year = ballot?.year || latestBallotYear();
+  return `2C(S) ${formatPressureShort(phases["2C(S)"])} · 2C ${formatPressureShort(phases["2C"])}`;
+}
+
 function formatCount(value) {
   return typeof value === "number" ? value : "—";
 }
 
-function renderOfficialCutoff(official) {
+function renderOfficialCutoff(official, year) {
   if (!official?.has_data) {
-    return `<p class="subtle compact-note">No official MOE cutoff published for this phase.</p>`;
+    const note =
+      year === 2025
+        ? "No official MOE cutoff published for this phase."
+        : "2026 source has vacancy/applied/taken counts; citizen and distance cutoff should be verified separately.";
+    return `<p class="subtle compact-note">${note}</p>`;
   }
 
   const meta = [];
@@ -140,7 +165,7 @@ function renderOfficialCutoff(official) {
 
   return `
     <div class="official-cutoff">
-      <div class="official-kicker">Official MOE 2025 result</div>
+      <div class="official-kicker">Official MOE ${year} result</div>
       ${official.result_label ? `<div class="official-label">${official.result_label}</div>` : ""}
       ${official.result_text ? `<p class="subtle">${official.result_text}</p>` : ""}
       ${meta.length ? `<div class="pressure-meta official-meta">${meta.map((item) => `<span>${item}</span>`).join("")}</div>` : ""}
@@ -170,7 +195,7 @@ function renderSchoolList() {
       return `
         <button class="school-item ${active}" data-slug="${school.slug}">
           <div class="name">${school.name}</div>
-          <div class="meta">${town}</div>
+          <div class="meta">${town} · ${formatSchoolPressureLine(school)}</div>
         </button>
       `;
     })
@@ -241,11 +266,18 @@ function renderMotherTongue(data) {
   `;
 }
 
-function renderPressureCard(label, phase) {
+function renderPressureCard(label, phase, year) {
   const pressure = typeof phase?.pressure === "number" ? `${phase.pressure.toFixed(2)}x` : "—";
-  const status = !phase?.has_data ? "No 2025 data" : phase.oversubscribed ? "Oversubscribed" : "Within vacancy";
-  const statusClass = !phase?.has_data ? "muted" : phase.oversubscribed ? "hot" : "calm";
-  const officialCutoff = renderOfficialCutoff(phase?.official);
+  const noPlaces = phase?.vacancy === 0 && phase?.applied === 0;
+  const status = !phase?.has_data
+    ? `No ${year} data`
+    : noPlaces
+      ? `No ${year} places`
+      : phase.oversubscribed
+        ? "Oversubscribed"
+        : "Within vacancy";
+  const statusClass = !phase?.has_data || noPlaces ? "muted" : phase.oversubscribed ? "hot" : "calm";
+  const officialCutoff = renderOfficialCutoff(phase?.official, year);
 
   return `
     <article class="pressure-card">
@@ -287,9 +319,10 @@ function renderCcaSnapshot(cca) {
 
 function renderSourceCoverage(school) {
   const quality = school.organized?.data_quality || {};
+  const year = quality.latest_ballot_year || getLatestBallot(school).year || latestBallotYear();
   const sourceTags = [
     quality.directory_verified ? "Official directory verified" : "Directory match unavailable",
-    quality.has_2025_ballot ? "2025 ballot record" : "No 2025 ballot row",
+    quality.has_latest_ballot ? `${year} ballot record` : `No ${year} ballot row`,
     quality.has_official_2025_cutoff ? "Official MOE cutoff" : "No official MOE cutoff",
     quality.has_location ? "Mapped location" : "No mapped location",
     quality.has_school_website ? "School website linked" : "Website missing"
@@ -299,9 +332,10 @@ function renderSourceCoverage(school) {
     <div class="source-panel">
       ${renderTagList(sourceTags)}
       <p class="subtle">
-        Profile and ballot history come from SGSchooling. The per-phase cutoff line comes from MOE&apos;s 2025
-        vacancies and balloting data page. Verified identity, contact, and school directory details come from the
-        cached official school directory when a match is available.
+        Profile and ballot history come from SGSchooling. Latest vacancy, applied, and taken counts are refreshed from
+        PrimarySch&apos;s MOE-derived 2023-2026 open dataset. Citizen/distance cutoff details remain shown only where the
+        source exposes them. Verified identity, contact, and school directory details come from the cached official
+        school directory when a match is available.
       </p>
     </div>
   `;
@@ -361,7 +395,9 @@ function renderSchoolDetails() {
   const rank = school.community_ranking ? `<span class="rank-chip">PSLE Rank #${school.community_ranking.rank}</span>` : "";
   const overview = school.organized?.overview || {};
   const contact = school.organized?.contact || {};
-  const phases = school.ballot_2025?.phases || {};
+  const latestBallot = getLatestBallot(school);
+  const phases = latestBallot?.phases || {};
+  const ballotYear = latestBallot?.year || latestBallotYear();
   const programmeTags = school.organized?.programmes || [];
   const description = formatValue(school.description, "");
   const identityCard = renderInfoCard("Verified Overview", [
@@ -401,12 +437,12 @@ function renderSchoolDetails() {
     </div>
 
     <section class="section">
-      <h4>2025 Ballot Pressure</h4>
-      <p class="subtle">Pressure is shown as applied/vacancy. Values above 1.00x mean the phase was oversubscribed. Each phase card shows the official MOE 2025 citizen and distance cutoff for that phase.</p>
+      <h4>${ballotYear} Ballot Pressure</h4>
+      <p class="subtle">Pressure is shown as applied/vacancy. Values above 1.00x mean the phase was oversubscribed. 2026 numeric counts are from the latest MOE-derived open dataset; citizen and distance cutoff lines appear only where available.</p>
       <div class="pressure-grid">
-        ${renderPressureCard("2C(S)", phases["2C(S)"])}
-        ${renderPressureCard("2C", phases["2C"])}
-        ${renderPressureCard("2B", phases["2B"])}
+        ${renderPressureCard("2C(S)", phases["2C(S)"], ballotYear)}
+        ${renderPressureCard("2C", phases["2C"], ballotYear)}
+        ${renderPressureCard("2B", phases["2B"], ballotYear)}
       </div>
     </section>
 
@@ -480,7 +516,10 @@ function renderHeaderStats() {
   schoolCount.textContent = `Schools: ${state.data.stats.primary_school_count}`;
   rankCount.textContent = `Ranked: ${state.data.stats.ranked_school_count}`;
   verifiedCount.textContent = `Directory verified: ${state.data.stats.directory_verified_count ?? "-"}`;
-  ballotCount.textContent = `2025 ballot: ${state.data.stats.schools_with_2025_ballot ?? "-"}`;
+  const year = latestBallotYear();
+  ballotCount.textContent = `${year} ballot: ${state.data.stats.schools_with_latest_ballot ?? "-"}`;
+  housingCount.textContent = `HDB suggestions: ${state.data.stats.schools_with_housing_suggestions ?? "-"}`;
+  condoNameCount.textContent = `Condo names: ${state.data.stats.onemap_condo_name_count ?? "-"}`;
 }
 
 async function init() {

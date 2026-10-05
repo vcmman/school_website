@@ -11,7 +11,7 @@ import re
 import time
 from pathlib import Path
 from typing import Any
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 from xml.etree import ElementTree as ET
 
 import pandas as pd
@@ -31,6 +31,7 @@ SG_BASE_URL = "https://sgschooling.com"
 SG_SITEMAP_URL = f"{SG_BASE_URL}/sitemap.xml"
 SG_PSLE_COMMUNITY_URL = f"{SG_BASE_URL}/blog/psle-2025-score-ranges-community-data"
 MOE_P1_BALLOT_URL = "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data"
+PRIMARYSCH_P1_DATA_URL = "https://primarysch.com/schools_data.json"
 ONEMAP_SEARCH_URL = "https://www.onemap.gov.sg/api/common/elastic/search"
 HDB_DATASET_ID = "d_8b84c4ee58e3cfc0ece0d773c8ca6abc"
 URA_TOKEN_URL = "https://eservice.ura.gov.sg/uraDataService/insertNewToken.action"
@@ -55,6 +56,13 @@ DIRECTORY_NAME_ALIASES = {
     "CATHOLIC HIGH PRIMARY": "CATHOLIC HIGH",
     "CHIJ ST NICHOLAS GIRLS SCHOOL PRIMARY": "CHIJ ST NICHOLAS GIRLS SCHOOL",
     "MARIS STELLA HIGH PRIMARY": "MARIS STELLA HIGH",
+}
+
+BALLOT_PHASE_ALIASES = {
+    "2CS": "2C(S)",
+    "2C(S)": "2C(S)",
+    "PHASE 1": "Phase 1",
+    "PHASE 3": "Phase 3",
 }
 
 
@@ -201,9 +209,161 @@ def normalize_moe_phase_name(value: str) -> str:
     return phase
 
 
+def normalize_ballot_phase_name(value: str) -> str:
+    phase = clean_text(value)
+    return BALLOT_PHASE_ALIASES.get(phase.upper(), phase)
+
+
+def school_match_keys(*names: str) -> list[str]:
+    keys: list[str] = []
+    seen: set[str] = set()
+    for name in names:
+        text = clean_text(name)
+        if not text:
+            continue
+        candidates = [
+            text,
+            re.sub(r"\bPrimary School\b", "School", text, flags=re.IGNORECASE),
+            re.sub(r"\bSchool\b", "Primary School", text, flags=re.IGNORECASE),
+        ]
+        for candidate in candidates:
+            key = normalize_school_name(candidate)
+            if key and key not in seen:
+                seen.add(key)
+                keys.append(key)
+    return keys
+
+
+def load_primarysch_p1_payload() -> dict[str, Any]:
+    cache_path = CACHE_DIR / "primarysch_schools_data.json"
+    try:
+        response = requests.get(PRIMARYSCH_P1_DATA_URL, timeout=REQ_TIMEOUT)
+        response.raise_for_status()
+        payload = response.json()
+        cache_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        return payload
+    except Exception as exc:
+        if cache_path.exists():
+            print(f"PrimarySch refresh failed; using cached P1 data: {exc}")
+            return json.loads(cache_path.read_text(encoding="utf-8"))
+        raise
+
+
+def build_primarysch_ballot_index() -> tuple[dict[str, dict[str, Any]], dict[str, Any]]:
+    payload = load_primarysch_p1_payload()
+    metadata = payload.get("metadata", {}) if isinstance(payload, dict) else {}
+    index: dict[str, dict[str, Any]] = {}
+
+    for row in payload.get("schools", []) if isinstance(payload, dict) else []:
+        short_name = clean_text(str(row.get("shortName", "")))
+        official_name = clean_text(str(row.get("officialName", "")))
+        years_in: dict[str, Any] = row.get("years", {}) if isinstance(row.get("years"), dict) else {}
+        years_out: dict[int, dict[str, dict[str, int | None]]] = {}
+
+        for year_text, phases_in in years_in.items():
+            try:
+                year = int(year_text)
+            except (TypeError, ValueError):
+                continue
+            if not isinstance(phases_in, dict):
+                continue
+
+            phase_map: dict[str, dict[str, int | None]] = {}
+            for phase_name, phase_values in phases_in.items():
+                if not isinstance(phase_values, dict):
+                    continue
+                phase = normalize_ballot_phase_name(str(phase_name))
+                phase_map[phase] = {
+                    "vacancy": parse_number(str(phase_values.get("vacancy", ""))),
+                    "applied": parse_number(str(phase_values.get("applied", ""))),
+                    "taken": parse_number(str(phase_values.get("taken", ""))),
+                }
+            if phase_map:
+                years_out[year] = phase_map
+
+        if not years_out:
+            continue
+
+        entry = {
+            "short_name": short_name,
+            "official_name": official_name,
+            "source_url": PRIMARYSCH_P1_DATA_URL,
+            "metadata_generated": metadata.get("generated", ""),
+            "years": years_out,
+        }
+
+        for key in school_match_keys(short_name, official_name):
+            index[key] = entry
+
+    return index, metadata
+
+
+def merge_primarysch_ballot_history(primary_schools: list[dict[str, Any]]) -> dict[str, Any]:
+    index, metadata = build_primarysch_ballot_index()
+    matched_count = 0
+    latest_year = None
+
+    for school in primary_schools:
+        keys = school_match_keys(
+            school.get("name", ""),
+            school.get("directory", {}).get("official_name", "") if school.get("directory") else "",
+            school.get("organized", {}).get("overview", {}).get("official_name", "") if school.get("organized") else "",
+        )
+        source_record = next((index[key] for key in keys if key in index), None)
+        if not source_record:
+            continue
+
+        matched_count += 1
+        history = school.setdefault("ballot_history", [])
+        by_year = {int(row.get("year")): row for row in history if isinstance(row.get("year"), int)}
+
+        for year, phase_map in source_record["years"].items():
+            latest_year = max(latest_year or year, year)
+            row = by_year.get(year)
+            if row is None:
+                row = {
+                    "year": year,
+                    "vacancy": {},
+                    "applied": {},
+                    "taken": {},
+                    "ballot_results": {},
+                }
+                history.append(row)
+                by_year[year] = row
+
+            row.setdefault("vacancy", {})
+            row.setdefault("applied", {})
+            row.setdefault("taken", {})
+            row.setdefault("ballot_results", {})
+            for phase, values in phase_map.items():
+                for metric in ("vacancy", "applied", "taken"):
+                    if values.get(metric) is not None:
+                        row[metric][phase] = values[metric]
+            row["numeric_source"] = "PrimarySch.com / MOE annual P1 data"
+
+        history.sort(key=lambda item: item.get("year", 0), reverse=True)
+        school["primarysch_ballot_source"] = {
+            "matched": True,
+            "source_url": PRIMARYSCH_P1_DATA_URL,
+            "generated": source_record.get("metadata_generated", ""),
+            "official_name": source_record.get("official_name", ""),
+        }
+
+    return {
+        "source_url": PRIMARYSCH_P1_DATA_URL,
+        "metadata": metadata,
+        "matched_school_count": matched_count,
+        "latest_year": latest_year,
+    }
+
+
 def load_moe_balloting_2025_index() -> dict[str, dict[str, dict[str, Any]]]:
-    html = fetch_text(MOE_P1_BALLOT_URL)
-    school_rows = extract_escaped_json_array(html, '\\"schoolData\\":')
+    try:
+        html = fetch_text(MOE_P1_BALLOT_URL)
+        school_rows = extract_escaped_json_array(html, '\\"schoolData\\":')
+    except Exception as exc:
+        print(f"MOE 2025 cutoff pull failed; continuing without official cutoff details: {exc}")
+        return {}
 
     index: dict[str, dict[str, dict[str, Any]]] = {}
     for school_row in school_rows:
@@ -353,13 +513,14 @@ def fetch_school_urls() -> list[str]:
     urls: list[str] = []
     for loc in root.findall("sm:url/sm:loc", ns):
         raw = clean_text(loc.text or "")
-        if not raw.startswith("/school/"):
+        path = urlparse(raw).path if raw.startswith("http") else raw
+        if not path.startswith("/school/"):
             continue
-        if raw in {"/school/", "/school"}:
+        if path in {"/school/", "/school"}:
             continue
-        if not raw.endswith(".html"):
+        if not path.endswith(".html"):
             continue
-        urls.append(urljoin(SG_BASE_URL, raw))
+        urls.append(raw if raw.startswith("http") else urljoin(SG_BASE_URL, path))
     return sorted(set(urls))
 
 
@@ -744,6 +905,62 @@ def build_ballot_phase_snapshot(record: dict[str, Any] | None, phase: str) -> di
     }
 
 
+def default_official_ballot_phase(school_name: str, phase_name: str, year: int) -> dict[str, Any]:
+    return {
+        "phase": phase_name,
+        "source": "MOE" if year == 2025 else "PrimarySch.com / MOE annual P1 data",
+        "source_url": MOE_P1_BALLOT_URL if year == 2025 else PRIMARYSCH_P1_DATA_URL,
+        "school_name": school_name,
+        "total_vacancies": None,
+        "total_applicants": None,
+        "balloting_required": None,
+        "vacancies_balloted": None,
+        "applicants_balloted": None,
+        "result_text": "",
+        "result_label": "",
+        "remarks": "",
+        "has_data": False,
+    }
+
+
+def build_ballot_year_snapshot(
+    school: dict[str, Any],
+    year: int,
+    official_ballot: dict[str, dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    record = next((row for row in school.get("ballot_history", []) if row.get("year") == year), None)
+    phases = {
+        "2B": build_ballot_phase_snapshot(record, "2B"),
+        "2C": build_ballot_phase_snapshot(record, "2C"),
+        "2C(S)": build_ballot_phase_snapshot(record, "2C(S)"),
+    }
+    for phase_name, phase_snapshot in phases.items():
+        phase_snapshot["official"] = (official_ballot or {}).get(
+            phase_name,
+            default_official_ballot_phase(school.get("name", ""), phase_name, year),
+        )
+
+    return {
+        "year": year,
+        "phases": phases,
+        "has_record": record is not None,
+        "official_source_url": MOE_P1_BALLOT_URL if year == 2025 else PRIMARYSCH_P1_DATA_URL,
+    }
+
+
+def latest_ballot_year_for_school(school: dict[str, Any]) -> int | None:
+    years: list[int] = []
+    for row in school.get("ballot_history", []):
+        year = row.get("year")
+        if not isinstance(year, int):
+            continue
+        phases = row.get("applied", {}) or {}
+        vacancies = row.get("vacancy", {}) or {}
+        if any(isinstance(phases.get(phase), int) or isinstance(vacancies.get(phase), int) for phase in ("2C(S)", "2C", "2B")):
+            years.append(year)
+    return max(years) if years else None
+
+
 def organize_school_metadata(primary_schools: list[dict[str, Any]]) -> int:
     directory_index = load_school_directory_index()
     moe_balloting_index = load_moe_balloting_2025_index()
@@ -769,37 +986,17 @@ def organize_school_metadata(primary_schools: list[dict[str, Any]]) -> int:
             if not school.get("address", {}).get("locality"):
                 school.setdefault("address", {})["locality"] = directory_record["town"]
 
-        ballot_2025_record = next((row for row in school.get("ballot_history", []) if row.get("year") == 2025), None)
-        ballot_2025 = {
-            "year": 2025,
-            "phases": {
-                "2B": build_ballot_phase_snapshot(ballot_2025_record, "2B"),
-                "2C": build_ballot_phase_snapshot(ballot_2025_record, "2C"),
-                "2C(S)": build_ballot_phase_snapshot(ballot_2025_record, "2C(S)"),
-            },
-            "has_record": ballot_2025_record is not None,
-            "official_source_url": MOE_P1_BALLOT_URL,
-        }
-        for phase_name, phase_snapshot in ballot_2025["phases"].items():
-            phase_snapshot["official"] = official_ballot.get(
-                phase_name,
-                {
-                    "phase": phase_name,
-                    "source": "MOE",
-                    "source_url": MOE_P1_BALLOT_URL,
-                    "school_name": school.get("name", ""),
-                    "total_vacancies": None,
-                    "total_applicants": None,
-                    "balloting_required": None,
-                    "vacancies_balloted": None,
-                    "applicants_balloted": None,
-                    "result_text": "",
-                    "result_label": "",
-                    "remarks": "",
-                    "has_data": False,
-                },
-            )
+        ballot_2025 = build_ballot_year_snapshot(school, 2025, official_ballot)
         school["ballot_2025"] = ballot_2025
+
+        latest_year = latest_ballot_year_for_school(school) or 2025
+        ballot_latest = build_ballot_year_snapshot(
+            school,
+            latest_year,
+            official_ballot if latest_year == 2025 else {},
+        )
+        school["ballot_latest"] = ballot_latest
+        school[f"ballot_{latest_year}"] = ballot_latest
 
         programme_tags = list(directory_record.get("programmes", [])) if directory_record else []
         if info.get("Parent Volunteer") and info.get("Parent Volunteer") != "-":
@@ -841,6 +1038,8 @@ def organize_school_metadata(primary_schools: list[dict[str, Any]]) -> int:
                 "directory_verified": bool(directory_record),
                 "has_location": bool(school.get("location")),
                 "has_2025_ballot": ballot_2025["has_record"],
+                "latest_ballot_year": latest_year,
+                "has_latest_ballot": ballot_latest["has_record"],
                 "has_official_2025_cutoff": any(
                     phase.get("official", {}).get("has_data") for phase in ballot_2025["phases"].values()
                 ),
@@ -921,12 +1120,22 @@ def build_propertyguru_condo_listings(cache: dict[str, list[float]]) -> list[dic
         price = parse_price(row[price_col])
         if not address or price is None:
             continue
+        # The optional CSV is manually scraped and can contain whole listing snippets
+        # rather than postal addresses. Skipping noisy rows avoids wasteful OneMap
+        # geocoding calls and prevents rate-limit failures during dataset refreshes.
+        address_upper = address.upper()
+        if len(address) > 120 or " S$ " in f" {address_upper} " or " PSF " in f" {address_upper} ":
+            continue
         if price < PRICE_MIN or price > PRICE_MAX:
             continue
 
-        geo = geocode_address(address, cache, allow_online_lookup=True)
-        if not geo:
-            geo = geocode_address(f"{address} Singapore", cache, allow_online_lookup=True)
+        try:
+            geo = geocode_address(address, cache, allow_online_lookup=True)
+            if not geo:
+                geo = geocode_address(f"{address} Singapore", cache, allow_online_lookup=True)
+        except requests.HTTPError as exc:
+            print(f"Skipped PropertyGuru condo geocode for {address!r}: {exc}")
+            continue
         if not geo:
             continue
 
@@ -1324,7 +1533,33 @@ def build_housing_suggestions(primary_schools: list[dict[str, Any]]) -> None:
     cache = load_geocode_cache()
     hdb_listings = build_hdb_listings(cache)
     condo_listings = build_propertyguru_condo_listings(cache)
-    onemap_condos = fetch_onemap_condo_landmarks()
+    previous_condos_by_slug: dict[str, list[dict[str, Any]]] = {}
+    previous_location_by_slug: dict[str, dict[str, float]] = {}
+    previous_site_path = SITE_DATA_DIR / "site.json"
+    if previous_site_path.exists():
+        try:
+            previous_site = json.loads(previous_site_path.read_text(encoding="utf-8"))
+            previous_condos_by_slug = {
+                school["slug"]: school.get("nearby_condos_within_1km", [])
+                for school in previous_site.get("primary_schools", [])
+                if school.get("slug")
+            }
+            previous_location_by_slug = {
+                school["slug"]: school.get("location", {})
+                for school in previous_site.get("primary_schools", [])
+                if school.get("slug") and school.get("location", {}).get("lat") and school.get("location", {}).get("lon")
+            }
+        except (json.JSONDecodeError, OSError):
+            previous_condos_by_slug = {}
+            previous_location_by_slug = {}
+
+    use_previous_condos = False
+    try:
+        onemap_condos = fetch_onemap_condo_landmarks()
+    except requests.HTTPError as exc:
+        print(f"OneMap condo refresh failed; preserving previous condo enrichment: {exc}")
+        onemap_condos = []
+        use_previous_condos = True
     ura_access_key = clean_text(str(os.environ.get("URA_ACCESS_KEY", "")))
     ura_listings: list[dict[str, Any]] = []
     if ura_access_key:
@@ -1341,7 +1576,16 @@ def build_housing_suggestions(primary_schools: list[dict[str, Any]]) -> None:
         if not address:
             school["housing_within_1km"] = []
             continue
-        geo = geocode_address(str(address), cache)
+        try:
+            geo = geocode_address(str(address), cache)
+        except requests.HTTPError as exc:
+            previous_location = previous_location_by_slug.get(school["slug"], {})
+            if previous_location:
+                print(f"OneMap school geocode failed; reusing previous location for {school['name']}: {exc}")
+                geo = (float(previous_location["lat"]), float(previous_location["lon"]))
+            else:
+                print(f"OneMap school geocode failed; skipping housing suggestions for {school['name']}: {exc}")
+                geo = None
         if not geo:
             school["housing_within_1km"] = []
             continue
@@ -1368,6 +1612,10 @@ def build_housing_suggestions(primary_schools: list[dict[str, Any]]) -> None:
                 )
         candidates.sort(key=lambda item: (item["distance_m"], -item["price"]))
         school["housing_within_1km"] = candidates[:10]
+
+        if use_previous_condos:
+            school["nearby_condos_within_1km"] = previous_condos_by_slug.get(school["slug"], [])
+            continue
 
         nearby_condos: list[dict[str, Any]] = []
         for condo in onemap_condos:
@@ -1426,11 +1674,21 @@ def build_housing_suggestions(primary_schools: list[dict[str, Any]]) -> None:
         )
 
     save_geocode_cache(cache)
+    onemap_condo_count = len(onemap_condos)
+    if use_previous_condos:
+        onemap_condo_count = len(
+            {
+                (condo.get("name", "").upper(), condo.get("address", "").upper())
+                for condos in previous_condos_by_slug.values()
+                for condo in condos
+                if condo.get("name")
+            }
+        )
     return {
         "hdb_count": len(hdb_listings),
         "propertyguru_condo_count": len(condo_listings),
         "ura_condo_count": len(ura_listings),
-        "onemap_condo_name_count": len(onemap_condos),
+        "onemap_condo_name_count": onemap_condo_count,
     }
 
 
@@ -1453,11 +1711,22 @@ def main() -> None:
 
     primary_schools = collect_primary_schools()
     attach_rankings(primary_schools, rankings)
+    primarysch_counts = merge_primarysch_ballot_history(primary_schools)
     matched_directory_count = organize_school_metadata(primary_schools)
     housing_counts = build_housing_suggestions(primary_schools)
 
     schools_with_housing = sum(1 for school in primary_schools if school.get("housing_within_1km"))
     schools_with_2025_ballot = sum(1 for school in primary_schools if school.get("ballot_2025", {}).get("has_record"))
+    latest_ballot_year = primarysch_counts.get("latest_year") or max(
+        (school.get("ballot_latest", {}).get("year", 0) for school in primary_schools),
+        default=2025,
+    )
+    schools_with_latest_ballot = sum(
+        1
+        for school in primary_schools
+        if school.get("ballot_latest", {}).get("year") == latest_ballot_year
+        and school.get("ballot_latest", {}).get("has_record")
+    )
     schools_with_official_cutoff = sum(
         1
         for school in primary_schools
@@ -1474,6 +1743,7 @@ def main() -> None:
             "primary_pages_base": f"{SG_BASE_URL}/school/",
             "community_ranking": SG_PSLE_COMMUNITY_URL,
             "official_balloting_2025": MOE_P1_BALLOT_URL,
+            "p1_balloting_2023_2026": PRIMARYSCH_P1_DATA_URL,
             "official_directory_cache": str(CACHE_DIR / "school_directory.csv"),
             "hdb_resale": "https://data.gov.sg/datasets/d_8b84c4ee58e3cfc0ece0d773c8ca6abc/view",
             "geocoding": "https://www.onemap.gov.sg/docs/",
@@ -1485,6 +1755,10 @@ def main() -> None:
             "primary_school_count": len(primary_schools),
             "ranked_school_count": len(rankings),
             "directory_verified_count": matched_directory_count,
+            "latest_ballot_year": latest_ballot_year,
+            "schools_with_latest_ballot": schools_with_latest_ballot,
+            "primarysch_matched_school_count": primarysch_counts.get("matched_school_count", 0),
+            "primarysch_generated": primarysch_counts.get("metadata", {}).get("generated", ""),
             "schools_with_2025_ballot": schools_with_2025_ballot,
             "schools_with_official_cutoff": schools_with_official_cutoff,
             "schools_with_housing_suggestions": schools_with_housing,
@@ -1505,6 +1779,9 @@ def main() -> None:
     print(f"Primary schools: {len(primary_schools)}")
     print(f"Ranked schools: {len(rankings)}")
     print(f"Directory verified: {matched_directory_count}")
+    print(f"Latest ballot year: {latest_ballot_year}")
+    print(f"Schools with latest ballot: {schools_with_latest_ballot}")
+    print(f"PrimarySch matched schools: {primarysch_counts.get('matched_school_count', 0)}")
     print(f"Schools with 2025 ballot: {schools_with_2025_ballot}")
     print(f"Schools with official 2025 cutoff: {schools_with_official_cutoff}")
     print(f"Schools with housing suggestions: {schools_with_housing}")

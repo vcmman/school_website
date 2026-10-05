@@ -1,0 +1,9 @@
+.git
+.vercel
+.pycache
+.server*.log
+.DS_Store
+/data/
+/scripts/
+/node_modules/
+test.cpp

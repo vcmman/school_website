@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCR/RCR/OCR Condo Investment Scout</title>
+    <link rel="stylesheet" href="styles.css?v=20261005a" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="badge">Investment Scout</div>
+        <h1>CCR / RCR / OCR Condo Investment Scout</h1>
+        <p>
+          A curated shortlist of current CCR, RCR, and OCR condo listings filtered for investment-style traits:
+          around SGD 2M, above 800 sqft, near MRT, under 10 years old, and with primary-school demand signals.
+        </p>
+        <div class="meta-row">
+          <div id="investGeneratedAt" class="meta-pill">Loading data...</div>
+          <div id="investCount" class="meta-pill">Listings: -</div>
+          <div id="investCoverage" class="meta-pill">Coverage: -</div>
+          <div id="investSchoolSignals" class="meta-pill">School signals: -</div>
+        </div>
+        <nav class="tabs">
+          <a class="tab" href="index.html">School Explorer</a>
+          <a class="tab" href="house.html">1km Home Suggestions</a>
+          <a class="tab" href="condo.html">1km Condo Names</a>
+          <a class="tab" href="school-condos.html">School Condo Picks</a>
+          <a class="tab active" href="invest.html">Investment Scout</a>
+          <a class="tab" href="research.html">Market Research</a>
+          <a class="tab" href="ai-stocks.html">AI Stocks</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="controls invest-controls">
+      <input id="investSearchInput" type="text" placeholder="Search condo, corridor, MRT, or school" />
+      <select id="investRegionFilter">
+        <option value="all">All CCR / RCR / OCR</option>
+        <option value="CCR">CCR only</option>
+        <option value="RCR">RCR only</option>
+        <option value="OCR">OCR only</option>
+      </select>
+      <select id="investSchoolFilter">
+        <option value="withSignal">With school signal</option>
+        <option value="all">All shortlisted listings</option>
+      </select>
+      <select id="investVerificationFilter">
+        <option value="all">All choices</option>
+        <option value="live">Verified live listings only</option>
+        <option value="candidate">Expanded candidates only</option>
+      </select>
+      <select id="investSortFilter">
+        <option value="score">Sort by investment score</option>
+        <option value="price">Sort by price</option>
+        <option value="mrt">Sort by MRT distance</option>
+        <option value="size">Sort by size</option>
+        <option value="age">Sort by youngest</option>
+      </select>
+    </section>
+
+    <section class="controls invest-range-row">
+      <label>
+        Max price
+        <input id="investMaxPrice" type="number" min="1200000" step="50000" value="2500000" />
+      </label>
+      <label>
+        Min size (sqft)
+        <input id="investMinSize" type="number" min="800" step="10" value="800" />
+      </label>
+      <label>
+        Max MRT distance (m)
+        <input id="investMaxMrt" type="number" min="200" step="50" value="1300" />
+      </label>
+      <label>
+        Max age (years)
+        <input id="investMaxAge" type="number" min="1" step="1" value="10" />
+      </label>
+    </section>
+
+    <main class="layout">
+      <aside class="school-list-panel">
+        <h2>Shortlist</h2>
+        <div id="investResultCount" class="subtle">0 results</div>
+        <div id="investList" class="school-list"></div>
+      </aside>
+
+      <section class="details-panel">
+        <article id="investDetails" class="details-card">
+          <p class="empty">Select a condo shortlist item to inspect its fit.</p>
+        </article>
+      </section>
+    </main>
+
+    <section class="ranking-wrap invest-top-wrap">
+      <h2>Top 50 Condos</h2>
+      <div class="table-scroll">
+        <table class="ranking-table invest-top-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Condo</th>
+              <th>Region</th>
+              <th>Status</th>
+              <th>Score</th>
+              <th>Price</th>
+              <th>Size</th>
+              <th>Age</th>
+              <th>MRT</th>
+              <th>School signal</th>
+            </tr>
+          </thead>
+          <tbody id="investTop50Body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+        Sources: current PropertyGuru listing/search snippets gathered online on 2026-05-13, plus this site's local
+        primary-school demand dataset and 1km condo project names. Live listings are verified; expanded candidates are
+        discovery-oriented and still need live checks.
+      </p>
+    </footer>
+
+    <script src="i18n.js?v=20261005a"></script>
+    <script src="data/investment_condos.js?v=20261005a"></script>
+    <script src="invest.js?v=20261005a"></script>
+  </body>
+</html>
