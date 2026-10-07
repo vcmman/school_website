@@ -1,0 +1,36 @@
+{
+  "checked_on": "2026-10-06",
+  "directory_published_on": "2026-04-17",
+  "p1_published_on": "2026-08-27",
+  "sources": [
+    "https://data.gov.sg/datasets/d_688b934f82c1059ed0a6993d2a829089/view",
+    "https://primarysch.com/schools_data.json",
+    "https://sgschoolkaki.com/p1-registration/data-2026"
+  ],
+  "excluded_from_current_directory": [
+    "Eunos Primary School",
+    "Guangyang Primary School",
+    "Juying Primary School",
+    "Stamford Primary School"
+  ],
+  "missing_2026": [
+    "Damai Primary School",
+    "Kranji Primary School",
+    "Townsville Primary School"
+  ],
+  "conflicts": [],
+  "numeric_cells_checked": 916,
+  "address_conflicts": [
+    {
+      "school": "Anglo-Chinese School (Junior)",
+      "directory_postal": "227988",
+      "p1_postal": "139745"
+    },
+    {
+      "school": "St. Andrew's Junior School",
+      "directory_postal": "359337",
+      "p1_postal": "357691"
+    }
+  ],
+  "directory_matched": 182
+}

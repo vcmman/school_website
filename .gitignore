@@ -3,6 +3,17 @@ apps/web/dist
 apps/desktop/dist
 .DS_Store
 .env
+.env.*
+!.env.example
+.private/
+/site/data/ura_transactions.json
+/site/data/ura_transactions.tmp
+/site/data/property_evidence.json
+/site/data/property_evidence.tmp
+/data/rebuild/ura-projects.json
+/data/rebuild/raw/
+/data/rebuild/*progress.log
+__pycache__/
 .vercel
 .pycache/
 .server*.log

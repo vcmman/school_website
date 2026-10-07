@@ -1,0 +1,2735 @@
+{
+  "source_url": "https://sgschoolkaki.com/p1-registration/data-2026",
+  "retrieved_on": "2026-10-06",
+  "source_updated_on": "2026-08-22",
+  "verification": "Independent secondary record of MOE figures; not a direct MOE download.",
+  "schools": [
+    {
+      "name": "Casuarina Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 29,
+          "vacancy": 35
+        },
+        "2C": {
+          "applied": 31,
+          "vacancy": 66
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 22
+        }
+      }
+    },
+    {
+      "name": "Marsiling Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 4,
+          "vacancy": 8
+        },
+        "2C": {
+          "applied": 85,
+          "vacancy": 92
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "Yishun Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 54,
+          "vacancy": 58
+        },
+        "2C": {
+          "applied": 36,
+          "vacancy": 93
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "Red Swastika School",
+      "phases": {
+        "2C": {
+          "applied": 83,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 33,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Ai Tong School",
+      "phases": {
+        "2C": {
+          "applied": 76,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 51,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Frontier Primary School",
+      "phases": {
+        "2C": {
+          "applied": 64,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 20,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Admiralty Primary School",
+      "phases": {
+        "2C": {
+          "applied": 87,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 22,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Nanyang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 68,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 52,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Princess Elizabeth Primary School",
+      "phases": {
+        "2C": {
+          "applied": 159,
+          "vacancy": 40
+        },
+        "2B": {
+          "applied": 25,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Catholic High School (Primary Section)",
+      "phases": {
+        "2C": {
+          "applied": 64,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 35,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Bukit Panjang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 77,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 19,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Singapore Chinese Girls' Primary School",
+      "phases": {
+        "2C": {
+          "applied": 62,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 29,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Methodist Girls' School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 63,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 40,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Nan Hua Primary School",
+      "phases": {
+        "2C": {
+          "applied": 123,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 42,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Rulang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 90,
+          "vacancy": 41
+        },
+        "2B": {
+          "applied": 23,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Canossa Catholic Primary School",
+      "phases": {
+        "2C": {
+          "applied": 50,
+          "vacancy": 42
+        },
+        "2B": {
+          "applied": 21,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Northland Primary School",
+      "phases": {
+        "2C": {
+          "applied": 141,
+          "vacancy": 42
+        },
+        "2B": {
+          "applied": 29,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Radin Mas Primary School",
+      "phases": {
+        "2C": {
+          "applied": 66,
+          "vacancy": 42
+        },
+        "2B": {
+          "applied": 23,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Tao Nan School",
+      "phases": {
+        "2C": {
+          "applied": 57,
+          "vacancy": 42
+        },
+        "2B": {
+          "applied": 40,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Maha Bodhi School",
+      "phases": {
+        "2C": {
+          "applied": 77,
+          "vacancy": 43
+        },
+        "2B": {
+          "applied": 32,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Pei Hwa Presbyterian Primary School",
+      "phases": {
+        "2C": {
+          "applied": 53,
+          "vacancy": 43
+        },
+        "2B": {
+          "applied": 46,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Holy Innocents' Primary School",
+      "phases": {
+        "2C": {
+          "applied": 97,
+          "vacancy": 44
+        },
+        "2B": {
+          "applied": 45,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "South View Primary School",
+      "phases": {
+        "2C": {
+          "applied": 105,
+          "vacancy": 44
+        },
+        "2B": {
+          "applied": 18,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Pei Chun Public School",
+      "phases": {
+        "2C": {
+          "applied": 76,
+          "vacancy": 44
+        },
+        "2B": {
+          "applied": 27,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Pasir Ris Primary School",
+      "phases": {
+        "2C": {
+          "applied": 81,
+          "vacancy": 45
+        },
+        "2B": {
+          "applied": 15,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Wellington Primary School",
+      "phases": {
+        "2C": {
+          "applied": 85,
+          "vacancy": 45
+        },
+        "2B": {
+          "applied": 15,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Horizon Primary School",
+      "phases": {
+        "2C": {
+          "applied": 88,
+          "vacancy": 46
+        },
+        "2B": {
+          "applied": 16,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "St. Hilda's Primary School",
+      "phases": {
+        "2C": {
+          "applied": 118,
+          "vacancy": 46
+        },
+        "2B": {
+          "applied": 16,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Rosyth School",
+      "phases": {
+        "2C": {
+          "applied": 120,
+          "vacancy": 46
+        },
+        "2B": {
+          "applied": 18,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Gongshang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 92,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 13,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Fairfield Methodist School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 80,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 27,
+          "vacancy": 22
+        }
+      }
+    },
+    {
+      "name": "CHIJ St. Nicholas Girls' School (Primary Section)",
+      "phases": {
+        "2C": {
+          "applied": 78,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 49,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Chongfu School",
+      "phases": {
+        "2C": {
+          "applied": 137,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 45,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Kuo Chuan Presbyterian Primary School",
+      "phases": {
+        "2C": {
+          "applied": 82,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 37,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Shuqun Primary School",
+      "phases": {
+        "2C": {
+          "applied": 75,
+          "vacancy": 48
+        },
+        "2B": {
+          "applied": 13,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Temasek Primary School",
+      "phases": {
+        "2C": {
+          "applied": 86,
+          "vacancy": 50
+        },
+        "2B": {
+          "applied": 12,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Sengkang Green Primary School",
+      "phases": {
+        "2C": {
+          "applied": 67,
+          "vacancy": 50
+        },
+        "2B": {
+          "applied": 10,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Henry Park Primary School",
+      "phases": {
+        "2C": {
+          "applied": 76,
+          "vacancy": 51
+        },
+        "2B": {
+          "applied": 29,
+          "vacancy": 25
+        }
+      }
+    },
+    {
+      "name": "Yu Neng Primary School",
+      "phases": {
+        "2C": {
+          "applied": 90,
+          "vacancy": 51
+        },
+        "2B": {
+          "applied": 14,
+          "vacancy": 22
+        }
+      }
+    },
+    {
+      "name": "Westwood Primary School",
+      "phases": {
+        "2C": {
+          "applied": 66,
+          "vacancy": 52
+        },
+        "2B": {
+          "applied": 16,
+          "vacancy": 23
+        }
+      }
+    },
+    {
+      "name": "Rivervale Primary School",
+      "phases": {
+        "2C": {
+          "applied": 106,
+          "vacancy": 54
+        },
+        "2B": {
+          "applied": 18,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Anglo-Chinese School (Junior)",
+      "phases": {
+        "2C": {
+          "applied": 68,
+          "vacancy": 54
+        },
+        "2B": {
+          "applied": 41,
+          "vacancy": 26
+        }
+      }
+    },
+    {
+      "name": "Xinmin Primary School",
+      "phases": {
+        "2C": {
+          "applied": 82,
+          "vacancy": 54
+        },
+        "2B": {
+          "applied": 18,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Alexandra Primary School",
+      "phases": {
+        "2C": {
+          "applied": 86,
+          "vacancy": 55
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Yangzheng Primary School",
+      "phases": {
+        "2C": {
+          "applied": 56,
+          "vacancy": 55
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Tanjong Katong Primary School",
+      "phases": {
+        "2C": {
+          "applied": 94,
+          "vacancy": 56
+        },
+        "2B": {
+          "applied": 9,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Kong Hwa School",
+      "phases": {
+        "2C": {
+          "applied": 117,
+          "vacancy": 56
+        },
+        "2B": {
+          "applied": 57,
+          "vacancy": 27
+        }
+      }
+    },
+    {
+      "name": "Punggol Green Primary School",
+      "phases": {
+        "2C": {
+          "applied": 96,
+          "vacancy": 57
+        },
+        "2B": {
+          "applied": 5,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Elias Park Primary School",
+      "phases": {
+        "2C": {
+          "applied": 98,
+          "vacancy": 58
+        },
+        "2B": {
+          "applied": 2,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Sembawang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 79,
+          "vacancy": 58
+        },
+        "2B": {
+          "applied": 3,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Huamin Primary School",
+      "phases": {
+        "2C": {
+          "applied": 106,
+          "vacancy": 58
+        },
+        "2B": {
+          "applied": 3,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Jurong West Primary School",
+      "phases": {
+        "2C": {
+          "applied": 73,
+          "vacancy": 59
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "North View Primary School",
+      "phases": {
+        "2C": {
+          "applied": 122,
+          "vacancy": 59
+        },
+        "2B": {
+          "applied": 4,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Jing Shan Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 4,
+          "vacancy": 3
+        },
+        "2C": {
+          "applied": 57,
+          "vacancy": 60
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Zhenghua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 4,
+          "vacancy": 2
+        },
+        "2C": {
+          "applied": 59,
+          "vacancy": 60
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Angsana Primary School",
+      "phases": {
+        "2C": {
+          "applied": 154,
+          "vacancy": 60
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Hong Wen School",
+      "phases": {
+        "2C": {
+          "applied": 121,
+          "vacancy": 60
+        },
+        "2B": {
+          "applied": 32,
+          "vacancy": 30
+        }
+      }
+    },
+    {
+      "name": "Punggol Primary School",
+      "phases": {
+        "2C": {
+          "applied": 70,
+          "vacancy": 61
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "West Spring Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 3,
+          "vacancy": 3
+        },
+        "2C": {
+          "applied": 59,
+          "vacancy": 61
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "Valour Primary School",
+      "phases": {
+        "2C": {
+          "applied": 70,
+          "vacancy": 61
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Riverside Primary School",
+      "phases": {
+        "2C": {
+          "applied": 64,
+          "vacancy": 64
+        },
+        "2B": {
+          "applied": 4,
+          "vacancy": 22
+        }
+      }
+    },
+    {
+      "name": "CHIJ Primary (Toa Payoh)",
+      "phases": {
+        "2C": {
+          "applied": 75,
+          "vacancy": 64
+        },
+        "2B": {
+          "applied": 34,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Waterway Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 2,
+          "vacancy": 1
+        },
+        "2C": {
+          "applied": 64,
+          "vacancy": 65
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 21
+        }
+      }
+    },
+    {
+      "name": "St. Anthony's Primary School",
+      "phases": {
+        "2C": {
+          "applied": 113,
+          "vacancy": 65
+        },
+        "2B": {
+          "applied": 44,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "White Sands Primary School",
+      "phases": {
+        "2C": {
+          "applied": 69,
+          "vacancy": 65
+        },
+        "2B": {
+          "applied": 5,
+          "vacancy": 23
+        }
+      }
+    },
+    {
+      "name": "Compassvale Primary School",
+      "phases": {
+        "2C": {
+          "applied": 99,
+          "vacancy": 70
+        },
+        "2B": {
+          "applied": 21,
+          "vacancy": 30
+        }
+      }
+    },
+    {
+      "name": "St Andrew's School (Junior)",
+      "phases": {
+        "2C": {
+          "applied": 100,
+          "vacancy": 70
+        },
+        "2B": {
+          "applied": 35,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Woodlands Primary School",
+      "phases": {
+        "2C": {
+          "applied": 82,
+          "vacancy": 71
+        },
+        "2B": {
+          "applied": 3,
+          "vacancy": 24
+        }
+      }
+    },
+    {
+      "name": "Anglo-Chinese School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 84,
+          "vacancy": 72
+        },
+        "2B": {
+          "applied": 45,
+          "vacancy": 36
+        }
+      }
+    },
+    {
+      "name": "Hougang Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 22,
+          "vacancy": 9
+        },
+        "2C": {
+          "applied": 64,
+          "vacancy": 73
+        },
+        "2B": {
+          "applied": 2,
+          "vacancy": 25
+        }
+      }
+    },
+    {
+      "name": "River Valley Primary School",
+      "phases": {
+        "2C": {
+          "applied": 99,
+          "vacancy": 74
+        },
+        "2B": {
+          "applied": 23,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Maris Stella High School (Primary Section)",
+      "phases": {
+        "2C": {
+          "applied": 164,
+          "vacancy": 75
+        },
+        "2B": {
+          "applied": 66,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Anderson Primary School",
+      "phases": {
+        "2C": {
+          "applied": 101,
+          "vacancy": 77
+        },
+        "2B": {
+          "applied": 21,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Naval Base Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 37,
+          "vacancy": 14
+        },
+        "2C": {
+          "applied": 65,
+          "vacancy": 79
+        },
+        "2B": {
+          "applied": 2,
+          "vacancy": 27
+        }
+      }
+    },
+    {
+      "name": "Springdale Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 12,
+          "vacancy": 5
+        },
+        "2C": {
+          "applied": 74,
+          "vacancy": 79
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 26
+        }
+      }
+    },
+    {
+      "name": "Junyuan Primary School",
+      "phases": {
+        "2C": {
+          "applied": 100,
+          "vacancy": 81
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 27
+        }
+      }
+    },
+    {
+      "name": "St. Joseph's Institution Junior",
+      "phases": {
+        "2C": {
+          "applied": 108,
+          "vacancy": 81
+        },
+        "2B": {
+          "applied": 79,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "St. Gabriel's Primary School",
+      "phases": {
+        "2C": {
+          "applied": 85,
+          "vacancy": 83
+        },
+        "2B": {
+          "applied": 16,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Canberra Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 7,
+          "vacancy": 1
+        },
+        "2C": {
+          "applied": 86,
+          "vacancy": 87
+        },
+        "2B": {
+          "applied": 14,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Keming Primary School",
+      "phases": {
+        "2C": {
+          "applied": 97,
+          "vacancy": 88
+        },
+        "2B": {
+          "applied": 23,
+          "vacancy": 37
+        }
+      }
+    },
+    {
+      "name": "Nan Chiau Primary School",
+      "phases": {
+        "2C": {
+          "applied": 213,
+          "vacancy": 88
+        },
+        "2B": {
+          "applied": 79,
+          "vacancy": 43
+        }
+      }
+    },
+    {
+      "name": "Fengshan Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 35,
+          "vacancy": 18
+        },
+        "2C": {
+          "applied": 71,
+          "vacancy": 89
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 29
+        }
+      }
+    },
+    {
+      "name": "CHIJ (Katong) Primary",
+      "phases": {
+        "2C(S)": {
+          "applied": 15,
+          "vacancy": 11
+        },
+        "2C": {
+          "applied": 82,
+          "vacancy": 92
+        },
+        "2B": {
+          "applied": 31,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "Chua Chu Kang Primary School",
+      "phases": {
+        "2C": {
+          "applied": 125,
+          "vacancy": 93
+        },
+        "2B": {
+          "applied": 14,
+          "vacancy": 35
+        }
+      }
+    },
+    {
+      "name": "Northshore Primary School",
+      "phases": {
+        "2C": {
+          "applied": 123,
+          "vacancy": 93
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "Woodgrove Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 10,
+          "vacancy": 10
+        },
+        "2C": {
+          "applied": 85,
+          "vacancy": 94
+        },
+        "2B": {
+          "applied": 3,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "De La Salle School",
+      "phases": {
+        "2C": {
+          "applied": 98,
+          "vacancy": 94
+        },
+        "2B": {
+          "applied": 8,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Changkat Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 18,
+          "vacancy": 189
+        },
+        "2C": {
+          "applied": 40,
+          "vacancy": 229
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 76
+        }
+      }
+    },
+    {
+      "name": "Northoaks Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 6,
+          "vacancy": 174
+        },
+        "2C": {
+          "applied": 14,
+          "vacancy": 188
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 63
+        }
+      }
+    },
+    {
+      "name": "Lianhua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 20,
+          "vacancy": 177
+        },
+        "2C": {
+          "applied": 28,
+          "vacancy": 205
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 68
+        }
+      }
+    },
+    {
+      "name": "Pei Tong Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 34,
+          "vacancy": 183
+        },
+        "2C": {
+          "applied": 35,
+          "vacancy": 218
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 71
+        }
+      }
+    },
+    {
+      "name": "Ahmad Ibrahim Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 19,
+          "vacancy": 165
+        },
+        "2C": {
+          "applied": 21,
+          "vacancy": 186
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 61
+        }
+      }
+    },
+    {
+      "name": "Yuhua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 14,
+          "vacancy": 151
+        },
+        "2C": {
+          "applied": 11,
+          "vacancy": 162
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 54
+        }
+      }
+    },
+    {
+      "name": "Yumin Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 33,
+          "vacancy": 160
+        },
+        "2C": {
+          "applied": 14,
+          "vacancy": 174
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 58
+        }
+      }
+    },
+    {
+      "name": "Meridian Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 18,
+          "vacancy": 139
+        },
+        "2C": {
+          "applied": 15,
+          "vacancy": 154
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 51
+        }
+      }
+    },
+    {
+      "name": "Punggol Cove Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 32,
+          "vacancy": 153
+        },
+        "2C": {
+          "applied": 24,
+          "vacancy": 177
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 58
+        }
+      }
+    },
+    {
+      "name": "New Town Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 17,
+          "vacancy": 130
+        },
+        "2C": {
+          "applied": 26,
+          "vacancy": 156
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 52
+        }
+      }
+    },
+    {
+      "name": "First Toa Payoh Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 8,
+          "vacancy": 114
+        },
+        "2C": {
+          "applied": 11,
+          "vacancy": 125
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Bedok Green Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 31,
+          "vacancy": 131
+        },
+        "2C": {
+          "applied": 31,
+          "vacancy": 162
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 54
+        }
+      }
+    },
+    {
+      "name": "Fuhua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 13,
+          "vacancy": 110
+        },
+        "2C": {
+          "applied": 30,
+          "vacancy": 140
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 47
+        }
+      }
+    },
+    {
+      "name": "East Spring Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 15,
+          "vacancy": 111
+        },
+        "2C": {
+          "applied": 47,
+          "vacancy": 158
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 53
+        }
+      }
+    },
+    {
+      "name": "Montfort Junior School",
+      "phases": {
+        "2C(S)": {
+          "applied": 22,
+          "vacancy": 117
+        },
+        "2C": {
+          "applied": 9,
+          "vacancy": 126
+        },
+        "2B": {
+          "applied": 3,
+          "vacancy": 43
+        }
+      }
+    },
+    {
+      "name": "Ang Mo Kio Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 18,
+          "vacancy": 110
+        },
+        "2C": {
+          "applied": 27,
+          "vacancy": 137
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 46
+        }
+      }
+    },
+    {
+      "name": "Marymount Convent School",
+      "phases": {
+        "2C(S)": {
+          "applied": 93,
+          "vacancy": 184
+        },
+        "2C": {
+          "applied": 27,
+          "vacancy": 210
+        },
+        "2B": {
+          "applied": 5,
+          "vacancy": 72
+        }
+      }
+    },
+    {
+      "name": "Greendale Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 20,
+          "vacancy": 110
+        },
+        "2C": {
+          "applied": 16,
+          "vacancy": 126
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Zhonghua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 24,
+          "vacancy": 108
+        },
+        "2C": {
+          "applied": 18,
+          "vacancy": 126
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Teck Whye Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 18,
+          "vacancy": 100
+        },
+        "2C": {
+          "applied": 22,
+          "vacancy": 122
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 41
+        }
+      }
+    },
+    {
+      "name": "North Vista Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 26,
+          "vacancy": 107
+        },
+        "2C": {
+          "applied": 22,
+          "vacancy": 127
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Edgefield Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 21,
+          "vacancy": 102
+        },
+        "2C": {
+          "applied": 39,
+          "vacancy": 141
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 47
+        }
+      }
+    },
+    {
+      "name": "Jiemin Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 25,
+          "vacancy": 104
+        },
+        "2C": {
+          "applied": 46,
+          "vacancy": 150
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 50
+        }
+      }
+    },
+    {
+      "name": "Yio Chu Kang Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 28,
+          "vacancy": 105
+        },
+        "2C": {
+          "applied": 21,
+          "vacancy": 126
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Xinghua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 29,
+          "vacancy": 104
+        },
+        "2C": {
+          "applied": 40,
+          "vacancy": 144
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 48
+        }
+      }
+    },
+    {
+      "name": "Seng Kang Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 24,
+          "vacancy": 98
+        },
+        "2C": {
+          "applied": 16,
+          "vacancy": 114
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 38
+        }
+      }
+    },
+    {
+      "name": "St. Anthony's Canossian Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 30,
+          "vacancy": 99
+        },
+        "2C": {
+          "applied": 38,
+          "vacancy": 137
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 48
+        }
+      }
+    },
+    {
+      "name": "Beacon Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 12,
+          "vacancy": 79
+        },
+        "2C": {
+          "applied": 24,
+          "vacancy": 103
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Bendemeer Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 43,
+          "vacancy": 110
+        },
+        "2C": {
+          "applied": 24,
+          "vacancy": 134
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 44
+        }
+      }
+    },
+    {
+      "name": "Farrer Park Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 42,
+          "vacancy": 108
+        },
+        "2C": {
+          "applied": 27,
+          "vacancy": 135
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 45
+        }
+      }
+    },
+    {
+      "name": "Greenridge Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 8,
+          "vacancy": 71
+        },
+        "2C": {
+          "applied": 32,
+          "vacancy": 103
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Blangah Rise Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 8,
+          "vacancy": 70
+        },
+        "2C": {
+          "applied": 21,
+          "vacancy": 91
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 30
+        }
+      }
+    },
+    {
+      "name": "Anchor Green Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 55,
+          "vacancy": 117
+        },
+        "2C": {
+          "applied": 23,
+          "vacancy": 140
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 47
+        }
+      }
+    },
+    {
+      "name": "Endeavour Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 38,
+          "vacancy": 98
+        },
+        "2C": {
+          "applied": 43,
+          "vacancy": 140
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 47
+        }
+      }
+    },
+    {
+      "name": "Fern Green Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 40,
+          "vacancy": 100
+        },
+        "2C": {
+          "applied": 71,
+          "vacancy": 171
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 57
+        }
+      }
+    },
+    {
+      "name": "Corporation Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 11,
+          "vacancy": 70
+        },
+        "2C": {
+          "applied": 25,
+          "vacancy": 95
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Qihua Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 2,
+          "vacancy": 59
+        },
+        "2C": {
+          "applied": 41,
+          "vacancy": 99
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Si Ling Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 1,
+          "vacancy": 54
+        },
+        "2C": {
+          "applied": 33,
+          "vacancy": 86
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 29
+        }
+      }
+    },
+    {
+      "name": "Unity Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 2,
+          "vacancy": 54
+        },
+        "2C": {
+          "applied": 46,
+          "vacancy": 100
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Innova Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 3,
+          "vacancy": 54
+        },
+        "2C": {
+          "applied": 69,
+          "vacancy": 123
+        },
+        "2B": {
+          "applied": 2,
+          "vacancy": 41
+        }
+      }
+    },
+    {
+      "name": "Gan Eng Seng Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 14,
+          "vacancy": 64
+        },
+        "2C": {
+          "applied": 22,
+          "vacancy": 86
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 28
+        }
+      }
+    },
+    {
+      "name": "Boon Lay Garden Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 20,
+          "vacancy": 70
+        },
+        "2C": {
+          "applied": 22,
+          "vacancy": 92
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "Mayflower Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 29,
+          "vacancy": 73
+        },
+        "2C": {
+          "applied": 28,
+          "vacancy": 101
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Fuchun Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 0,
+          "vacancy": 43
+        },
+        "2C": {
+          "applied": 53,
+          "vacancy": 95
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Oasis Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 36,
+          "vacancy": 73
+        },
+        "2C": {
+          "applied": 35,
+          "vacancy": 108
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 35
+        }
+      }
+    },
+    {
+      "name": "Woodlands Ring Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 11,
+          "vacancy": 45
+        },
+        "2C": {
+          "applied": 59,
+          "vacancy": 104
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Greenwood Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 20,
+          "vacancy": 54
+        },
+        "2C": {
+          "applied": 67,
+          "vacancy": 121
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "Cantonment Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 25,
+          "vacancy": 57
+        },
+        "2C": {
+          "applied": 36,
+          "vacancy": 93
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "CHIJ Our Lady of Good Counsel",
+      "phases": {
+        "2C(S)": {
+          "applied": 30,
+          "vacancy": 61
+        },
+        "2C": {
+          "applied": 28,
+          "vacancy": 89
+        },
+        "2B": {
+          "applied": 15,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Tampines North Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 92,
+          "vacancy": 123
+        },
+        "2C": {
+          "applied": 50,
+          "vacancy": 172
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 57
+        }
+      }
+    },
+    {
+      "name": "Fernvale Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 17,
+          "vacancy": 43
+        },
+        "2C": {
+          "applied": 85,
+          "vacancy": 126
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Telok Kurau Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 39,
+          "vacancy": 65
+        },
+        "2C": {
+          "applied": 72,
+          "vacancy": 137
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 45
+        }
+      }
+    },
+    {
+      "name": "CHIJ Our Lady Queen of Peace",
+      "phases": {
+        "2C(S)": {
+          "applied": 33,
+          "vacancy": 59
+        },
+        "2C": {
+          "applied": 80,
+          "vacancy": 139
+        },
+        "2B": {
+          "applied": 6,
+          "vacancy": 48
+        }
+      }
+    },
+    {
+      "name": "Jurong Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 29,
+          "vacancy": 54
+        },
+        "2C": {
+          "applied": 43,
+          "vacancy": 97
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 32
+        }
+      }
+    },
+    {
+      "name": "Yew Tee Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 18,
+          "vacancy": 43
+        },
+        "2C": {
+          "applied": 55,
+          "vacancy": 97
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Zhangde Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 25,
+          "vacancy": 49
+        },
+        "2C": {
+          "applied": 47,
+          "vacancy": 95
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 31
+        }
+      }
+    },
+    {
+      "name": "CHIJ (Kellock)",
+      "phases": {
+        "2C(S)": {
+          "applied": 24,
+          "vacancy": 48
+        },
+        "2C": {
+          "applied": 53,
+          "vacancy": 101
+        },
+        "2B": {
+          "applied": 12,
+          "vacancy": 37
+        }
+      }
+    },
+    {
+      "name": "Punggol View Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 43,
+          "vacancy": 39
+        },
+        "2C": {
+          "applied": 60,
+          "vacancy": 99
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Palm View Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 23,
+          "vacancy": 6
+        },
+        "2C": {
+          "applied": 93,
+          "vacancy": 99
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Paya Lebar Methodist Girls' School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 103,
+          "vacancy": 99
+        },
+        "2B": {
+          "applied": 37,
+          "vacancy": 45
+        }
+      }
+    },
+    {
+      "name": "Poi Ching School",
+      "phases": {
+        "2C": {
+          "applied": 183,
+          "vacancy": 102
+        },
+        "2B": {
+          "applied": 43,
+          "vacancy": 48
+        }
+      }
+    },
+    {
+      "name": "Ngee Ann Primary School",
+      "phases": {
+        "2C": {
+          "applied": 114,
+          "vacancy": 103
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Xishan Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 102,
+          "vacancy": 59
+        },
+        "2C": {
+          "applied": 47,
+          "vacancy": 106
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 35
+        }
+      }
+    },
+    {
+      "name": "Concord Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 56,
+          "vacancy": 48
+        },
+        "2C": {
+          "applied": 63,
+          "vacancy": 111
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 37
+        }
+      }
+    },
+    {
+      "name": "Bukit Timah Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 22,
+          "vacancy": 16
+        },
+        "2C": {
+          "applied": 114,
+          "vacancy": 113
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 38
+        }
+      }
+    },
+    {
+      "name": "St. Margaret's School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 122,
+          "vacancy": 117
+        },
+        "2B": {
+          "applied": 11,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "Peiying Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 76,
+          "vacancy": 59
+        },
+        "2C": {
+          "applied": 61,
+          "vacancy": 120
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "Haig Girls' School",
+      "phases": {
+        "2C(S)": {
+          "applied": 38,
+          "vacancy": 18
+        },
+        "2C": {
+          "applied": 106,
+          "vacancy": 124
+        },
+        "2B": {
+          "applied": 11,
+          "vacancy": 45
+        }
+      }
+    },
+    {
+      "name": "Teck Ghee Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 45,
+          "vacancy": 34
+        },
+        "2C": {
+          "applied": 90,
+          "vacancy": 124
+        },
+        "2B": {
+          "applied": 5,
+          "vacancy": 43
+        }
+      }
+    },
+    {
+      "name": "Kheng Cheng School",
+      "phases": {
+        "2C(S)": {
+          "applied": 31,
+          "vacancy": 10
+        },
+        "2C": {
+          "applied": 115,
+          "vacancy": 125
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 42
+        }
+      }
+    },
+    {
+      "name": "CHIJ Our Lady of the Nativity",
+      "phases": {
+        "2C(S)": {
+          "applied": 14,
+          "vacancy": 8
+        },
+        "2C": {
+          "applied": 122,
+          "vacancy": 130
+        },
+        "2B": {
+          "applied": 31,
+          "vacancy": 54
+        }
+      }
+    },
+    {
+      "name": "Chongzheng Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 27,
+          "vacancy": 26
+        },
+        "2C": {
+          "applied": 105,
+          "vacancy": 131
+        },
+        "2B": {
+          "applied": 5,
+          "vacancy": 45
+        }
+      }
+    },
+    {
+      "name": "St. Stephen's School",
+      "phases": {
+        "2C(S)": {
+          "applied": 59,
+          "vacancy": 44
+        },
+        "2C": {
+          "applied": 87,
+          "vacancy": 131
+        },
+        "2B": {
+          "applied": 19,
+          "vacancy": 49
+        }
+      }
+    },
+    {
+      "name": "Raffles Girls' Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 31,
+          "vacancy": 10
+        },
+        "2C": {
+          "applied": 128,
+          "vacancy": 137
+        },
+        "2B": {
+          "applied": 24,
+          "vacancy": 53
+        }
+      }
+    },
+    {
+      "name": "Mee Toh School",
+      "phases": {
+        "2C": {
+          "applied": 155,
+          "vacancy": 137
+        },
+        "2B": {
+          "applied": 41,
+          "vacancy": 59
+        }
+      }
+    },
+    {
+      "name": "Cedar Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 117,
+          "vacancy": 84
+        },
+        "2C": {
+          "applied": 57,
+          "vacancy": 141
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 47
+        }
+      }
+    },
+    {
+      "name": "Qifa Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 20,
+          "vacancy": 20
+        },
+        "2C": {
+          "applied": 128,
+          "vacancy": 147
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 50
+        }
+      }
+    },
+    {
+      "name": "Geylang Methodist School (Primary)",
+      "phases": {
+        "2C": {
+          "applied": 151,
+          "vacancy": 149
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 52
+        }
+      }
+    },
+    {
+      "name": "Tampines Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 115,
+          "vacancy": 72
+        },
+        "2C": {
+          "applied": 78,
+          "vacancy": 150
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 49
+        }
+      }
+    },
+    {
+      "name": "Clementi Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 75,
+          "vacancy": 67
+        },
+        "2C": {
+          "applied": 100,
+          "vacancy": 165
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 55
+        }
+      }
+    },
+    {
+      "name": "Bukit View Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 39,
+          "vacancy": 5
+        },
+        "2C": {
+          "applied": 207,
+          "vacancy": 212
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 70
+        }
+      }
+    },
+    {
+      "name": "Pioneer Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 58,
+          "vacancy": 34
+        },
+        "2C": {
+          "applied": 276,
+          "vacancy": 309
+        },
+        "2B": {
+          "applied": 7,
+          "vacancy": 105
+        }
+      }
+    },
+    {
+      "name": "Park View Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 45,
+          "vacancy": 68
+        },
+        "2C": {
+          "applied": 51,
+          "vacancy": 119
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "West Grove Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 42,
+          "vacancy": 64
+        },
+        "2C": {
+          "applied": 37,
+          "vacancy": 101
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Lakeside Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 25,
+          "vacancy": 47
+        },
+        "2C": {
+          "applied": 74,
+          "vacancy": 121
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 40
+        }
+      }
+    },
+    {
+      "name": "Xingnan Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 14,
+          "vacancy": 34
+        },
+        "2C": {
+          "applied": 54,
+          "vacancy": 87
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 29
+        }
+      }
+    },
+    {
+      "name": "West View Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 8,
+          "vacancy": 25
+        },
+        "2C": {
+          "applied": 35,
+          "vacancy": 60
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 20
+        }
+      }
+    },
+    {
+      "name": "Opera Estate Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 35,
+          "vacancy": 51
+        },
+        "2C": {
+          "applied": 70,
+          "vacancy": 119
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 39
+        }
+      }
+    },
+    {
+      "name": "Evergreen Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 22,
+          "vacancy": 37
+        },
+        "2C": {
+          "applied": 64,
+          "vacancy": 101
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 34
+        }
+      }
+    },
+    {
+      "name": "Queenstown Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 25,
+          "vacancy": 39
+        },
+        "2C": {
+          "applied": 108,
+          "vacancy": 147
+        },
+        "2B": {
+          "applied": 1,
+          "vacancy": 49
+        }
+      }
+    },
+    {
+      "name": "North Spring Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 50,
+          "vacancy": 63
+        },
+        "2C": {
+          "applied": 36,
+          "vacancy": 99
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 33
+        }
+      }
+    },
+    {
+      "name": "Dazhong Primary School",
+      "phases": {
+        "2C(S)": {
+          "applied": 50,
+          "vacancy": 59
+        },
+        "2C": {
+          "applied": 32,
+          "vacancy": 90
+        },
+        "2B": {
+          "applied": 0,
+          "vacancy": 30
+        }
+      }
+    }
+  ]
+}

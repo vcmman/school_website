@@ -1,5 +1,9 @@
 .git
 .vercel
+.env
+.env.*
+.private
+__pycache__
 .pycache
 .server*.log
 .DS_Store

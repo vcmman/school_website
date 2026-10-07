@@ -1,0 +1,2624 @@
+{
+  "observed_on": "2026-10-06",
+  "source_notice": "Public portal page snapshots. Asking prices are not transactions or independently verified availability.",
+  "profiles": [
+    {
+      "name": "GLENTREES",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/glentrees",
+      "observed_on": "2026-10-06",
+      "top_year": 2005,
+      "tenure": "999 YEARS",
+      "unit_count": 176,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground"
+      ],
+      "mrt_description": "Dover MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 5680000,
+          "size_sqft": 3650,
+          "beds": 5,
+          "baths": 4,
+          "asking_psf": 1556,
+          "source_url": "https://www.99.co/singapore/condos-apartments/glentrees",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3300000,
+          "size_sqft": 1399,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2359,
+          "source_url": "https://www.99.co/singapore/condos-apartments/glentrees",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2600000,
+          "size_sqft": 1345,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1933,
+          "source_url": "https://www.99.co/singapore/condos-apartments/glentrees",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 5800000,
+          "size_sqft": 3671,
+          "beds": 5,
+          "baths": 4,
+          "asking_psf": 1580,
+          "source_url": "https://www.99.co/singapore/condos-apartments/glentrees",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "GARDENVISTA",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+      "observed_on": "2026-10-06",
+      "top_year": 2006,
+      "tenure": "99 YEARS",
+      "unit_count": 310,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "King Albert Park MRT · 7 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 2340000,
+          "size_sqft": 1141,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2051,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2880000,
+          "size_sqft": 1346,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2140,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2850000,
+          "size_sqft": 1345,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2119,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1680000,
+          "size_sqft": 872,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1927,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1820000,
+          "size_sqft": 925,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1968,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2300000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2035,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2488000,
+          "size_sqft": 1109,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2243,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2800000,
+          "size_sqft": 1346,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2080,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1650000,
+          "size_sqft": 872,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1892,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2499999,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2212,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3100000,
+          "size_sqft": 1346,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2303,
+          "source_url": "https://www.99.co/singapore/condos-apartments/gardenvista",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "TWIN WATERFALLS",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+      "observed_on": "2026-10-06",
+      "top_year": 2015,
+      "tenure": "99 YEARS",
+      "unit_count": 728,
+      "facilities_known": true,
+      "facilities": [
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Soo Teck LRT · 5 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 1695000,
+          "size_sqft": 1001,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1693,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1600000,
+          "size_sqft": 915,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1749,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2170000,
+          "size_sqft": 1765,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1229,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2100000,
+          "size_sqft": 1238,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1696,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1580000,
+          "size_sqft": 915,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1727,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2800000,
+          "size_sqft": 2174,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 1288,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1618000,
+          "size_sqft": 915,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1768,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2199900,
+          "size_sqft": 1873,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1175,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1800000,
+          "size_sqft": 1108,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1625,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1600000,
+          "size_sqft": 1001,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1598,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2170000,
+          "size_sqft": 1756,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1236,
+          "source_url": "https://www.99.co/singapore/condos-apartments/twin-waterfalls",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "MONTEREY PARK CONDOMINIUM",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+      "observed_on": "2026-10-06",
+      "top_year": 2006,
+      "tenure": "999 YEARS",
+      "unit_count": 280,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "West Coast MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 2800000,
+          "size_sqft": 1421,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1970,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1860000,
+          "size_sqft": 1023,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1818,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1800000,
+          "size_sqft": 1023,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1760,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2990000,
+          "size_sqft": 2056,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1454,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2288888,
+          "size_sqft": 1249,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1833,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2580000,
+          "size_sqft": 1528,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1688,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2350000,
+          "size_sqft": 1259,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1867,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1980000,
+          "size_sqft": 1023,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1935,
+          "source_url": "https://www.99.co/singapore/condos-apartments/monterey-park-condominium",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "ECOPOLITAN",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+      "observed_on": "2026-10-06",
+      "top_year": 2016,
+      "tenure": "99 YEARS",
+      "unit_count": 512,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Soo Teck LRT · 7 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1141,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1621,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 894,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1544,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2488888,
+          "size_sqft": 1518,
+          "beds": 5,
+          "baths": 4,
+          "asking_psf": 1640,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1350000,
+          "size_sqft": 893,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1512,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2180000,
+          "size_sqft": 1367,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1595,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1728000,
+          "size_sqft": 1098,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1574,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1950000,
+          "size_sqft": 1195,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1632,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1888888,
+          "size_sqft": 1195,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1581,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1600000,
+          "size_sqft": 1054,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1518,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1216,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1521,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1720000,
+          "size_sqft": 1087,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1582,
+          "source_url": "https://www.99.co/singapore/condos-apartments/ecopolitan",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "A TREASURE TROVE",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+      "observed_on": "2026-10-06",
+      "top_year": 2015,
+      "tenure": "99 YEARS",
+      "unit_count": 882,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Soo Teck LRT · 4 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 4600000,
+          "size_sqft": 4874,
+          "beds": 7,
+          "baths": 5,
+          "asking_psf": 944,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1350000,
+          "size_sqft": 775,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1742,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 4600000,
+          "size_sqft": 4876,
+          "beds": 7,
+          "baths": 5,
+          "asking_psf": 943,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 4599999,
+          "size_sqft": 4876,
+          "beds": 5,
+          "baths": 6,
+          "asking_psf": 943,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2000000,
+          "size_sqft": 1206,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1658,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1500000,
+          "size_sqft": 1001,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1499,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1999000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1769,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 4600000,
+          "size_sqft": 4870,
+          "beds": 7,
+          "baths": 5,
+          "asking_psf": 945,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1600000,
+          "size_sqft": 1001,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1598,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 4650000,
+          "size_sqft": 4876,
+          "beds": 7,
+          "baths": 5,
+          "asking_psf": 954,
+          "source_url": "https://www.99.co/singapore/condos-apartments/a-treasure-trove",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "WATERTOWN",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+      "observed_on": "2026-10-06",
+      "top_year": 2017,
+      "tenure": "99 YEARS",
+      "unit_count": 992,
+      "facilities_known": true,
+      "facilities": [
+        "Gym"
+      ],
+      "mrt_description": "Punggol MRT/LRT · 3 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 950000,
+          "size_sqft": 603,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1575,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 968888,
+          "size_sqft": 570,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 1700,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1050000,
+          "size_sqft": 572,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 1836,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1410000,
+          "size_sqft": 807,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1747,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1050000,
+          "size_sqft": 570,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 1842,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1000000,
+          "size_sqft": 603,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 1658,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 950000,
+          "size_sqft": 581,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1635,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1390000,
+          "size_sqft": 807,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1722,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 949900,
+          "size_sqft": 581,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1635,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2000000,
+          "size_sqft": 958,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2088,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 980000,
+          "size_sqft": 624,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1571,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 909000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1725,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 920000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1746,
+          "source_url": "https://www.99.co/singapore/condos-apartments/watertown",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "PARC CENTROS",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+      "observed_on": "2026-10-06",
+      "top_year": 2016,
+      "tenure": "99 YEARS",
+      "unit_count": 618,
+      "facilities_known": true,
+      "facilities": [],
+      "mrt_description": "Punggol MRT/LRT · 4 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 2150000,
+          "size_sqft": 1163,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1849,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1650000,
+          "size_sqft": 1033,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1597,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1790000,
+          "size_sqft": 1033,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1733,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1780000,
+          "size_sqft": 990,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1798,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 970000,
+          "size_sqft": 570,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1702,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 780000,
+          "size_sqft": 474,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1646,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1360000,
+          "size_sqft": 764,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1780,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 879999,
+          "size_sqft": 464,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1897,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2480000,
+          "size_sqft": 1496,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1658,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3200000,
+          "size_sqft": 1679,
+          "beds": 5,
+          "baths": 4,
+          "asking_psf": 1906,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1880000,
+          "size_sqft": 1324,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1420,
+          "source_url": "https://www.99.co/singapore/condos-apartments/parc-centros",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "PRIVE",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+      "observed_on": "2026-10-06",
+      "top_year": 2013,
+      "tenure": "99 YEARS",
+      "unit_count": 680,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Playground",
+        "Tennis Court"
+      ],
+      "mrt_description": "Cove LRT · 4 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 2499999,
+          "size_sqft": 1399,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 1787,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2338888,
+          "size_sqft": 1496,
+          "beds": 3,
+          "baths": 4,
+          "asking_psf": 1563,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1790000,
+          "size_sqft": 1087,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1647,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1298880,
+          "size_sqft": 775,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1676,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1870000,
+          "size_sqft": 1098,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1703,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1750000,
+          "size_sqft": 1087,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1610,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1400000,
+          "size_sqft": 883,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1586,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1828000,
+          "size_sqft": 1098,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1665,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1500000,
+          "size_sqft": 883,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1699,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1828000,
+          "size_sqft": 1087,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1682,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1308000,
+          "size_sqft": 829,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1578,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1250000,
+          "size_sqft": 775,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1613,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1875000,
+          "size_sqft": 1098,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1708,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1098,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1685,
+          "source_url": "https://www.99.co/singapore/condos-apartments/prive",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "RIVER ISLES",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+      "observed_on": "2026-10-06",
+      "top_year": 2015,
+      "tenure": "99 YEARS",
+      "unit_count": 610,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool"
+      ],
+      "mrt_description": "Coral Edge LRT · 5 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 1400000,
+          "size_sqft": 893,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1568,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1490000,
+          "size_sqft": 947,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1573,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1950000,
+          "size_sqft": 1206,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1617,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2090000,
+          "size_sqft": 1227,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1703,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1999999,
+          "size_sqft": 1647,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1214,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1880000,
+          "size_sqft": 1141,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1648,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1410000,
+          "size_sqft": 900,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1567,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2500000,
+          "size_sqft": 2045,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1222,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2560000,
+          "size_sqft": 1475,
+          "beds": 5,
+          "baths": 3,
+          "asking_psf": 1736,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 700000,
+          "size_sqft": 441,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1587,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1580000,
+          "size_sqft": 947,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1668,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1568888,
+          "size_sqft": 947,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1657,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1888888,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1610,
+          "source_url": "https://www.99.co/singapore/condos-apartments/river-isles",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE CLEMENT CANOPY",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+      "observed_on": "2026-10-06",
+      "top_year": 2020,
+      "tenure": "99 YEARS",
+      "unit_count": 505,
+      "facilities_known": true,
+      "facilities": [],
+      "mrt_description": "Clementi MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 2160000,
+          "size_sqft": 990,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2182,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1490000,
+          "size_sqft": 731,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2038,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1638000,
+          "size_sqft": 732,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2238,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2900000,
+          "size_sqft": 1346,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 2155,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2150000,
+          "size_sqft": 990,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2172,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2799999,
+          "size_sqft": 1345,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 2082,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2970000,
+          "size_sqft": 1346,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 2207,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2650000,
+          "size_sqft": 1141,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2323,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2388888,
+          "size_sqft": 1109,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2154,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2000000,
+          "size_sqft": 990,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2020,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1280000,
+          "size_sqft": 657,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 1948,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1599999,
+          "size_sqft": 710,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2254,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1520000,
+          "size_sqft": 710,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2141,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1550000,
+          "size_sqft": 732,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2117,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-clement-canopy",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE TRILINQ",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+      "observed_on": "2026-10-06",
+      "top_year": 2017,
+      "tenure": "99 YEARS",
+      "unit_count": 755,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Clementi MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 970000,
+          "size_sqft": 538,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1803,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1420000,
+          "size_sqft": 710,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 2000,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 700,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1971,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 980000,
+          "size_sqft": 538,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1822,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2800000,
+          "size_sqft": 1518,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1845,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 999999,
+          "size_sqft": 603,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1658,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 990000,
+          "size_sqft": 603,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1642,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1800000,
+          "size_sqft": 1335,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1348,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2820000,
+          "size_sqft": 1518,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1858,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 978000,
+          "size_sqft": 538,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1818,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2430000,
+          "size_sqft": 1044,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2328,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1698888,
+          "size_sqft": 753,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2256,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3050000,
+          "size_sqft": 1518,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2009,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-trilinq",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "DOVER PARKVIEW",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/dover-parkview",
+      "observed_on": "2026-10-06",
+      "top_year": 1997,
+      "tenure": "99 YEARS",
+      "unit_count": 686,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Buona Vista MRT",
+      "listing_samples": []
+    },
+    {
+      "name": "RIDGEWOOD CONDOMINIUM",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/ridgewood-condominium",
+      "observed_on": "2026-10-06",
+      "top_year": 1981,
+      "tenure": "999 YEARS",
+      "unit_count": 464,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Dover MRT · 8 min walk",
+      "listing_samples": []
+    },
+    {
+      "name": "THE NEXUS",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-nexus",
+      "observed_on": "2026-10-06",
+      "top_year": 2006,
+      "tenure": "Freehold",
+      "unit_count": 242,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool"
+      ],
+      "mrt_description": "King Albert Park MRT · 5 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 614,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2248,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-nexus",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1300000,
+          "size_sqft": 614,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2117,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-nexus",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2600000,
+          "size_sqft": 1055,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2464,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-nexus",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3750000,
+          "size_sqft": 1485,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 2525,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-nexus",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "MAPLE WOODS",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/maple-woods",
+      "observed_on": "2026-10-06",
+      "top_year": 1997,
+      "tenure": "Freehold",
+      "unit_count": 697,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "King Albert Park MRT · 4 min walk",
+      "listing_samples": []
+    },
+    {
+      "name": "PINETREE HILL",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/pinetree-hill",
+      "observed_on": "2026-10-06",
+      "top_year": null,
+      "tenure": null,
+      "unit_count": null,
+      "facilities_known": true,
+      "facilities": [
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "| Dover MRT",
+      "listing_samples": []
+    },
+    {
+      "name": "NAVA GROVE",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/nava-grove",
+      "observed_on": "2026-10-06",
+      "top_year": null,
+      "tenure": null,
+      "unit_count": null,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool"
+      ],
+      "mrt_description": "| Dover MRT",
+      "listing_samples": []
+    },
+    {
+      "name": "RESIDENCE TWENTY-TWO",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/residence-twenty-two",
+      "observed_on": "2026-10-06",
+      "top_year": 2021,
+      "tenure": "Freehold",
+      "unit_count": 22,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Playground"
+      ],
+      "mrt_description": "Marine Terrace MRT",
+      "listing_samples": []
+    },
+    {
+      "name": "VILLA MARTIA",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/villa-martia",
+      "observed_on": "2026-10-06",
+      "top_year": 2000,
+      "tenure": "Freehold",
+      "unit_count": 60,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Marine Terrace MRT · 5 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 2700000,
+          "size_sqft": 1249,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2162,
+          "source_url": "https://www.99.co/singapore/condos-apartments/villa-martia",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2820000,
+          "size_sqft": 1281,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2201,
+          "source_url": "https://www.99.co/singapore/condos-apartments/villa-martia",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "PINEHURST CONDOMINIUM",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/pinehurst-condominium",
+      "observed_on": "2026-10-06",
+      "top_year": 1993,
+      "tenure": "Freehold",
+      "unit_count": 41,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Playground"
+      ],
+      "mrt_description": "Marine Terrace MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 3850000,
+          "size_sqft": 1475,
+          "beds": 4,
+          "baths": 2,
+          "asking_psf": 2610,
+          "source_url": "https://www.99.co/singapore/condos-apartments/pinehurst-condominium",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "SELETAR SPRINGS CONDOMINIUM",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+      "observed_on": "2026-10-06",
+      "top_year": 2001,
+      "tenure": "99 YEARS",
+      "unit_count": 364,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Layar LRT · 7 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 1580000,
+          "size_sqft": 1335,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1184,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1690000,
+          "size_sqft": 1658,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1019,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1330000,
+          "size_sqft": 1270,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1047,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1560000,
+          "size_sqft": 1335,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1169,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1480000,
+          "size_sqft": 1323,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1119,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1620000,
+          "size_sqft": 1335,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1213,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1375000,
+          "size_sqft": 1238,
+          "beds": 798592,
+          "baths": 2,
+          "asking_psf": 1111,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2280000,
+          "size_sqft": 2067,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 1103,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1375000,
+          "size_sqft": 1238,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1111,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1698000,
+          "size_sqft": 1582,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1073,
+          "source_url": "https://www.99.co/singapore/condos-apartments/seletar-springs-condominium",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE PANORAMA",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+      "observed_on": "2026-10-06",
+      "top_year": 2019,
+      "tenure": null,
+      "unit_count": 698,
+      "facilities_known": false,
+      "facilities": [],
+      "mrt_description": null,
+      "listing_samples": [
+        {
+          "price_sgd": 1680000,
+          "size_sqft": 797,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2108,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2288000,
+          "size_sqft": 1001,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2286,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 890000,
+          "size_sqft": 452,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1969,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2300000,
+          "size_sqft": 1012,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2273,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2500000,
+          "size_sqft": 1012,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2470,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2499999,
+          "size_sqft": 1012,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 2470,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1529000,
+          "size_sqft": 786,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1945,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2200000,
+          "size_sqft": 1001,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2198,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1628000,
+          "size_sqft": 786,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2071,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 868888,
+          "size_sqft": 431,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2016,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 899000,
+          "size_sqft": 474,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1897,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-panorama",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE CALROSE",
+      "status": "unavailable",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-calrose",
+      "observed_on": "2026-10-06"
+    },
+    {
+      "name": "THE POIZ RESIDENCES",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+      "observed_on": "2026-10-06",
+      "top_year": 2019,
+      "tenure": "99 YEARS",
+      "unit_count": 731,
+      "facilities_known": true,
+      "facilities": [],
+      "mrt_description": "Potong Pasir MRT · 2 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 4100000,
+          "size_sqft": 1528,
+          "beds": 4,
+          "baths": 3,
+          "asking_psf": 2683,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 968000,
+          "size_sqft": 592,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1635,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 810000,
+          "size_sqft": 420,
+          "beds": 358474,
+          "baths": 1,
+          "asking_psf": 1929,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 920000,
+          "size_sqft": 441,
+          "beds": 358453,
+          "baths": 1,
+          "asking_psf": 2086,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1200000,
+          "size_sqft": 581,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 2065,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2000000,
+          "size_sqft": 828,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2415,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 830000,
+          "size_sqft": 420,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1976,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2150000,
+          "size_sqft": 1162,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1850,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 829626,
+          "size_sqft": 420,
+          "beds": 358453,
+          "baths": 1,
+          "asking_psf": 1975,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 835000,
+          "size_sqft": 420,
+          "beds": 358474,
+          "baths": 1,
+          "asking_psf": 1988,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1260000,
+          "size_sqft": 538,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2342,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1150000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2182,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1290000,
+          "size_sqft": 581,
+          "beds": 2,
+          "baths": 1,
+          "asking_psf": 2220,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1000000,
+          "size_sqft": 592,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1689,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-poiz-residences",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "EIGHT RIVERSUITES",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+      "observed_on": "2026-10-06",
+      "top_year": 2016,
+      "tenure": "99 YEARS",
+      "unit_count": 862,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Boon Keng MRT · 5 min walk",
+      "listing_samples": [
+        {
+          "price_sgd": 2098000,
+          "size_sqft": 1076,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1950,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 900000,
+          "size_sqft": 441,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2041,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1360000,
+          "size_sqft": 700,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1943,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1880000,
+          "size_sqft": 936,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 2009,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 700,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1971,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1420000,
+          "size_sqft": 699,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 2031,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 889999,
+          "size_sqft": 441,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2018,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1508000,
+          "size_sqft": 807,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1869,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 700,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1971,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1388000,
+          "size_sqft": 700,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1983,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1620000,
+          "size_sqft": 840,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1929,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1339999,
+          "size_sqft": 700,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1914,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 888000,
+          "size_sqft": 441,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 2014,
+          "source_url": "https://www.99.co/singapore/condos-apartments/eight-riversuites",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "CASABLANCA",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+      "observed_on": "2026-10-06",
+      "top_year": 2005,
+      "tenure": "99 YEARS",
+      "unit_count": 478,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Playground",
+        "Tennis Court"
+      ],
+      "mrt_description": "Woodlands MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 1080000,
+          "size_sqft": 936,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1154,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1150000,
+          "size_sqft": 926,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1242,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1100000,
+          "size_sqft": 926,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1188,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1100000,
+          "size_sqft": 893,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1232,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1079999,
+          "size_sqft": 904,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1195,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1430000,
+          "size_sqft": 1184,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1208,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1400000,
+          "size_sqft": 1184,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1182,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1520000,
+          "size_sqft": 1342,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1133,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1400000,
+          "size_sqft": 1109,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1262,
+          "source_url": "https://www.99.co/singapore/condos-apartments/casablanca",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "ROSEWOOD",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+      "observed_on": "2026-10-06",
+      "top_year": 2003,
+      "tenure": "99 YEARS",
+      "unit_count": 437,
+      "facilities_known": true,
+      "facilities": [
+        "Swimming Pool",
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Woodlands MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 1060000,
+          "size_sqft": 1012,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1047,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1398888,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1193,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1500000,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1279,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1088000,
+          "size_sqft": 1012,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1075,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1390000,
+          "size_sqft": 1185,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1173,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1336671,
+          "size_sqft": 1174,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1139,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1420000,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1211,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1450000,
+          "size_sqft": 1174,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1235,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1490000,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1270,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1390000,
+          "size_sqft": 1178,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1180,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1380000,
+          "size_sqft": 1173,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1176,
+          "source_url": "https://www.99.co/singapore/condos-apartments/rosewood",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE TAMPINES TRILLIANT",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+      "observed_on": "2026-10-06",
+      "top_year": 2015,
+      "tenure": "99 YEARS",
+      "unit_count": 670,
+      "facilities_known": true,
+      "facilities": [
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Tampines MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 2088000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1848,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2188000,
+          "size_sqft": 1378,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1588,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2000000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1770,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1999999,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1770,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3680000,
+          "size_sqft": 2465,
+          "beds": 5,
+          "baths": 4,
+          "asking_psf": 1493,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3000000,
+          "size_sqft": 1970,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 1523,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1520000,
+          "size_sqft": 872,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1743,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2080000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1841,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1598000,
+          "size_sqft": 872,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1833,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2100000,
+          "size_sqft": 1302,
+          "beds": 4,
+          "baths": 4,
+          "asking_psf": 1613,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1001,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1848,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 3650000,
+          "size_sqft": 2465,
+          "beds": 4,
+          "baths": 5,
+          "asking_psf": 1481,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2050000,
+          "size_sqft": 1130,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1814,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-tampines-trilliant",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "name": "THE SANTORINI",
+      "status": "observed",
+      "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+      "observed_on": "2026-10-06",
+      "top_year": 2018,
+      "tenure": "99 YEARS",
+      "unit_count": 597,
+      "facilities_known": true,
+      "facilities": [
+        "Wading Pool",
+        "Playground",
+        "Tennis Court",
+        "Gym"
+      ],
+      "mrt_description": "Tampines West MRT",
+      "listing_samples": [
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1152,
+          "beds": 3,
+          "baths": 3,
+          "asking_psf": 1606,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 2150000,
+          "size_sqft": 1367,
+          "beds": 5,
+          "baths": 2,
+          "asking_psf": 1573,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 800000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1518,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 788000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1495,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1850000,
+          "size_sqft": 1152,
+          "beds": 4,
+          "baths": 2,
+          "asking_psf": 1606,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 768000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1457,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1200000,
+          "size_sqft": 732,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1639,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 770000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1461,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 758000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1438,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 780000,
+          "size_sqft": 527,
+          "beds": 1,
+          "baths": 1,
+          "asking_psf": 1480,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1450000,
+          "size_sqft": 915,
+          "beds": 3,
+          "baths": 2,
+          "asking_psf": 1585,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        },
+        {
+          "price_sgd": 1150000,
+          "size_sqft": 721,
+          "beds": 2,
+          "baths": 2,
+          "asking_psf": 1595,
+          "source_url": "https://www.99.co/singapore/condos-apartments/the-santorini",
+          "observed_on": "2026-10-06"
+        }
+      ]
+    }
+  ]
+}

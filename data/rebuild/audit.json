@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-10-06",
+  "school_count": 182,
+  "school_coordinates_available": 182,
+  "p1_latest_year": 2026,
+  "moe_ballot_years": [
+    2025
+  ],
+  "numeric_cells_checked": 916,
+  "numeric_conflicts": [],
+  "property_directory_count": 2727,
+  "unresolved_properties": 2448,
+  "source_hashes": {
+    "moe-primary-map.html": "99ce242590fa76069600056dee671a1bdc4939e5581a02a495fefbc1c0c60d07",
+    "condo-directory.html": "2cc8470e46f31543c0f782991387c852e0f3c71473d8480ddf2fa0dd2994b176",
+    "p1-crosscheck.txt": "5b6696c010f91c23d3b25066d4487635f004b6c27838b66964f022c301b52dc9",
+    "moe-directory.json": "6f1804eae7930abfaeac19d47bdf283a345d2a9dffdab1a1d2eefa8390d0b8f0",
+    "p1-crosscheck.json": "b7d7af7fc5832608a10bbc0153e5daebd7b1d706d98aa45ec26f73b6f0174f26",
+    "onemap-condominium-page1.json": "eea976023530dd6ed8167685ff3f0e001770622d8c0138f1c9092a6451e1209a",
+    "moe-schoolfinder.html": "6cd72fd78ce4097ddb8bf5132a4ad26465aee95dfa58c8168403f53daca5c328",
+    "moe-current.html": "297b144aeac33799e59a391a85774e1296ed052e46ee32052d76c99ec732b4c7",
+    "glentrees.html": "d59d746981da40f076522db60b0d8fadf39ce1f8b3d16d7949e89de37cf5f60a",
+    "p1-counts.json": "68ee6c7cdf7921d08a2621c56e1c4b88e2c9fdb2e27ddc9311c3c69bebca607d",
+    "moe-balloting.html": "42de83c1ac22d97ee13c1678c256e8aaa6be242d2db7df02c221c6947aa3cc0c",
+    "moe-schoolfinder-schools.json": "99e30718ed7f3bba52e9569c54f91fafab6a7d1d24d827a39aade4ed0426b6fd"
+  },
+  "notice": "Rebuilt independently of all legacy site/cache JSON. Project directory is secondary, not authoritative; coordinates confirm geographic matches only. No old listing samples are reused.",
+  "excluded_project_conflicts": {
+    "ASHLEY GREEN": {
+      "reason": "Directory classifies this as condo but the current project portal identifies a landed-house development; excluded from condo picks.",
+      "source_url": "https://www.99.co/singapore/houses/ashley-green-deXCjkpoecvNbLMRa8UWa553",
+      "checked_on": "2026-10-06"
+    },
+    "CASABELLA": {
+      "reason": "Ambiguous project/address: directory postal 269187 differs from the condominium project address 192 Duchess Avenue 266323. Do not match a same-name landed estate to this condo.",
+      "source_url": "https://www.cashew.sg/property/casabella",
+      "checked_on": "2026-10-06"
+    }
+  },
+  "ura_coordinate_conflicts": [],
+  "ura_project_points_used": 196,
+  "school_coordinates_matched": 181,
+  "property_coordinates_matched": 279,
+  "source_access_warning": "Authentication token missing. Please create an account and generate or renew your API Token.",
+  "completion_status": "partial: project inventory geocoding, classification and individual sale evidence incomplete"
+}
