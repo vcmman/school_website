@@ -6,11 +6,14 @@ apps/desktop/dist
 .env.*
 !.env.example
 .private/
+# Local downloads and rebuild intermediates, not published website datasets.
+/data/cache/
+/data/rebuild/*.json
+!/data/rebuild/property-exclusions.json
 /site/data/ura_transactions.json
 /site/data/ura_transactions.tmp
 /site/data/property_evidence.json
 /site/data/property_evidence.tmp
-/data/rebuild/ura-projects.json
 /data/rebuild/raw/
 /data/rebuild/*progress.log
 __pycache__/

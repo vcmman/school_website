@@ -59,3 +59,9 @@ python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
 Daily raw HTML is cached under `.private/property-evidence/YYYY-MM-DD` with URL hashes. Page hashes, source links and retrieval dates are retained in the normalized evidence. Challenge pages stop collection. Existing dated evidence is not relabelled as fresh. Credentials, all original downloads, generated transaction/evidence JSON and generated URA point inputs are ignored by Git. A Git-only deployment consequently needs a separately authorized data provisioning step; the frontend handles missing price files without breaking school browsing.
+
+## Git Tracking Rules
+
+`data/cache/`, rebuild raw downloads, progress logs and rebuild JSON intermediates (including coordinates, schools, projects and audit) are local-only. The manual `property-exclusions.json` and this README remain tracked. Ignoring a coordinate cache does not make source access restrictions disappear; preserve the local files when an authorized refresh is unavailable.
+
+The published school/condo bundles under `site/data/` remain tracked so a fresh checkout can run the core website. The two transaction/sample files keep their existing local-only rules and require separate deployment provisioning. Root-level manual profiles, query overrides and CSV inputs are not removed by this cache cleanup. Removing files from the Git index does not delete their local copies or erase earlier commits.
