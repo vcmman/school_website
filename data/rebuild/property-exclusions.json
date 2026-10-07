@@ -1,0 +1,12 @@
+{
+  "ASHLEY GREEN": {
+    "reason": "Directory classifies this as condo but the current project portal identifies a landed-house development; excluded from condo picks.",
+    "source_url": "https://www.99.co/singapore/houses/ashley-green-deXCjkpoecvNbLMRa8UWa553",
+    "checked_on": "2026-10-06"
+  },
+  "CASABELLA": {
+    "reason": "Ambiguous project/address: directory postal 269187 differs from the condominium project address 192 Duchess Avenue 266323. Do not match a same-name landed estate to this condo.",
+    "source_url": "https://www.cashew.sg/property/casabella",
+    "checked_on": "2026-10-06"
+  }
+}

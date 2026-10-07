@@ -1,5 +1,9 @@
 # Data sources
 
+## Repository Storage
+
+`data/cache/` contains local download/geocoding caches and is ignored by Git. `data/rebuild/` keeps source downloads and generated intermediates locally; only its README and manual property exclusion list are tracked. Website bundles in `site/data/` are deployment inputs, not disposable caches, and remain tracked except for the separately provisioned transaction/sample files. See `data/rebuild/README.md` for the current pipeline. The legacy sources below do not drive the rebuilt core pages.
+
 - `top20_schools.csv` is refreshed from SGSchooling PSLE 2025 community data:
   - https://sgschooling.com/blog/psle-2025-score-ranges-community-data
 - `/Users/byc/src/webschool/site/data/site.json` includes:
