@@ -1,6 +1,6 @@
-# School Atlas
+# SG School-Condo
 
-Public website: [School Atlas](https://webschool-theta.vercel.app/)
+Public website: [SG School-Condo](https://webschool-theta.vercel.app/)
 
 [School Explorer](https://webschool-theta.vercel.app/index.html) | [Nearby Condo Picks](https://webschool-theta.vercel.app/school-condos.html)
 
