@@ -12,10 +12,14 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE_URL = 'https://eservice.ura.gov.sg/uraDataService/invokeUraDS/v1?service=PMI_Resi_Transaction'
 
 
-def normalize_batches(paths, retrieved_on):
+def normalize_batches(paths, retrieved_on, batch_ids=None):
     as_of = dt.date.fromisoformat(retrieved_on)
     if as_of > dt.datetime.now(ZoneInfo('Asia/Singapore')).date():
         raise ValueError('Download date cannot be in the future')
+    batches = list(batch_ids or [])
+    if batches and (len(batches) != len(paths) or len(set(batches)) != len(batches)
+                    or any(batch not in [1, 2, 3, 4] for batch in batches)):
+        raise ValueError('Batch identities must uniquely match the input files')
     records, hashes, projects = [], {}, set()
     for path in paths:
         raw = path.read_bytes()
@@ -51,9 +55,14 @@ def normalize_batches(paths, retrieved_on):
                 records.append(record)
     if not records:
         raise ValueError('No transactions; existing evidence retained')
+    complete = sorted(batches) == [1, 2, 3, 4]
     return {'schema_version': 1, 'source': 'URA', 'source_url': SOURCE_URL,
             'as_of_date': retrieved_on, 'retrieved_on': retrieved_on,
-            'status': 'available', 'raw_hashes': hashes, 'records': records}
+            'status': 'available' if complete else 'partial',
+            'coverage': {'downloaded_batches': sorted(batches),
+                         'expected_batches': [1, 2, 3, 4],
+                         'national_coverage_complete': complete},
+            'raw_hashes': hashes, 'records': records}
 
 
 def write_output(output, destination):
@@ -66,8 +75,10 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('files', nargs='+', type=Path, help='Original successful URA API batch JSON files')
     parser.add_argument('--retrieved-on', required=True, help='Actual download date, YYYY-MM-DD')
+    parser.add_argument('--batch', action='append', type=int, choices=[1, 2, 3, 4], required=True,
+                        help='Actual batch identity; repeat in the same order as input files')
     args = parser.parse_args()
-    output = normalize_batches(args.files, args.retrieved_on)
+    output = normalize_batches(args.files, args.retrieved_on, args.batch)
     write_output(output, ROOT / 'site/data/ura_transactions.json')
     print(f"Imported {len(output['records'])} transactions")
 

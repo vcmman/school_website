@@ -1,76 +1,63 @@
-# SGSchooling Primary Schools Mirror
+# School Atlas
 
-Static site generator that mirrors SGSchooling primary-school data into a local website.
-It collects:
-- All `/school/*.html` primary-school pages from SGSchooling sitemap
-- School profile fields (town, address, type, affiliation, CCA, etc.)
-- Mother-tongue offerings
-- Ballot history table
-- PSLE 2025 community ranking table
-- Nearby home suggestions within 1km (HDB by default, optional PropertyGuru condos via CSV input)
-- Nearby condo names within 1km from OneMap place search (no sales data required)
+Public website: [School Atlas](https://webschool-theta.vercel.app/)
 
-## Data source
+[School Explorer](https://webschool-theta.vercel.app/index.html) | [Nearby Condo Picks](https://webschool-theta.vercel.app/school-condos.html)
 
-- SGSchooling sitemap:
-  - https://sgschooling.com/sitemap.xml
-- SGSchooling primary-school pages:
-  - https://sgschooling.com/school/
-- SGSchooling PSLE 2025 community ranking:
-  - https://sgschooling.com/blog/psle-2025-score-ranges-community-data
+A bilingual static website for Singapore primary-school registration evidence and nearby condo distances. The maintained pages are `site/index.html` (School Explorer) and `site/school-condos.html` (Condo Picks). Older research pages are retained, not newly verified.
 
-The build step also refreshes:
-- `/Users/byc/src/webschool/data/top20_schools.csv`
-- `/Users/byc/src/webschool/site/data/site.json`
+## Local Development
 
-## Build data
+Requires Node.js 22+ and Python 3.9+. There are no npm dependencies.
 
-Install Python dependencies:
-
-```bash
-python3 -m pip install -r /Users/byc/src/webschool/scripts/requirements.txt
+```sh
+npm run dev
+# http://127.0.0.1:8013/index.html
+npm test
+python3 -m pip install -r scripts/requirements.txt
+npm run test:python
+npm run build
 ```
 
-Run the data build:
+`npm run build` validates the school bundle, public price snapshot, their matching hash, source dates, batch coverage, required HTML assets and JavaScript syntax. It then creates `.build/site` with public files only. Missing or invalid price data stops the build before replacing the previous artifact. Build a fresh checkout without caches or private files to verify reproducibility.
 
-```bash
-python3 /Users/byc/src/webschool/scripts/build_data.py
+## School Sorting
+
+Use applicants / vacancies from the bundle's latest registration year, highest demand first. This is not individual admission probability. Zero vacancies and missing/invalid counts are not numeric ratios.
+
+The ranking policy is selected once for the full school dataset and is unchanged by search, town filtering or language. If every school with usable demand data has a comparable 2C(S) ratio, use 2C(S), with 2C as a tie-breaker. Otherwise use 2C uniformly for the entire list. Schools lacking a ratio in the chosen phase go last. Fully missing schools do not trigger the fallback themselves. Name and slug provide deterministic tie-breakers.
+
+This conservative fallback is deliberate: comparing one school's 2C with another's 2C(S) is misleading; falling back independently for each pair can create circular rankings. The page displays the active year, phase and fallback reason. Citizenship/distance groups remain attached to their original MOE phase and year.
+
+## Price Data And Safe Releases
+
+`site/data/atlas_bundle.json` and `site/data/condo_price_summary.json` are public, versioned release inputs. The price file is a derived aggregate snapshot, not an original transaction download. It contains average resale PSF, sample count, observed area range, transaction-month range, actual retrieval dates and separate primary/secondary attribution. Source input hashes and the school-bundle hash make updates traceable. Individual transaction rows, credentials, private paths and raw downloads are not exported into it.
+
+Authorized local inputs stay ignored:
+
+- `.env.ura` and `.private/`: credentials and original downloads.
+- `data/cache/` and rebuild intermediates: source caches and generated working files.
+- `site/data/ura_transactions.json` and `site/data/property_evidence.json`: normalized local evidence, excluded from the release output as well as Git.
+
+After acquiring and validating authorized evidence using the documented import pipeline:
+
+```sh
+npm run data:prices
+npm test
+npm run test:python
+npm run build
 ```
 
-Optional: export PropertyGuru condo rows (manual browser-assisted), then rebuild:
+The price-summary generator is offline. It does not call URA or OneMap. A missing, empty or invalid input fails before writing, preserving the last successful public snapshot. Evidence dates are never changed to the build date. A change to the school bundle requires regenerating its matching price snapshot. Review and commit the public summary with the code; do not add the ignored source files.
 
-```bash
-python3 -m pip install playwright
-python3 -m playwright install chromium
-python3 /Users/byc/src/webschool/scripts/fetch_propertyguru_condos.py
-python3 /Users/byc/src/webschool/scripts/build_data.py
-```
+Prices prioritize original individual strata URA resales. Public Cashew samples are kept separate and used only when primary resale summaries are absent. A reference price needs at least three records and a selected area within the observed range. It is not a valuation, an available unit or proof of a layout. Current official coverage is only batch 1 of 4; no build turns it into nationwide coverage. Snapshot windows remain relative to the evidence retrieval date, not the current day.
 
-Preferred automated condo source (URA API):
+`vercel.json` runs the release gate and serves `.build`, retaining existing URL rewrites. `.vercelignore` allows the build scripts but excludes private data and nested CLI output. A public checksum manifest is generated at `/data/release_manifest.json`. Do not use old prebuilt CLI artifacts to bypass the build gate.
 
-```bash
-export URA_ACCESS_KEY="YOUR_URA_KEY"
-python3 /Users/byc/src/webschool/scripts/build_data.py
-```
+GitHub Actions runs the offline JavaScript and Python tests and the release build on pull requests and relevant pushes. This repository configuration does not connect Vercel to GitHub or change deployment protection; those remain separate project settings. CI does not download private data or deploy production.
 
-This generates:
+## Data Limits
 
-- `/Users/byc/src/webschool/site/data/site.json`
-- `/Users/byc/src/webschool/data/top20_schools.csv`
+The school/project catalog and price coverage are incomplete. No matched project is not evidence of no nearby condos. School-point distances are approximate straight lines, not official MOE admission distances. The retrieved 2026 counts are cross-checked secondary data; absent 2026 MOE citizenship/distance groups are not inferred from 2025 results.
 
-## Serve the site
-
-```bash
-cd /Users/byc/src/webschool/site
-python3 -m http.server 8000
-```
-
-Open http://localhost:8000
-
-## Notes
-
-- Data is community-contributed and may be incomplete/inaccurate.
-- If SGSchooling changes HTML structures, update `/Users/byc/src/webschool/scripts/build_data.py` selectors/parsers.
-- PropertyGuru may block bot requests. If direct fetch is blocked, place condo listings in
-  `/Users/byc/src/webschool/data/propertyguru_condos.csv` (see `/Users/byc/src/webschool/data/README.md`).
-- URA condo pull requires `URA_ACCESS_KEY`. Without it, URA condo count remains 0 and the build continues.
+See `data/rebuild/README.md`, `REDESIGN.md` and `URA_SETUP.md` for provenance and authorized source handling. Do not use legacy `scripts/build_data.py` to replace the schema-2 main-page bundle. Do not retry or bypass source access challenges.

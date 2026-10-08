@@ -100,7 +100,7 @@ def fetch():
         print(f'Batch {batch}/4 saved')
         if batch < 4:
             time.sleep(2)
-    output = normalize_batches(paths, now.date().isoformat())
+    output = normalize_batches(paths, now.date().isoformat(), batch_ids=[1, 2, 3, 4])
     write_output(output, ROOT / 'site/data/ura_transactions.json')
     print(f"Downloaded all 4 batches; imported {len(output['records'])} transactions. Token was not saved.")
 

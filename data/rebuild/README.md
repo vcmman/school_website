@@ -34,11 +34,11 @@ The condo page now lists all matched projects by increasing school-point distanc
 On 2026-10-06, one official batch containing 19,783 transaction records was acquired. Status is `partial`, not national coverage. Later URA requests encountered a source challenge and were stopped; do not retry or bypass it. The official property portal is https://www.ura.gov.sg/property-data/private-residential-properties/. Original authorized batches can be imported using:
 
 ```sh
-python3 scripts/import_ura_transactions.py --retrieved-on YYYY-MM-DD /path/to/ura-batch-1.json /path/to/ura-batch-2.json
+python3 scripts/import_ura_transactions.py --retrieved-on YYYY-MM-DD --batch 1 --batch 2 /path/to/ura-batch-1.json /path/to/ura-batch-2.json
 node --test tests/*.test.js
 ```
 
-The importer rejects unsupported schemas, empty/failed responses and ambiguous repeated projects across batches. Identical public transaction fields within an official project are retained as distinct records. Do not pass credentials in arguments or store them in public site files. REALIS CSV exports require a separately verified field mapping; this script accepts only original API JSON.
+The importer rejects unsupported schemas, empty/failed responses and ambiguous repeated projects across batches. Explicit batch numbers must match the input file order; only all four distinct batches claim complete coverage. Unidentified imports remain partial and cannot publish a price snapshot without verified batch identities. Identical public transaction fields within an official project are retained as distinct records. Do not pass credentials in arguments or store them in public site files. REALIS CSV exports require a separately verified field mapping; this script accepts only original API JSON.
 
 Local Access Key configuration and automatic four-batch download are implemented in `scripts/fetch_ura_transactions.py`. Follow `URA_SETUP.md`; never paste credentials in chat. Both helpers use current official v1 URLs and `typeOfArea` fields, not legacy API paths. Raw downloads reside in ignored `.private/ura`, outside the public website.
 
@@ -58,10 +58,12 @@ node --test tests/*.test.js
 python3 -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Daily raw HTML is cached under `.private/property-evidence/YYYY-MM-DD` with URL hashes. Page hashes, source links and retrieval dates are retained in the normalized evidence. Challenge pages stop collection. Existing dated evidence is not relabelled as fresh. Credentials, all original downloads, generated transaction/evidence JSON and generated URA point inputs are ignored by Git. A Git-only deployment consequently needs a separately authorized data provisioning step; the frontend handles missing price files without breaking school browsing.
+Daily raw HTML is cached under `.private/property-evidence/YYYY-MM-DD` with URL hashes. Page hashes, source links and retrieval dates are retained in the normalized evidence. Challenge pages stop collection. Existing dated evidence is not relabelled as fresh. Credentials, all original downloads, generated transaction/evidence JSON and generated URA point inputs are ignored by Git.
+
+`npm run data:prices` derives the versioned public `site/data/condo_price_summary.json` offline from the two local evidence files. It exports aggregate means, sample counts, area/month ranges and provenance, never individual transaction rows or layouts. The current summary has 178 nearby projects with usable primary or secondary evidence. Primary and secondary aggregates remain separate; official coverage remains partial. A failed generation retains the previous snapshot. The main pages no longer fetch the ignored files. A Git-only build needs only the tracked public snapshot, not private data provisioning.
 
 ## Git Tracking Rules
 
 `data/cache/`, rebuild raw downloads, progress logs and rebuild JSON intermediates (including coordinates, schools, projects and audit) are local-only. The manual `property-exclusions.json` and this README remain tracked. Ignoring a coordinate cache does not make source access restrictions disappear; preserve the local files when an authorized refresh is unavailable.
 
-The published school/condo bundles under `site/data/` remain tracked so a fresh checkout can run the core website. The two transaction/sample files keep their existing local-only rules and require separate deployment provisioning. Root-level manual profiles, query overrides and CSV inputs are not removed by this cache cleanup. Removing files from the Git index does not delete their local copies or erase earlier commits.
+The published school/condo bundles and the derived public price snapshot under `site/data/` remain tracked so a fresh checkout can run and build the core website. The two transaction/sample files keep their local-only rules and are explicitly excluded from the release output. Root-level manual profiles, query overrides and CSV inputs are not removed by this cache cleanup. Removing files from the Git index does not delete their local copies or erase earlier commits. See the root README for release validation and CI.
