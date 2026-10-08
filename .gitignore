@@ -20,3 +20,6 @@ __pycache__/
 .vercel
 .pycache/
 .server*.log
+.build/
+.release-*/
+/site/data/condo_price_summary.json.tmp

@@ -93,7 +93,24 @@ class PipelineTests(unittest.TestCase):
             result = json.loads((root / 'site/data/ura_transactions.json').read_text())
             self.assertEqual(len(result['records']), 4)
             self.assertEqual(len(result['raw_hashes']), 4)
+            self.assertEqual(result['status'], 'available')
+            self.assertEqual(result['coverage']['downloaded_batches'], [1, 2, 3, 4])
+            self.assertTrue(result['coverage']['national_coverage_complete'])
             self.assertNotIn('private-token', json.dumps(result))
+
+    def test_partial_and_unidentified_imports_never_claim_national_coverage(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / 'batch-1.json'
+            path.write_text(json.dumps(payload()))
+            unknown = normalize_batches([path], '2026-10-06')
+            self.assertEqual(unknown['status'], 'partial')
+            self.assertEqual(unknown['coverage']['downloaded_batches'], [])
+            partial = normalize_batches([path], '2026-10-06', batch_ids=[1])
+            self.assertEqual(partial['coverage']['downloaded_batches'], [1])
+            self.assertFalse(partial['coverage']['national_coverage_complete'])
+            for batches in [[1, 2], [5], [0]]:
+                with self.assertRaises(ValueError):
+                    normalize_batches([path], '2026-10-06', batch_ids=batches)
 
     def test_redirect_cannot_forward_credentials(self):
         with self.assertRaises(RuntimeError):

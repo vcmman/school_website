@@ -1,6 +1,6 @@
 # School Atlas Redesign
 
-Branch: `codex/school-website-redesign`.
+The redesign is merged into `main`. Ranking and release safeguards are developed on `codex/ranking-release-safeguards`.
 
 The main navigation contains School Explorer and Condo Picks, with bilingual selection, school search and registration demand history. Older research pages remain at their original URLs but have not been rebuilt and must not be used as a verified current source.
 
@@ -22,20 +22,20 @@ See `data/rebuild/README.md` for raw sources, provenance, refresh steps and limi
 
 ## Display Rules
 
-Applicants divided by vacancies measures registration demand, not personal admission probability. Zero vacancies have no numeric ratio. Sorting prioritizes 2C(S), then uses 2C where the first ratio is unavailable. Citizenship/distance results retain their exact original phase and year; historical outcomes never imply current eligibility.
+Applicants divided by vacancies measures registration demand, not personal admission probability. Zero vacancies have no numeric ratio. Sorting uses a dataset-wide comparable phase: 2C(S) if all schools with usable demand ratios have that phase, otherwise 2C for the entire list. Equal 2C(S) values use 2C. Schools missing the selected ratio go last. Search and language do not change this policy. The fallback is explained on the page; phases are never compared against one another. Citizenship/distance results retain their exact original phase and year; historical outcomes never imply current eligibility.
 
 Distances are school-point to a single matched project block, not official boundary-to-residential-block distances. Directory tenure and completion are unverified claims. Asking price, maintenance condition, amenities and valuation scores are never invented. Purchase candidates require fresh individual sale evidence and independently verified completion; sorting uses explicit budget/layout/asking-PSF criteria, not a purported market-value score.
 
-The current condo page instead uses fixed nearest-first distance order, not buying recommendations. Reference pricing prioritizes original individual strata URA resales; separately labelled Cashew samples are used only when original resale evidence is unavailable. At least three records and a selected area within the observed range are required for a total estimate. Missing prices remain unknown. The explorer no longer fetches property transaction payloads. See the alternative-evidence snapshot in `data/rebuild/README.md` for actual counts and exclusions.
+The current condo page instead uses fixed nearest-first distance order, not buying recommendations. Reference pricing prioritizes original individual strata URA resales; separately labelled Cashew samples are used only when original resale evidence is unavailable. At least three records and a selected area within the observed range are required for a total estimate. Missing prices remain unknown. The explorer fetches no pricing payload. The condo page first renders school/distance controls, then loads the small versioned aggregate snapshot, with a timeout and translated retry state. Network failures are not presented as absence of transactions. Individual transaction rows and publisher-listed layouts are no longer published by the core pages. See the alternative-evidence snapshot in `data/rebuild/README.md` for actual counts and exclusions.
 
 ## Local Preview And Checks
 
 Serve `site` over HTTP and open `index.html` or `school-condos.html`; direct file URLs cannot reliably fetch the bundle. Run:
 
 ```sh
-node --test tests/condo-ranking.test.js
-node --check site/redesign.js
-node --check site/school-balloting.js
+npm test
+npm run test:python
+npm run build
 ```
 
 This is a partial, evidence-labelled local preview, not a release-ready nationwide condo recommendation service. Completing property coverage requires authorized location data and verified current listings/transaction evidence.
