@@ -29,6 +29,27 @@ test('school explorer loads without property payloads and language/search handle
  get('search').oninput({target:{value:'恒力'}});assert.match(get('detail').innerHTML,/HENRY PARK/i);
 });
 
+test('SG School-Condo branding is consistent in both pages and survives language changes',async()=>{
+ for(const page of ['explorer','condos']){
+   const filename=page==='explorer'?'index.html':'school-condos.html';
+   const html=fs.readFileSync('site/'+filename,'utf8');
+   assert.match(html,/<title>SG School-Condo \|/);
+   assert.match(html,/Loading SG School-Condo/);
+   assert.doesNotMatch(html,/School Atlas|20261007ranking1/);
+   const {get,context}=await renderPage(page);
+   assert.match(get('app').innerHTML,/SG <span>School-Condo<\/span>/);
+   assert.match(context.document.title,/^SG School-Condo \|/);
+   get('language').onclick();
+   assert.equal(context.document.documentElement.lang,'zh-CN');
+   assert.match(context.document.title,/^SG School-Condo \|/);
+   assert.match(get('app').innerHTML,/SG <span>School-Condo<\/span>/);
+   get('language').onclick();
+   assert.equal(context.document.documentElement.lang,'en');
+   assert.match(context.document.title,/^SG School-Condo \|/);
+ }
+ assert.equal(JSON.parse(fs.readFileSync('package.json')).name,'sgschoolcondo');
+});
+
 test('condo rendering preserves distance order and translated prices after area/radius changes',async()=>{
  const {get,radii}=await renderPage('condos');
  let html=get('detail').innerHTML;

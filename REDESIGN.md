@@ -1,4 +1,4 @@
-# School Atlas Redesign
+# SG School-Condo Redesign
 
 The redesign is merged into `main`. Ranking and release safeguards are developed on `codex/ranking-release-safeguards`.
 

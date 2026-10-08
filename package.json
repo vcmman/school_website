@@ -1,7 +1,9 @@
 {
-  "name": "school-atlas",
+  "name": "sgschoolcondo",
   "private": true,
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "python3 -m http.server 8013 --bind 127.0.0.1 --directory site",
     "test": "node --test tests/*.test.js",
