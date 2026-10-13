@@ -5,7 +5,7 @@ const {spawnSync} = require('node:child_process');
 const Snapshot = require('../site/price-snapshot');
 const {digest} = require('./build_price_summary');
 const root = path.resolve(__dirname, '..');
-const required = ['index.html', 'school-condos.html', 'redesign.css', 'redesign.js', 'school-ranking.js', 'school-balloting.js', 'condo-pricing.js', 'condo-ranking.js', 'price-snapshot.js', 'data/atlas_bundle.json', 'data/condo_price_summary.json'];
+const required = ['index.html', 'school-condos.html', 'redesign.css', 'activity.css', 'redesign.js', 'school-ranking.js', 'school-balloting.js', 'condo-pricing.js', 'condo-ranking.js', 'price-snapshot.js', 'data/atlas_bundle.json', 'data/condo_price_summary.json'];
 // Explicit public assets avoid accidentally shipping arbitrary local JSON or CLI output.
 const publicAssets = [...required, 'app.js', 'condo.html', 'condo.js', 'house.html', 'house.js', 'invest.html', 'invest.js', 'research.html', 'research.js', 'ai-stocks.html', 'i18n.js', 'school-condos.js', 'styles.css',
   'data/atlas_schools.json', 'data/school_condos_2km.json', 'data/school_data_audit.json', 'data/site.json', 'data/investment_condos.json', 'data/investment_condos.js'];

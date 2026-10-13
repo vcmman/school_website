@@ -29,25 +29,25 @@ test('school explorer loads without property payloads and language/search handle
  get('search').oninput({target:{value:'恒力'}});assert.match(get('detail').innerHTML,/HENRY PARK/i);
 });
 
-test('SG School-Condo branding is consistent in both pages and survives language changes',async()=>{
+test('sg_school_website branding is consistent in both pages and survives language changes',async()=>{
  for(const page of ['explorer','condos']){
    const filename=page==='explorer'?'index.html':'school-condos.html';
    const html=fs.readFileSync('site/'+filename,'utf8');
-   assert.match(html,/<title>SG School-Condo \|/);
-   assert.match(html,/Loading SG School-Condo/);
+   assert.match(html,/<title>sg_school_website \|/);
+   assert.match(html,/Loading sg_school_website/);
    assert.doesNotMatch(html,/School Atlas|20261007ranking1/);
    const {get,context}=await renderPage(page);
-   assert.match(get('app').innerHTML,/SG <span>School-Condo<\/span>/);
-   assert.match(context.document.title,/^SG School-Condo \|/);
+   assert.match(get('app').innerHTML,/sg_school_website/);
+   assert.match(context.document.title,/^sg_school_website \|/);
    get('language').onclick();
    assert.equal(context.document.documentElement.lang,'zh-CN');
-   assert.match(context.document.title,/^SG School-Condo \|/);
-   assert.match(get('app').innerHTML,/SG <span>School-Condo<\/span>/);
+   assert.match(context.document.title,/^sg_school_website \|/);
+   assert.match(get('app').innerHTML,/sg_school_website/);
    get('language').onclick();
    assert.equal(context.document.documentElement.lang,'en');
-   assert.match(context.document.title,/^SG School-Condo \|/);
+   assert.match(context.document.title,/^sg_school_website \|/);
  }
- assert.equal(JSON.parse(fs.readFileSync('package.json')).name,'sgschoolcondo');
+ assert.equal(JSON.parse(fs.readFileSync('package.json')).name,'sg_school_website');
 });
 
 test('condo rendering preserves distance order and translated prices after area/radius changes',async()=>{
@@ -80,6 +80,8 @@ test('condo page loads only public aggregates, not ignored transaction payloads'
  assert.equal(requests.length,2);assert.ok(requests[1].startsWith('data/condo_price_summary.json'));
  assert.match(get('detail').innerHTML,/URA original resale average/);
  assert.match(get('detail').innerHTML,/2026-10-06/);
+ assert.match(get('detail').innerHTML,/Monthly transaction activity · past 2 years/);
+ assert.match(get('detail').innerHTML,/activity-bar/);
 });
 
 test('slow price fetch does not block school, language, search, or radius; timeout can be retried',async()=>{

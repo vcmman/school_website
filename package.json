@@ -1,5 +1,5 @@
 {
-  "name": "sgschoolcondo",
+  "name": "sg_school_website",
   "private": true,
   "engines": {
     "node": ">=22"

@@ -21,6 +21,8 @@ test('derived summary retains price arithmetic and provenance without individual
   assert.equal(output.input_hashes.ura,digest(serialize(ura)));
   const primary=Snapshot.summarize(output,'TESTCONDO',1000);
   assert.equal(primary.count,3);assert.ok(Math.abs(primary.average_psf-20000/10.7639104167)<1e-8);
+  assert.equal(primary.monthly_activity.length,24);
+  assert.deepEqual(primary.monthly_activity.at(-1),{month:'2026-09',count:3});
   assert.equal(primary.estimate_sgd,primary.average_psf*1000);
   assert.equal(Snapshot.summarize(output,'PUBLICCONDO',1000).estimate_sgd,1800000);
   assert.equal(Snapshot.summarize(output,'PUBLICCONDO',1500).estimate_sgd,null);
@@ -51,7 +53,7 @@ test('invalid or misleading snapshots cannot pass validation',()=>{
     s=>s.projects.TESTCONDO.primary.last_month='2026-10',s=>s.projects.TESTCONDO.primary.first_month='2025-09',
     s=>s.projects.PUBLICCONDO.secondary.source_url='https://example.com/incorrect',
     s=>s.projects.PUBLICCONDO.secondary.source_url+='?token=secret',
-    s=>s.projects.TESTCONDO.primary.records=[],s=>s.credentials='secret',
+    s=>s.projects.TESTCONDO.primary.records=[],s=>delete s.projects.TESTCONDO.primary.monthly_activity,s=>s.projects.TESTCONDO.primary.monthly_activity[0].count=-1,s=>s.credentials='secret',
     s=>s.projects.TESTCONDO.layouts=[],s=>s.official.access_key='secret',
     s=>delete s.projects.TESTCONDO.primary,
   ];

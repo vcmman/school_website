@@ -20,8 +20,8 @@ function build(atlasBytes, uraBytes, publicBytes) {
   const names = [...new Set(Object.values(atlas.condos.schools).flat().map(p => p.name))].sort();
   function aggregate(stats, checkedOn) {
     if (!stats) return null;
-    const {source_kind, count, average_psf, min_size_sqft, max_size_sqft, first_month, last_month} = stats;
-    return {source_kind, count, average_psf, min_size_sqft, max_size_sqft, first_month, last_month, checked_on: checkedOn,
+    const {source_kind, count, average_psf, min_size_sqft, max_size_sqft, first_month, last_month, monthly_activity} = stats;
+    return {source_kind, count, average_psf, min_size_sqft, max_size_sqft, first_month, last_month, monthly_activity, checked_on: checkedOn,
       ...(source_kind === 'secondary' ? {source_url: stats.source_url, coverage: stats.coverage} : {})};
   }
   for (const name of names) {
@@ -44,7 +44,12 @@ function write(rootPath = root) {
   const output = build(read('atlas_bundle.json'), read('ura_transactions.json'), read('property_evidence.json'));
   const destination = path.join(rootPath, 'site/data/condo_price_summary.json');
   if (fs.existsSync(destination)) {
-    const previous = Snapshot.validate(JSON.parse(fs.readFileSync(destination)));
+    const previous = JSON.parse(fs.readFileSync(destination));
+    try { Snapshot.validate(previous); }
+    catch (error) {
+      const legacy = error.message === 'Price snapshot: invalid monthly activity' && Object.values(previous.projects || {}).every(project => ['primary','secondary'].every(kind => !project[kind] || !('monthly_activity' in project[kind])));
+      if (!legacy) throw error;
+    }
     if (output.official.retrieved_on < previous.official.retrieved_on || output.secondary.checked_on < previous.secondary.checked_on) throw new Error('Older evidence cannot replace the last good snapshot');
   }
   const temp = destination + '.tmp';

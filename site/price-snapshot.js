@@ -42,7 +42,7 @@
       for (const kind of ['primary', 'secondary']) {
         const row = project[kind];
         if (!row) continue;
-        only(row, ['source_kind','count','average_psf','min_size_sqft','max_size_sqft','first_month','last_month','checked_on','source_url','coverage']);
+        only(row, ['source_kind','count','average_psf','min_size_sqft','max_size_sqft','first_month','last_month','monthly_activity','checked_on','source_url','coverage']);
         if (kind === 'primary') primaryCount++;
         if (row.source_kind !== kind || !Number.isInteger(row.count) || row.count < 1 || ![row.average_psf, row.min_size_sqft, row.max_size_sqft].every(v => Number.isFinite(v) && v > 0) || row.min_size_sqft > row.max_size_sqft) fail('invalid aggregate');
         const retrieved = kind === 'primary' ? official.retrieved_on : snapshot.secondary.checked_on;
@@ -51,6 +51,13 @@
         const end = new Date(row.checked_on + 'T00:00:00Z');
         const start = new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth() - 12, 1)).toISOString().slice(0,7);
         if (![row.first_month, row.last_month].every(v => /^\d{4}-(0[1-9]|1[0-2])$/.test(v || '')) || row.first_month < start || row.first_month > row.last_month || row.last_month >= row.checked_on.slice(0,7)) fail('invalid transaction window');
+        const activityStart = new Date(Date.UTC(end.getUTCFullYear(), end.getUTCMonth() - 24, 1)).toISOString().slice(0,7);
+        if (!Array.isArray(row.monthly_activity) || row.monthly_activity.length !== 24) fail('invalid monthly activity');
+        row.monthly_activity.forEach((point,index) => {
+          only(point,['month','count']);
+          const expected = new Date(Date.UTC(end.getUTCFullYear(),end.getUTCMonth()-24+index,1)).toISOString().slice(0,7);
+          if (point.month !== expected || point.month < activityStart || !Number.isInteger(point.count) || point.count < 0) fail('invalid monthly activity');
+        });
         if (kind === 'secondary' && (!/^https:\/\/www\.cashew\.sg\/[^?#]+$/.test(row.source_url || '') || row.coverage !== 'displayed_sample_only')) fail('invalid public attribution');
         if (kind === 'primary' && ('source_url' in row || 'coverage' in row)) fail('unexpected primary attribution');
       }
