@@ -5,7 +5,7 @@ const {spawnSync} = require('node:child_process');
 const Snapshot = require('../site/price-snapshot');
 const {digest} = require('./build_price_summary');
 const root = path.resolve(__dirname, '..');
-const required = ['index.html', 'school-condos.html', 'redesign.css', 'activity.css', 'redesign.js', 'school-ranking.js', 'school-balloting.js', 'condo-pricing.js', 'condo-ranking.js', 'price-snapshot.js', 'data/atlas_bundle.json', 'data/condo_price_summary.json'];
+const required = ['index.html', 'school-condos.html', 'hdb-growth.html', 'hdb-growth.css', 'hdb-growth.js', 'data/hdb_growth.json', 'redesign.css', 'activity.css', 'redesign.js', 'school-ranking.js', 'school-balloting.js', 'condo-pricing.js', 'condo-ranking.js', 'price-snapshot.js', 'data/atlas_bundle.json', 'data/condo_price_summary.json'];
 // Explicit public assets avoid accidentally shipping arbitrary local JSON or CLI output.
 const publicAssets = [...required, 'app.js', 'condo.html', 'condo.js', 'house.html', 'house.js', 'invest.html', 'invest.js', 'research.html', 'research.js', 'ai-stocks.html', 'i18n.js', 'school-condos.js', 'styles.css',
   'data/atlas_schools.json', 'data/school_condos_2km.json', 'data/school_data_audit.json', 'data/site.json', 'data/investment_condos.json', 'data/investment_condos.js'];
@@ -24,13 +24,13 @@ function verify(rootPath = root) {
     const check = spawnSync(process.execPath, ['--check', path.join(site, file)], {encoding: 'utf8'});
     if (check.status !== 0) throw new Error('Invalid JavaScript: ' + file + '\n' + check.stderr);
   }
-  for (const file of ['index.html', 'school-condos.html']) {
+  for (const file of ['index.html', 'school-condos.html', 'hdb-growth.html']) {
     const html = fs.readFileSync(path.join(site, file), 'utf8');
     for (const [, asset] of html.matchAll(/(?:src|href)="([^"?#]+)(?:\?[^"#]*)?"/g)) {
       if (/^[a-z]+:|^#/.test(asset)) continue;
       if (!fs.existsSync(path.join(site, asset))) throw new Error('Broken HTML asset: ' + asset);
     }
-    for (const script of ['school-ranking.js','price-snapshot.js']) if (!html.includes(script)) throw new Error('Missing page module: ' + script);
+    if (file !== 'hdb-growth.html') for (const script of ['school-ranking.js','price-snapshot.js']) if (!html.includes(script)) throw new Error('Missing page module: ' + script);
   }
   return snapshot;
 }

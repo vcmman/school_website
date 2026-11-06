@@ -91,7 +91,7 @@ function cleanRelease() {
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'atlas-release-'));
   fs.mkdirSync(path.join(root,'site/data'),{recursive:true});
   for(const file of fs.readdirSync('site'))if(/^[\w-]+\.(js|css|html)$/.test(file))fs.copyFileSync(path.join('site',file),path.join(root,'site',file));
-  for(const file of ['atlas_bundle.json','condo_price_summary.json'])fs.copyFileSync(path.join('site/data',file),path.join(root,'site/data',file));
+  for(const file of ['atlas_bundle.json','condo_price_summary.json','hdb_growth.json'])fs.copyFileSync(path.join('site/data',file),path.join(root,'site/data',file));
   return root;
 }
 test('a clean checkout builds with only tracked public data and never publishes private inputs',()=>{

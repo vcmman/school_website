@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="新加坡2006–2025年HDB建设与存量趋势，Clementi至Queenstown沿线新增住宅，以及四所小学报名竞争的证据分析。">
+  <title>HDB 增长与小学报名 | sg_school_website</title>
+  <link rel="stylesheet" href="hdb-growth.css?v=20261106a">
+  <script src="hdb-growth.js?v=20261106a" defer></script>
+</head>
+<body>
+  <header><nav aria-label="主导航"><a class="brand" href="index.html">sg_school_website</a><div><a href="index.html">学校探索</a><a href="school-condos.html">周边公寓</a><a aria-current="page" href="hdb-growth.html">HDB 增长研究</a></div></nav></header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">HOUSING × SCHOOL DEMAND · 研究专题 01</div>
+      <h1>更多组屋，<br>会让小学更难进吗？</h1>
+      <p class="lead">从新加坡 20 年建设周期，走到 Clementi—Queenstown 的街区更新，再看四所小学的学额与申请人数。</p>
+      <div class="dateline">研究日期 2026-11-06 <span>年度实绩截至 2025</span><span>校情快照核验于 2026-10-06</span></div>
+      <div class="takeaway"><span>核心判断</span><p>全国建设量已走出 2020 年低点，但近五年平均并未超过上一轮高位。沿线更值得关注的是<strong>新家庭集中迁入哪些街区、何时形成入学需求，以及学校能提供多少学额</strong>。HDB 增长提供需求线索，不能单独证明抽签变难。</p></div>
+    </section>
+    <nav class="contents" aria-label="专题目录"><a href="#national">01 全国 20 年</a><a href="#corridor">02 沿线增长</a><a href="#schools">03 四校分析</a><a href="#scenario">04 情景测算</a><a href="#sources">来源与方法</a></nav>
+    <div id="load-status" role="status">正在载入官方年度序列与学校历史…</div>
+    <section id="national" class="section">
+      <div class="section-head"><div class="eyebrow">01 / NATIONAL</div><h2>建设量回升，放回 20 年看</h2><p>统一使用自然年。柱图是每年建成套数；存量图是年末 HDB 在管住宅单位，二者含义不同。</p></div>
+      <div id="national-metrics" class="metrics"></div>
+      <div class="panel"><div class="chart-head"><h3>每年建成 HDB 套数</h3><span>2006–2025 · 单位：套</span></div><div id="construction-chart" class="chart"></div><p class="caption">数据：SingStat / HDB “Flats Constructed”，通过 <a href="https://data.gov.sg/datasets/d_5363b6c403ae9a7d91c387eae64c4fac/view" target="_blank" rel="noopener">data.gov.sg</a> 获取。2026 年尚未结束，不补全年实绩。</p></div>
+      <div id="periods" class="periods"></div>
+      <div class="reading"><h3>如何理解这一轮增长</h3><p id="national-reading"></p><p>2020 年建成量低至 7,314 套，其后逐步恢复。HDB 在 2026 年 1 月公布，2025 年约建成 19,600 套，当时在建项目从一年前的 110 个增至 127 个；这是施工储备增强的信号，但“项目个数”不能换算为等量房屋或新生人数。<a href="https://www.hdb.gov.sg/hdb-pulse/news/2026/hdb-to-launch-19600-bto-flats-in-2026" target="_blank" rel="noopener">HDB 官方说明 ↗</a></p></div>
+    </section>
+    <section id="corridor" class="section">
+      <div class="section-head"><div class="eyebrow">02 / CLEMENTI → QUEENSTOWN</div><h2>成熟市镇：新楼增加，存量未必同步增加</h2><p>用 Clementi、Queenstown 两个 HDB 市镇作可复核的区域代理。它们覆盖范围大于地铁沿线，也不是四所学校的招生范围。</p></div>
+      <div class="panel"><div class="chart-head"><h3>年末在管存量的增长轨迹</h3><label>显示方式 <select id="stock-mode"><option value="index">指数 · 2005 = 100</option><option value="units">套数 · 沿线两镇</option></select></label></div><div id="stock-chart" class="chart"></div><div class="legend"><span class="national">全国</span><span class="clementi">Clementi</span><span class="queenstown">Queenstown</span></div><p class="caption">来源：<a href="https://data.gov.sg/datasets/d_06d2fe53728d2d971f1a8beae3c882d9/view" target="_blank" rel="noopener">SingStat / HDB 年末在管住宅</a>。2005 年底是计算随后 20 年净变化的基期；市镇按 Town Registration Boundary，排除有地住宅。</p></div>
+      <div class="table-scroll"><table><caption>存量与净变化，不能当作竣工套数</caption><thead><tr><th>区域</th><th>2005 年底</th><th>2020 年底</th><th>2025 年底</th><th>20 年净增</th><th>近 5 年净增</th></tr></thead><tbody id="stock-table"></tbody></table></div>
+      <p class="reading">Queenstown 从 2020 年的 33,973 套降至 2025 年的 32,874 套；Clementi 同期从 26,730 增至 28,712 套。存量减少不等于没有建设：新建、退出在管范围、旧区更新等会共同影响净数。现有年度表未分解减少原因，因此不能把全部下降归因于某个 SERS 项目。</p>
+      <div class="route" aria-label="研究走廊，非按比例地理图"><div><b>Clementi</b><span>NorthArc / Peaks / Emerald</span></div><div><b>Dover</b><span>Ulu Pandan 三项目</span></div><div><b>Buona Vista</b><span>Ghim Moh 两项目</span></div><div><b>Commonwealth</b><span>Tanglin Halt 更新</span></div><div><b>Queenstown</b><span>Queen’s Arc / Canopy</span></div></div>
+      <h3>项目层面：看清供给的阶段和家庭结构</h3><p class="caption">以下为有官方数量依据的重点项目样本，非沿线完整清单。按原始推出／规划口径列示；未逐栋核验当前交钥匙进度，所以不把表内总数作为“未来净新增”。</p>
+      <div class="table-scroll"><table class="projects"><thead><tr><th>片区 / 项目</th><th>官方数量</th><th>证据阶段</th><th>对学校需求的解读</th><th>来源</th></tr></thead><tbody id="projects"></tbody></table></div>
+      <div class="callout"><h3>未来观察：Sunset Way / Maju Forest</h3><p>HDB 于 2026-10-28 更新概念方案，预计约 4,000 套公共住宅，土地准备工程预计 2028 年上半年开始，满足 2030 年代的住房需求。具体推出、交付时间仍待公布。它是 Clementi 西段的长期变量，不能计入当前已入住家庭。<a href="https://www.hdb.gov.sg/hdb-pulse/news/2026/revised-plans-for-sunset-way-and-gillman-barracks-to-integrate-new-homes-with-more-greenery" target="_blank" rel="noopener">HDB 方案 ↗</a></p></div>
+    </section>
+    <section id="schools" class="section">
+      <div class="section-head"><div class="eyebrow">03 / FOUR SCHOOLS</div><h2>同一走廊，四种竞争结构</h2><p>这里的 Clementi 是 Clementi Primary School，不是 Nan Hua Primary。年份均为报名年，次年入学；申请人数 ÷ 学额表示需求强度。</p></div>
+      <div class="policy"><strong>2027 报名制度变化必须纳入观察</strong><p>据 CNA 对 MOE 2026-09-10 公告的报道，2027 年报名起，多数学校 2C 预留学额由 40 增至 60；P1 总招生少于 180 的学校仍预留 40。四所研究学校均不在公布的 12 所双轨制学校名单内。新增预留名额会改变阶段分配，但不能把各校 2026 年实际 2C 学额简单加 20。周边双轨学校也可能改变家长志愿流向。</p><p class="caption"><a href="https://www.channelnewsasia.com/singapore/p1-registration-phase-2c-two-track-schools-6375426" target="_blank" rel="noopener">CNA 报道及名单</a> · <a href="https://www.moe.gov.sg/news/press-releases/20260910-enhancing-the-primary-one-registration-framework-for-greater-access-and-inclusivity" target="_blank" rel="noopener">MOE 公告</a>（本次直接读取遇到验证页，以上政策细节据 CNA 核对）。</p></div>
+      <div class="panel"><div class="chart-head"><h3>2C 竞争比：2023–2026</h3><span>虚线 1.0 = 申请人数与学额相同</span></div><div id="school-chart" class="chart"></div><p class="caption">2025 数字及抽签组别来自本站已保存的 MOE 原始页面；2023–2024 是 PrimarySch 二手汇编，2026 数字经两家二手来源交叉核验。所有校情沿用 2026-10-06 快照，不标为今日重新核验。</p></div>
+      <div id="school-cards" class="school-cards"></div>
+      <div class="mechanism"><h3>从新增组屋到报名竞争，中间还隔着什么？</h3><ol><li><b>地址与交付</b>：推出、建成、交钥匙、实际入住是不同时间点。符合 MOE 新购未竣工住宅地址条件的家庭，可能在入住前报名；逐户须核对当年规则及合约日期。</li><li><b>同龄儿童</b>：两房 Flexi、Community Care Apartments、已有家庭搬迁与首次置业家庭，带来的单年度小一儿童数量不同。入住后出生的孩子通常要数年后才进入报名群体。</li><li><b>有效申请</b>：家庭有其他学校选择，也可能通过兄姐、校友等较早阶段获录取。不能把所有新增儿童同时计入四校 2C。</li><li><b>学额与优先组</b>：实际结果取决于该阶段学额、公民身份、官方家校距离组别及当年政策。学校点位直线距离或 MRT 站距不足以确认 1km 资格。</li></ol></div>
+    </section>
+    <section id="scenario" class="section">
+      <div class="section-head"><div class="eyebrow">04 / SENSITIVITY, NOT A FORECAST</div><h2>新增家庭，需要多大规模才会改变竞争比？</h2><p>可调情景用来理解变量的敏感度。输入值均为用户假设，默认值不是人口预测；没有街区儿童年龄、公民身份、实际选择学校等数据，无法推算个人中签率。</p></div>
+      <div class="scenario panel"><form id="scenario-form"><label>观察学校<select id="scenario-school"></select></label><label>假设净新增且已入住家庭数<input id="homes" type="number" min="0" max="20000" step="1" value="1000" required></label><label>每 100 户的当年小一适龄儿童数<input id="cohort" type="number" min="0" max="100" step="0.1" value="4" required></label><label>其中申请此校 2C 的比例（%）<input id="share" type="number" min="0" max="100" step="1" value="25" required></label><label>假设当年 2C 学额<input id="seats" type="number" min="1" max="1000" step="1" value="165" required></label></form><div id="scenario-output" aria-live="polite"></div><p class="caption">增量申请 = 家庭数 × 每户当年适龄儿童数 × 选择此校 2C 比例；示意竞争比 =（2026 快照申请人数 + 增量申请）÷ 假设学额。基线人群假定保持不变，未校正迁出、重复计数、人口结构或政策后的志愿变化。</p></div>
+    </section>
+    <section id="sources" class="section sources"><div class="eyebrow">METHOD & SOURCES</div><h2>数据范围与可复核性</h2><p>全国建成量：2006–2025 共 20 个自然年；存量：2005 年底至 2025 年底。增长率 = 期末 / 期初 − 1；五年平均 = 五年建成量之和 / 5。所有图表均由同一公开数据快照计算。</p><p>尚缺资料：沿线逐栋实际入住日期、各年龄儿童数、SC/PR 分布、逐栋官方家校距离及历年申请人的住宅类型。当前分析只能识别压力来源、历史变化和需要观察的变量，不能证明 HDB 导致某校抽签变化。</p><div id="source-list"></div><p><a href="data/hdb_growth.json" download>下载本页数据与来源记录（JSON）</a></p><details><summary>展开年度原始数据</summary><div class="table-scroll"><table><thead><tr><th>年</th><th>全国建成</th><th>全国在管</th><th>Clementi 在管</th><th>Queenstown 在管</th></tr></thead><tbody id="annual-table"></tbody></table></div></details></section>
+  </main>
+  <footer>sg_school_website · HDB 增长与学校报名研究 · <a href="index.html">返回学校探索</a></footer>
+</body>
+</html>

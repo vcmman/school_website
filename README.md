@@ -4,7 +4,11 @@ Public website: [sg_school_website](https://webschool-theta.vercel.app/)
 
 [School Explorer](https://webschool-theta.vercel.app/index.html) | [Nearby Condo Picks](https://webschool-theta.vercel.app/school-condos.html)
 
-A bilingual static website for Singapore primary-school registration evidence and nearby condo distances. The maintained pages are `site/index.html` (School Explorer) and `site/school-condos.html` (Condo Picks). Older research pages are retained, not newly verified.
+[HDB growth and school demand research](https://webschool-theta.vercel.app/hdb-growth.html) is a Chinese-language analysis of 2006–2025 completions, 2005–2025 year-end stock, the Clementi–Queenstown corridor and four primary schools. Its public snapshot is `site/data/hdb_growth.json`. National and town data were retrieved on 2026-11-06; school history retains its 2026-10-06 verification date. Project launches are not counted as completed or net new occupied homes. The scenario calculator is explicitly hypothetical, not an admissions probability model.
+
+To refresh the annual research snapshot, download the `data.gov.sg/api/action/datastore_search` responses for datasets `d_5363b6c403ae9a7d91c387eae64c4fac` (limit 10) and `d_06d2fe53728d2d971f1a8beae3c882d9` (limit 300), then run `node scripts/build_hdb_research.js <construction-response.json> <stock-response.json>`. Review the observation window, research date, policy notes and written analysis before publishing a refresh.
+
+A bilingual static website for Singapore primary-school registration evidence and nearby condo distances, with a Chinese HDB research feature. The maintained pages are `site/index.html` (School Explorer), `site/school-condos.html` (Condo Picks), and `site/hdb-growth.html` (HDB Growth). Older research pages are retained, not newly verified.
 
 ## Local Development
 

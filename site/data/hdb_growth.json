@@ -1,0 +1,686 @@
+{
+  "schema_version": 1,
+  "researched_on": "2026-11-06",
+  "annual_data_updated_on": "2026-05-11",
+  "school_checked_on": "2026-10-06",
+  "sources": {
+    "construction": "https://data.gov.sg/datasets/d_5363b6c403ae9a7d91c387eae64c4fac/view",
+    "stock": "https://data.gov.sg/datasets/d_06d2fe53728d2d971f1a8beae3c882d9/view"
+  },
+  "hashes": {
+    "construction": "1547e27256d6fea8674c525f974546174e293c0d9dc405667949230ec6ab8542",
+    "stock": "8fdc147ca501c7527a47a562dd9b6493573f20db467063453b7717731381d02a",
+    "schools": "622b4cd536578f78ca4ec30da7c6e31a1f73ddc7cd3593133430cad0ec88efee"
+  },
+  "annual": [
+    {
+      "year": 2005,
+      "constructed": 5663,
+      "national": 877546,
+      "clementi": 24490,
+      "queenstown": 28665
+    },
+    {
+      "year": 2006,
+      "constructed": 2733,
+      "national": 878820,
+      "clementi": 23877,
+      "queenstown": 28495
+    },
+    {
+      "year": 2007,
+      "constructed": 5063,
+      "national": 883448,
+      "clementi": 23877,
+      "queenstown": 29502
+    },
+    {
+      "year": 2008,
+      "constructed": 3154,
+      "national": 884920,
+      "clementi": 23874,
+      "queenstown": 29077
+    },
+    {
+      "year": 2009,
+      "constructed": 5208,
+      "national": 888143,
+      "clementi": 23872,
+      "queenstown": 29812
+    },
+    {
+      "year": 2010,
+      "constructed": 10453,
+      "national": 898532,
+      "clementi": 24001,
+      "queenstown": 31637
+    },
+    {
+      "year": 2011,
+      "constructed": 17725,
+      "national": 914102,
+      "clementi": 25241,
+      "queenstown": 30756
+    },
+    {
+      "year": 2012,
+      "constructed": 10733,
+      "national": 922493,
+      "clementi": 26100,
+      "queenstown": 29904
+    },
+    {
+      "year": 2013,
+      "constructed": 14004,
+      "national": 933278,
+      "clementi": 24881,
+      "queenstown": 30494
+    },
+    {
+      "year": 2014,
+      "constructed": 27120,
+      "national": 959960,
+      "clementi": 24592,
+      "queenstown": 29990
+    },
+    {
+      "year": 2015,
+      "constructed": 23178,
+      "national": 984908,
+      "clementi": 25264,
+      "queenstown": 31504
+    },
+    {
+      "year": 2016,
+      "constructed": 26025,
+      "national": 1010613,
+      "clementi": 26224,
+      "queenstown": 31504
+    },
+    {
+      "year": 2017,
+      "constructed": 35210,
+      "national": 1043968,
+      "clementi": 26728,
+      "queenstown": 32679
+    },
+    {
+      "year": 2018,
+      "constructed": 17556,
+      "national": 1061236,
+      "clementi": 26601,
+      "queenstown": 32676
+    },
+    {
+      "year": 2019,
+      "constructed": 12114,
+      "national": 1071126,
+      "clementi": 26345,
+      "queenstown": 33164
+    },
+    {
+      "year": 2020,
+      "constructed": 7314,
+      "national": 1079630,
+      "clementi": 26730,
+      "queenstown": 33973
+    },
+    {
+      "year": 2021,
+      "constructed": 13756,
+      "national": 1092898,
+      "clementi": 26730,
+      "queenstown": 36380
+    },
+    {
+      "year": 2022,
+      "constructed": 20064,
+      "national": 1110294,
+      "clementi": 28240,
+      "queenstown": 34676
+    },
+    {
+      "year": 2023,
+      "constructed": 21393,
+      "national": 1130144,
+      "clementi": 29709,
+      "queenstown": 33081
+    },
+    {
+      "year": 2024,
+      "constructed": 18011,
+      "national": 1144886,
+      "clementi": 28713,
+      "queenstown": 32876
+    },
+    {
+      "year": 2025,
+      "constructed": 19587,
+      "national": 1166152,
+      "clementi": 28712,
+      "queenstown": 32874
+    }
+  ],
+  "schools": [
+    {
+      "slug": "clementi",
+      "name": "Clementi Primary School",
+      "history": [
+        {
+          "year": 2023,
+          "vacancy": {
+            "2B": 71,
+            "2C": 214,
+            "2C(S)": 163
+          },
+          "applied": {
+            "2B": 0,
+            "2C": 51,
+            "2C(S)": 103
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2024,
+          "vacancy": {
+            "2B": 66,
+            "2C": 198,
+            "2C(S)": 121
+          },
+          "applied": {
+            "2B": 1,
+            "2C": 77,
+            "2C(S)": 106
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2025,
+          "vacancy": {
+            "2B": 77,
+            "2C": 231,
+            "2C(S)": 145
+          },
+          "applied": {
+            "2B": 0,
+            "2C": 86,
+            "2C(S)": 136
+          },
+          "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+          "verification": "direct_moe",
+          "balloting": {
+            "2B": {
+              "year": 2025,
+              "phase": "2B",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "",
+              "balloting_required": false,
+              "vacancy": 77,
+              "applied": 0,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            },
+            "2C": {
+              "year": 2025,
+              "phase": "2C",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "",
+              "balloting_required": false,
+              "vacancy": 231,
+              "applied": 86,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            },
+            "2C(S)": {
+              "year": 2025,
+              "phase": "2C(S)",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "",
+              "balloting_required": false,
+              "vacancy": 145,
+              "applied": 136,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            }
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2026,
+          "vacancy": {
+            "2B": 55,
+            "2C": 165,
+            "2C(S)": 67
+          },
+          "applied": {
+            "2B": 0,
+            "2C": 100,
+            "2C(S)": 75
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "crosschecked_secondary_sources",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06",
+          "crosscheck_source_url": "https://sgschoolkaki.com/p1-registration/data-2026"
+        }
+      ]
+    },
+    {
+      "slug": "fairfield-methodist",
+      "name": "Fairfield Methodist School (Primary)",
+      "history": [
+        {
+          "year": 2023,
+          "vacancy": {
+            "2B": 20,
+            "2C": 40,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 52,
+            "2C": 66,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2024,
+          "vacancy": {
+            "2B": 22,
+            "2C": 45,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 33,
+            "2C": 78,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2025,
+          "vacancy": {
+            "2B": 20,
+            "2C": 42,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 30,
+            "2C": 70,
+            "2C(S)": 0
+          },
+          "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+          "verification": "direct_moe",
+          "balloting": {
+            "2B": {
+              "year": 2025,
+              "phase": "2B",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "Conducted for: Singapore Citizen children residing within 1km of the school.",
+              "remarks": "",
+              "balloting_required": true,
+              "vacancy": 20,
+              "applied": 30,
+              "vacancies_balloted": 20,
+              "applicants_balloted": 21,
+              "checked_on": "2026-10-06"
+            },
+            "2C": {
+              "year": 2025,
+              "phase": "2C",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "Conducted for: Singapore Citizen children residing within 1km of the school.",
+              "remarks": "",
+              "balloting_required": true,
+              "vacancy": 42,
+              "applied": 70,
+              "vacancies_balloted": 42,
+              "applicants_balloted": 47,
+              "checked_on": "2026-10-06"
+            },
+            "2C(S)": {
+              "year": 2025,
+              "phase": "2C(S)",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "No registration in Phase 2C Supplementary was conducted as all vacancies were filled by Phase 2C.",
+              "balloting_required": false,
+              "vacancy": 0,
+              "applied": 0,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            }
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2026,
+          "vacancy": {
+            "2B": 22,
+            "2C": 48,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 27,
+            "2C": 80,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "crosschecked_secondary_sources",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06",
+          "crosscheck_source_url": "https://sgschoolkaki.com/p1-registration/data-2026"
+        }
+      ]
+    },
+    {
+      "slug": "henry-park",
+      "name": "Henry Park Primary School",
+      "history": [
+        {
+          "year": 2023,
+          "vacancy": {
+            "2B": 20,
+            "2C": 44,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 23,
+            "2C": 64,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2024,
+          "vacancy": {
+            "2B": 21,
+            "2C": 41,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 27,
+            "2C": 63,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2025,
+          "vacancy": {
+            "2B": 31,
+            "2C": 63,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 31,
+            "2C": 93,
+            "2C(S)": 0
+          },
+          "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+          "verification": "direct_moe",
+          "balloting": {
+            "2B": {
+              "year": 2025,
+              "phase": "2B",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "",
+              "balloting_required": false,
+              "vacancy": 31,
+              "applied": 31,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            },
+            "2C": {
+              "year": 2025,
+              "phase": "2C",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "Conducted for: Singapore Citizen children residing within 1km of the school.",
+              "remarks": "",
+              "balloting_required": true,
+              "vacancy": 63,
+              "applied": 93,
+              "vacancies_balloted": 63,
+              "applicants_balloted": 76,
+              "checked_on": "2026-10-06"
+            },
+            "2C(S)": {
+              "year": 2025,
+              "phase": "2C(S)",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "No registration in Phase 2C Supplementary was conducted as all vacancies were filled by Phase 2C.",
+              "balloting_required": false,
+              "vacancy": 0,
+              "applied": 0,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            }
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2026,
+          "vacancy": {
+            "2B": 25,
+            "2C": 51,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 29,
+            "2C": 76,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "crosschecked_secondary_sources",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06",
+          "crosscheck_source_url": "https://sgschoolkaki.com/p1-registration/data-2026"
+        }
+      ]
+    },
+    {
+      "slug": "queenstown",
+      "name": "Queenstown Primary School",
+      "history": [
+        {
+          "year": 2023,
+          "vacancy": {
+            "2B": 36,
+            "2C": 106,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 1,
+            "2C": 123,
+            "2C(S)": 0
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2024,
+          "vacancy": {
+            "2B": 44,
+            "2C": 133,
+            "2C(S)": 23
+          },
+          "applied": {
+            "2B": 1,
+            "2C": 110,
+            "2C(S)": 33
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "secondary_compilation",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2025,
+          "vacancy": {
+            "2B": 35,
+            "2C": 105,
+            "2C(S)": 0
+          },
+          "applied": {
+            "2B": 0,
+            "2C": 115,
+            "2C(S)": 0
+          },
+          "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+          "verification": "direct_moe",
+          "balloting": {
+            "2B": {
+              "year": 2025,
+              "phase": "2B",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "",
+              "balloting_required": false,
+              "vacancy": 35,
+              "applied": 0,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            },
+            "2C": {
+              "year": 2025,
+              "phase": "2C",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "Conducted for: Permanent Resident children residing within 1km of the school.",
+              "remarks": "",
+              "balloting_required": true,
+              "vacancy": 105,
+              "applied": 115,
+              "vacancies_balloted": 8,
+              "applicants_balloted": 12,
+              "checked_on": "2026-10-06"
+            },
+            "2C(S)": {
+              "year": 2025,
+              "phase": "2C(S)",
+              "source": "MOE",
+              "source_url": "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+              "result_text": "",
+              "remarks": "No registration in Phase 2C Supplementary was conducted as all vacancies were filled by Phase 2C.",
+              "balloting_required": false,
+              "vacancy": 0,
+              "applied": 0,
+              "vacancies_balloted": 0,
+              "applicants_balloted": 0,
+              "checked_on": "2026-10-06"
+            }
+          },
+          "checked_on": "2026-10-06"
+        },
+        {
+          "year": 2026,
+          "vacancy": {
+            "2B": 49,
+            "2C": 147,
+            "2C(S)": 39
+          },
+          "applied": {
+            "2B": 1,
+            "2C": 108,
+            "2C(S)": 25
+          },
+          "source_url": "https://primarysch.com/schools_data.json",
+          "verification": "crosschecked_secondary_sources",
+          "balloting": {
+            "2B": null,
+            "2C": null,
+            "2C(S)": null
+          },
+          "checked_on": "2026-10-06",
+          "crosscheck_source_url": "https://sgschoolkaki.com/p1-registration/data-2026"
+        }
+      ]
+    }
+  ]
+}
